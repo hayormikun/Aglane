@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from '../components/Heading'
 
-const about = () => {
+const About = () => {
   return (
     <main>
       <section>
@@ -56,4 +56,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

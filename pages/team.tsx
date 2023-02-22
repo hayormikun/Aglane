@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const team = () => {
+export const Team = () => {
   return (
-    <div>team</div>
+    <div>T</div>
   )
 }
