@@ -189,8 +189,8 @@ const Contact = () => {
             <h3>Head Office</h3>
             <p>7 Gambo Sawaba, Gwarimpa Abuja</p>
 
-            {socials.map((social) => (
-              <Link key={social.link} href={social.link} target="_blank">
+            {socials.map((social, index) => (
+              <Link key={index} href={social.link} target="_blank">
                 <span>
                   {social.logo}
                   {social.name}
