@@ -4,39 +4,40 @@ import { FaArrowRight, FaChevronRight } from 'react-icons/fa'
 import { HtmlHead } from '../components/Head'
 import { useState } from 'react'
 import { AccordionItem } from '../components/AccordionItem'
+import { Link } from 'react-scroll'
 // import landingImage from '../public/assests/Images/pexels-safari-consoler-11588042.jpg'
 
 const primaryServices = [
   {
-    "icon": "End-to-end agricultural primary production",
-    "title": "End-to-end agricultural primary production"
+    icon: 'End-to-end agricultural primary production',
+    title: 'End-to-end agricultural primary production',
   },
 
   {
-    "icon": "Farmer & Produce Aggregation",
-    "title": "Farmer & Produce Aggregation"
+    icon: 'Farmer & Produce Aggregation',
+    title: 'Farmer & Produce Aggregation',
   },
 
   {
-    "icon": "Commodity Trading",
-    "title": "Commodity Trading"
+    icon: 'Commodity Trading',
+    title: 'Commodity Trading',
   },
 ]
 
 const additionalServices = [
-  "Management and monitoring of mechanization service delivery",
-  "Management and monitoring of agronomic calendar/cycle",
-  "Logistics management delivery",
-  "Input sourcing and utilization management",
-  "Sourcing extension services",
-  "Sourcing and management warehousing facilities",
+  'Management and monitoring of mechanization service delivery',
+  'Management and monitoring of agronomic calendar/cycle',
+  'Logistics management delivery',
+  'Input sourcing and utilization management',
+  'Sourcing extension services',
+  'Sourcing and management warehousing facilities',
 ]
 
 export default function Home() {
   const [open, setOpen] = useState<number | boolean>(false)
 
   const toggle = (index: number) => {
-    if(open === index) return setOpen(false)
+    if (open === index) return setOpen(false)
     setOpen(index)
   }
 
@@ -50,12 +51,19 @@ export default function Home() {
               Establishing beneficial and profitable partnerships with
               smallholder farmers in Nigeria.
             </p>
-            <button className="flex flex-row mt-[3.75em] w-[15.875rem] px-[1.8725rem] h-20 bg-[#428821] hover:bg-[#346c1a] rounded-[0.625em] justify-start items-center">
-              <span className="text-white font-lexand font-normal text-2xl mr-[1.8725rem]">
-                Learn More
-              </span>
-              <FaArrowRight className="text-white h-[0.9375rem] w-[1.8725rem]" />
-            </button>
+            <Link
+             activeClass={'services'}
+             to={'services'}
+             offset={-50}
+             duration={500}
+             smooth={true}
+             className="flex flex-row mt-[3.75em] w-[15.875rem] px-[1.8725rem] h-20 bg-[#428821] hover:bg-[#346c1a] hover:cursor-pointer rounded-[0.625em] justify-start items-center"
+             >
+                <span className="text-white font-lexand font-normal text-2xl mr-[1.8725rem]">
+                  Learn More
+                </span>
+                <FaArrowRight className="text-white h-[0.9375rem] w-[1.8725rem]" />
+            </Link>
           </div>
           <div className="col-span-1">
             {/* <Image src={landingImage} width={565} height={400} alt="" loading='lazy' placeholder='blur'/> */}
@@ -76,34 +84,35 @@ export default function Home() {
             </p>
           </div>
 
-          { data && data.data.map((impact, index) => (
-            <div key={index} className="">
-
-              <div key={index} className="col-span-1">
-                <AccordionItem key={index} open={index === open} toggle={() =>toggle(index)} title={impact.title} description={impact.description} />
+          {data &&
+            data.data.map((impact, index) => (
+              <div key={index} className="">
+                <div key={index} className="col-span-1">
+                  <AccordionItem
+                    key={index}
+                    open={index === open}
+                    toggle={() => toggle(index)}
+                    title={impact.title}
+                    description={impact.description}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </section>
 
-        <section>
+        <section id='services' className='mt-96'>
           <h2>What we do</h2>
-          {
-            primaryServices && primaryServices.map((service, index) => (
+          {primaryServices &&
+            primaryServices.map((service, index) => (
               <div className="" key={index}>
                 <span>{service.icon}</span>
                 <span>{service.title}</span>
               </div>
-            ))
-          }
-
-          We provide the following additional services: 
-
-          {
-            additionalServices.map((val, index)=> (
-              <p key={index}>{val}</p>
-            ))
-          }
+            ))}
+          We provide the following additional services:
+          {additionalServices.map((val, index) => (
+            <p key={index}>{val}</p>
+          ))}
         </section>
       </main>
     </>
