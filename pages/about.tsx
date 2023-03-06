@@ -1,10 +1,18 @@
 import data from '../data/coreValues.json'
 import sdgs from '../data/sdgs.json'
-import React from 'react'
+import React, { useState } from 'react'
 import { HtmlHead } from '../components/Head'
 import { Heading } from '../components/Heading'
+import { AccordionItem } from '../components/AccordionItem'
 
 const About = () => {
+  const [open, setOpen] = useState<number | boolean>(false)
+
+  const toggle = (index: number) => {
+    if(open === index) return setOpen(false)
+    setOpen(index)
+  }
+
   return (
     <>
       <HtmlHead title="About Us" />
@@ -24,8 +32,8 @@ const About = () => {
         <section>
           <h2>Our Core Values</h2>
           <div className="grid grid-cols-2">
-            {data && data.data.map(val =>(
-              <div key={val.title} className="col-span-1">
+            {data && data.data.map((val, index) =>(
+              <div key={index} className="col-span-1">
                 <h3>{val.title}</h3>
                 <p>{val.description}</p>
               </div>
@@ -36,10 +44,9 @@ const About = () => {
         <section>
           <h2>OUR PLAN OF CHANGE</h2>
           <div className="grid grid-cols-2">
-            {sdgs && sdgs.data.map(val =>(
-              <div key={val.title} className="col-span-1">
-                <h3>{val.title}</h3>
-                <p>{val.description}</p>
+            {sdgs && sdgs.data.map((val, index) =>(
+              <div key={index} className="col-span-1">
+                <AccordionItem key={index} open={index === open} toggle={() =>toggle(index)} title={val.title} description={val.description} />
               </div>
             ))}
           </div>
