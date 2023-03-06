@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+          quickSand: ['Quicksand'],
+          montserrat: ['Montserrat'],
+          lexand: ['Lexend+Deca']
+        }
+    },
   },
   plugins: [],
 }

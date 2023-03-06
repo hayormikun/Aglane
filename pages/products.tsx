@@ -1,8 +1,11 @@
 import React from 'react'
+import { HtmlHead } from '../components/Head'
 
 const Products = () => {
   return (
-    <main>
+    <>
+    <HtmlHead title="Our Products" />
+    <main className='pt-40'>
       <section>
         <div>
           <h1>Aglanegrator</h1>
@@ -26,6 +29,7 @@ const Products = () => {
         </div>
       </section>
     </main>
+    </>
   )
 }
 

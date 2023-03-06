@@ -1,7 +1,10 @@
 import React from 'react'
+import { HtmlHead } from '../components/Head'
 
 export const Team = () => {
   return (
-    <div>T</div>
+    <>
+      <HtmlHead title="Meet the Team" />
+    </>
   )
 }
