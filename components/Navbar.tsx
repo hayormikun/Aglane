@@ -28,10 +28,10 @@ export const Navbar = () => {
               {/* links */}
               <div className="hidden md:block">
                 <div className="flex ml-10 items-center gap-x-10 text-gray-500">
-                  <Link href="/about" className="hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">About Us</Link>
-                  <Link href="/products" className="hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">Products</Link>
-                  <Link href="/team" className="hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">Our Team</Link>
-                  <Link href="/contact" className="hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">Contact Us</Link>
+                  <Link href="/about" className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">About Us</Link>
+                  <Link href="/products" className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">Products</Link>
+                  <Link href="/team" className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">Our Team</Link>
+                  <Link href="/contact" className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">Contact Us</Link>
                 </div>
               </div>
 
