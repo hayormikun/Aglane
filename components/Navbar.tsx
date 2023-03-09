@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../public/assests/AgLane_Logo.png'
+import logo from '../assests/AgLane_Logo.png'
 import { Menu } from '@headlessui/react'
 import { FaBars } from "react-icons/fa"
 
