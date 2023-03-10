@@ -9,7 +9,7 @@ const About = () => {
   const [open, setOpen] = useState<number | boolean>(false)
 
   const toggle = (index: number) => {
-    if(open === index) return setOpen(false)
+    if (open === index) return setOpen(false)
     setOpen(index)
   }
 
@@ -32,23 +32,31 @@ const About = () => {
         <section>
           <h2>Our Core Values</h2>
           <div className="grid grid-cols-2">
-            {data && data.data.map((val, index) =>(
-              <div key={index} className="col-span-1">
-                <h3>{val.title}</h3>
-                <p>{val.description}</p>
-              </div>
-            ))}
+            {data &&
+              data.data.map((val, index) => (
+                <div key={index} className="col-span-1">
+                  <h3>{val.title}</h3>
+                  <p>{val.description}</p>
+                </div>
+              ))}
           </div>
         </section>
 
         <section>
           <h2>OUR PLAN OF CHANGE</h2>
           <div className="grid grid-cols-2">
-            {sdgs && sdgs.data.map((val, index) =>(
-              <div key={index} className="col-span-1">
-                <AccordionItem key={index} open={index === open} toggle={() =>toggle(index)} title={val.title} description={val.description} />
-              </div>
-            ))}
+            {sdgs &&
+              sdgs.data.map((val, index) => (
+                <div key={index} className="col-span-1">
+                  <AccordionItem
+                    key={index}
+                    open={index === open}
+                    toggle={() => toggle(index)}
+                    title={val.title}
+                    description={val.description}
+                  />
+                </div>
+              ))}
           </div>
         </section>
 
@@ -60,7 +68,10 @@ const About = () => {
                 To become a leading investor in the agribusiness space by
                 forming beneficial and profitable partnerships with smallholder
                 farmers and other key stakeholders in Nigeria, making
-                agribusiness appealing and attractive to young Nigerians.
+                agribusiness appealing and attractive to young Nigerians. Our
+                Key Focus: Building food systems, achieving food security,
+                adopting innovative technology and creating impact in line with
+                targeted SDGs
               </p>
             </div>
             <div></div>
@@ -78,7 +89,6 @@ const About = () => {
             </div>
           </div>
         </section>
-
       </main>
     </>
   )

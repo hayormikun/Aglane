@@ -1,28 +1,25 @@
-import { FaArrowRight } from 'react-icons/fa'
 import { HtmlHead } from '../components/Head'
 import { useState } from 'react'
 import { Heading } from '../components/Heading'
 import { Testimonials } from '../components/Sliders'
-import e2e from '../public/assests/SVGs/What We Do Icons/factory.svg'
-import aggregation from '../public/assests/SVGs/What We Do Icons/food-donation.svg'
-import commodity from '../public/assests/SVGs/What We Do Icons/market.svg'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Affiliates } from '../components/Affiliates'
 
 const primaryServices = [
   {
-    icon: e2e,
+    icon: '/assests/SVGs/What We Do Icons/factory.svg',
     title: 'End-to-end agricultural primary production',
   },
 
   {
-    icon: aggregation,
+    icon: '/assests/SVGs/What We Do Icons/food-donation.svg',
     title: 'Farmer & Produce Aggregation',
   },
 
   {
-    icon: commodity,
+    icon: '/assests/SVGs/What We Do Icons/market.svg',
     title: 'Commodity Trading',
   },
 ]
@@ -33,7 +30,7 @@ const additionalServices = [
   'Logistics management delivery',
   'Input sourcing and utilization management',
   'Sourcing extension services',
-  'Sourcing and management warehousing facilities',
+  'Sourcing and management of warehousing facilities',
 ]
 
 export default function Home() {
@@ -49,7 +46,6 @@ export default function Home() {
       <HtmlHead title="Homepage" />
       <main className="pt-[6.9rem] mb-0">
         <section id="homeCaption">
-          <div className="bg-black z-20 opacity-60 h-full w-full">
             <div className="grid md:grid-cols-2 mt-0 pt-[3.125em] pb-[4.8125em]">
               <div className="col-span-1 flex-col mx-[3.125em]">
                 <p className="font-montserrat font-bold text-white text-5xl leading-[4.0625rem]">
@@ -89,7 +85,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
         </section>
         <div className="mx-10 md:mx-[3.125em]">
           <section className="mt-[1.875rem]">
@@ -126,16 +121,16 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-[1.875rem]">
+          <section className="mt-[1.875rem] pb-10">
             <Heading header={'Clients and affiliates'} />
 
             <Affiliates />
           </section>
 
-          <section className="mt-[1.875rem]">
-            {/* <Heading header={'Testimonials'} /> */}
-            {/* <Testimonials /> */}
-          </section>
+          {/* <section className="mt-[1.875rem]">
+            <Heading header={'Testimonials'} />
+            <Testimonials />
+          </section> */}
         </div>
       </main>
     </>
