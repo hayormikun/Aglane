@@ -30,13 +30,13 @@ export const Footer = () => {
 
   const footerSocials = [
     {
-      name: '@aglaneng',
-      link: 'http://www.twitter.com/aglaneng',
+      name: 'Aglane Nigeria',
+      link: 'http://www.twitter.com/AglaneNigeria',
       logo: '/assests/SVGs/FooterIcons/Twitter.svg'
     },
     {
-      name: '@aglaneng',
-      link: 'http://www.instagram.com/aglaneng',
+      name: 'Aglane Nigeria',
+      link: 'https://www.instagram.com/aglane_nigeria/',
       logo: '/assests/SVGs/FooterIcons/Instagram.svg'
     },
     {
@@ -46,12 +46,12 @@ export const Footer = () => {
     },
     {
       name: '+234 802 469 2369',
-      link: '',
+      link: 'tel:+2348024692369',
       logo: '/assests/SVGs/FooterIcons/Phone.svg'
     },
     {
       name: 'Aglane Nigeria Ltd',
-      link: 'http://www.linkedin.com/AgLane-Nigeria-Ltd/',
+      link: 'http://www.linkedin.com/in/aglane-nigeria-5276a9265',
       logo: '/assests/SVGs/FooterIcons/Linkedin.svg'
     },
     {
