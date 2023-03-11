@@ -2,36 +2,10 @@ import { HtmlHead } from '../components/Head'
 import { useState } from 'react'
 import { Heading } from '../components/Heading'
 import { Testimonials } from '../components/Sliders'
-
+import data from '../data/services.json'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Affiliates } from '../components/Affiliates'
-
-const primaryServices = [
-  {
-    icon: '/assests/SVGs/What We Do Icons/factory.svg',
-    title: 'End-to-end agricultural primary production',
-  },
-
-  {
-    icon: '/assests/SVGs/What We Do Icons/food-donation.svg',
-    title: 'Farmer & Produce Aggregation',
-  },
-
-  {
-    icon: '/assests/SVGs/What We Do Icons/market.svg',
-    title: 'Commodity Trading',
-  },
-]
-
-const additionalServices = [
-  'Management and monitoring of mechanization service delivery',
-  'Management and monitoring of agronomic calendar/cycle',
-  'Logistics management delivery',
-  'Input sourcing and utilization management',
-  'Sourcing extension services',
-  'Sourcing and management of warehousing facilities',
-]
 
 export default function Home() {
   const [open, setOpen] = useState<number | boolean>(false)
@@ -44,18 +18,18 @@ export default function Home() {
   return (
     <>
       <HtmlHead title="Homepage" />
-      <main className="pt-[6.9rem] mb-0">
+      <main className="pt-[6.9rem] mb-0 w-full h-full">
         <section id="homeCaption">
             <div className="grid md:grid-cols-2 mt-0 pt-[3.125em] pb-[4.8125em]">
               <div className="col-span-1 flex-col mx-[3.125em]">
-                <p className="font-montserrat font-bold text-white text-5xl leading-[4.0625rem]">
+                <p className="font-montserrat font-bold text-white text-2xl md:text-5xl md:leading-[4.0625rem]">
                   Building Sustainable Food Systems Across Sub-Saharan Africa
                 </p>
                 <Link
                   href={'/'}
-                  className="flex flex-row mt-[3.75em] w-[15.875rem] px-[1.8725rem] h-20 bg-[#428821] hover:bg-[#346c1a] hover:cursor-pointer rounded-[0.625em] justify-start items-center"
+                  className="flex flex-row mt-7 md:mt-[3.75em] w-fit md:w-[15.875rem] pl-5 pr-20 md:px-[1.8725rem] h-14 md:h-20 bg-[#428821] hover:bg-[#346c1a] hover:cursor-pointer rounded-[0.625em] justify-start items-center"
                 >
-                  <span className="text-white font-lexand font-normal text-2xl mr-[1.8725rem]">
+                  <span className="text-white font-lexand font-normal text-xl md:text-2xl mr-5 md:mr-[1.8725rem]">
                     Learn More
                   </span>
                   <svg
@@ -86,14 +60,14 @@ export default function Home() {
               </div>
             </div>
         </section>
-        <div className="mx-10 md:mx-[3.125em]">
+        <div className="px-5 md:mx-[3.125em] w-full">
           <section className="mt-[1.875rem]">
             <Heading header={'What we do'} />
-            <div className="flex flex-row gap-[3.125em] mb-10">
-              {primaryServices &&
-                primaryServices.map((service, index) => (
+            <div className="flex flex-col md:flex-row w-full gap-4 md:gap-[3.125em] mb-10">
+              {data &&
+                data.primary.map((service, index) => (
                   <div
-                    className="flex flex-col text-center border border-[#D5D5D5] rounded-[20px] pt-5 pb-[0.625em] px-[2.8125em]"
+                    className="flex flex-col text-center bg-white border border-[#D5D5D5] rounded-[20px] pt-5 pb-[0.625em] md:px-[2.8125em]"
                     key={index}
                   >
                     <span className="flex justify-center mb-3">
@@ -105,15 +79,15 @@ export default function Home() {
                         loading="lazy"
                       />
                     </span>
-                    <span className="m-auto w-[16.875em]">{service.title}</span>
+                    <span className="m-auto w-auto md:w-[16.875em]">{service.title}</span>
                   </div>
                 ))}
             </div>
-            <div className="mx-[2rem] font-medium font-quickSand text-[1.625em] leading-[3.75em]">
-              <h3>In addition Aglane provides the following services</h3>
+            <div className="mx-[2rem] font-medium font-quickSand md:text-2xl md:leading-10">
+              <h3 className='mb-5'>In addition Aglane provides the following services</h3>
               <ul>
-                {additionalServices.map((val, index) => (
-                  <li className="list-disc pl-5 " key={index}>
+                {data && data.additional.map((val, index) => (
+                  <li className="list-disc pl-5 mb-5" key={index}>
                     {val}
                   </li>
                 ))}

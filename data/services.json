@@ -1,0 +1,26 @@
+{
+    "primary": [{
+            "icon": "/assests/SVGs/What We Do Icons/factory.svg",
+            "title": "End-to-end agricultural primary production"
+        },
+
+        {
+            "icon": "/assests/SVGs/What We Do Icons/food-donation.svg",
+            "title": "Farmer & Produce Aggregation"
+        },
+
+        {
+            "icon": "/assests/SVGs/What We Do Icons/market.svg",
+            "title": "Commodity Trading"
+        }
+    ],
+
+    "additional": [
+        "Management and monitoring of mechanization service delivery",
+        "Management and monitoring of agronomic calendar/cycle",
+        "Logistics management delivery",
+        "Input sourcing and utilization management",
+        "Sourcing extension services",
+        "Sourcing and management of warehousing facilities"
+    ]
+}

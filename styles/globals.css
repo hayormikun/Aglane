@@ -33,4 +33,5 @@
     background: url('/assests/Images/Background.svg');
     background-position: center;
     background-repeat: repeat;
+    width: 100%;
   }

@@ -1,0 +1,56 @@
+{
+    "socials": [{
+            "name": "Aglane Nigeria",
+            "link": "http://www.twitter.com/AglaneNigeria",
+            "logo": "/assests/SVGs/FooterIcons/Twitter.svg"
+        },
+        {
+            "name": "Aglane Nigeria",
+            "link": "https://www.instagram.com/aglane_nigeria/",
+            "logo": "/assests/SVGs/FooterIcons/Instagram.svg"
+        },
+        {
+            "name": "info@aglane.ng",
+            "link": "mailto:info@aglane.ng",
+            "logo": "/assests/SVGs/FooterIcons/Mail.svg"
+        },
+        {
+            "name": "+234 802 469 2369",
+            "link": "tel:+2348024692369",
+            "logo": "/assests/SVGs/FooterIcons/Phone.svg"
+        },
+        {
+            "name": "Aglane Nigeria Ltd",
+            "link": "http://www.linkedin.com/in/aglane-nigeria-5276a9265",
+            "logo": "/assests/SVGs/FooterIcons/Linkedin.svg"
+        },
+        {
+            "name": "Aglane Nigeria Ltd",
+            "link": "https://web.facebook.com/AgLane-Nigeria-Ltd/",
+            "logo": "/assests/SVGs/FooterIcons/Facebook.svg"
+        }
+    ],
+    "footerNav": [{
+            "name": "About",
+            "link": "/about"
+        },
+        {
+            "name": "Our Impact",
+            "link": "/impact"
+        },
+        {
+            "name": "Our Solutions",
+            "link": "/solutions"
+        },
+        {
+            "name": "Our Team",
+            "link": "/team"
+        },
+        {
+            "name": "Careers",
+            "link": "/careers"
+        }
+    ]
+
+
+}
