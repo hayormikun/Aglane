@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "name": "Amina Mohammed Abdullahi",
+            "pic": "",
+            "title": "Field Supervisor",
+            "testimonial":
+              "AgLane is the best and most outstanding company I have ever worked with. I am proud to be part of the AgLane family."
+          },
+          {
+            "name": "Moses Oke",
+            "pic": "",
+            "title": "Field Manager",
+            "testimonial":
+              "AgLane Nigeria Ltd. has created an enabling environment for me to learn about agricultural innovation. The organization has provided me with a platform for disseminating agricultural information to rural communities."
+          }
+    ]
+}
