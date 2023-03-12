@@ -51,8 +51,8 @@ export const Footer = () => {
                 >
                   <Image
                     src={item.logo}
-                    width={24}
-                    height={24}
+                    width={26}
+                    height={26}
                     alt={item.name}
                   />
                   {item.name}

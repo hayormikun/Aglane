@@ -5,6 +5,7 @@ import { HtmlHead } from '../components/Head'
 import { Heading } from '../components/Heading'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Gallery } from '../components/Sliders'
 
 const Team = () => {
   return (
@@ -21,6 +22,11 @@ const Team = () => {
           <span>{staff.designation}</span>
         </div>
         ))}
+      </section>
+
+      <section>
+        <Heading header="Gallery"/>
+        <Gallery />
       </section>
 
     <section> 
