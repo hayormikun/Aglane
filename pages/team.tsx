@@ -50,8 +50,8 @@ const Team = () => {
           <div className="flex flex-col md:flex-row mt-[0.625em]">
             {data &&
               data.links.map((link, index) => (
-                <Link key={index} target="_blank" href={link.link}>
-                  <div className="flex flex-row mb-5 mr-[3.125em] px-5 hover:text-[#428821] transition-colors bg-[#FCFCFC] border border-[#D5D5D5] rounded-lg items-center justify-center min-w-full max-w-[35.3125em] h-20">
+                <Link key={index} target="_blank" href={link.link} className="flex flex-row mb-5 mr-[3.125em]">
+                  <div className="flex flex-row px-5 hover:text-[#428821] transition-colors bg-[#FCFCFC] border border-[#D5D5D5] rounded-lg items-center justify-center min-w-full max-w-[35.3125em] md:w-[35.3125em] h-20">
                     <h3 className="font-montserrat font-normal mr-[1.875em]">
                       {link.title}
                     </h3>
