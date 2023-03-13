@@ -51,12 +51,12 @@ const Team = () => {
           <div className="flex mt-[0.625em]">
             {links &&
               links.data.map((link, index) => (
-                <div
-                  key={index}
-                  className="flex flex-row mr-[3.125em] bg-[#FCFCFC] border border-[#D5D5D5] rounded-lg items-center justify-center w-[35.3125em] h-20"
-                >
-                  <h3 className='font-montserrat font-normal mr-[1.875em]'>{link.title}</h3>
-                  <Link target="_blank" href={link.link}>
+                <Link key={index} target="_blank" href={link.link}>
+                  <div className="flex flex-row mr-[3.125em] hover:text-[#428821] transition-colors bg-[#FCFCFC] border border-[#D5D5D5] rounded-lg items-center justify-center w-[35.3125em] h-20">
+                    <h3 className="font-montserrat font-normal mr-[1.875em]">
+                      {link.title}
+                    </h3>
+
                     <svg
                       width="30"
                       height="30"
@@ -80,8 +80,8 @@ const Team = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               ))}
           </div>
         </section>
