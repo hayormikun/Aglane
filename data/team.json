@@ -1,6 +1,5 @@
 {
-    "management": [
-        {
+    "management": [{
             "name": "Olusola Omole",
             "pic": "/assests/SVGs/team/managing_partner.svg",
             "designation": "Managing Partner"
@@ -38,5 +37,15 @@
         "/assests/Images/landing-image.svg",
         "/assests/Images/landing-image.svg",
         "/assests/Images/landing-image.svg"
+    ],
+    "links": [{
+            "title": "Join our producers",
+            "link": "https://aglane-aggregator.com/"
+        },
+
+        {
+            "title": "Join our offtake strength",
+            "link": "https://aglane-aggregator.com/"
+        }
     ]
 }

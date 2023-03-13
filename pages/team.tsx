@@ -1,6 +1,5 @@
 import React from 'react'
 import data from '../data/team.json'
-import links from '../data/links.json'
 import { HtmlHead } from '../components/Head'
 import { Heading } from '../components/Heading'
 import Image from 'next/image'
@@ -15,11 +14,11 @@ const Team = () => {
         <section>
           <Heading header="Management" />
 
-          <div className="grid grid-cols-3 gap-y-14">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-14">
             {data &&
               data.management.map((staff, index) => (
                 <div
-                  className="col-span-1 mx-auto pr-[4.375em] flex flex-col justify-center text-center"
+                  className="col-span-1 mx-auto md:pr-[4.375em] flex flex-col justify-center text-center"
                   key={index}
                 >
                   <Image
@@ -48,11 +47,11 @@ const Team = () => {
         <section className="mt-10 pb-[4.375em]">
           <Heading header="JOIN OUR COMMUNITY" />
 
-          <div className="flex mt-[0.625em]">
-            {links &&
-              links.data.map((link, index) => (
+          <div className="flex flex-col md:flex-row mt-[0.625em]">
+            {data &&
+              data.links.map((link, index) => (
                 <Link key={index} target="_blank" href={link.link}>
-                  <div className="flex flex-row mr-[3.125em] hover:text-[#428821] transition-colors bg-[#FCFCFC] border border-[#D5D5D5] rounded-lg items-center justify-center w-[35.3125em] h-20">
+                  <div className="flex flex-row mb-5 mr-[3.125em] px-5 hover:text-[#428821] transition-colors bg-[#FCFCFC] border border-[#D5D5D5] rounded-lg items-center justify-center min-w-full max-w-[35.3125em] h-20">
                     <h3 className="font-montserrat font-normal mr-[1.875em]">
                       {link.title}
                     </h3>
