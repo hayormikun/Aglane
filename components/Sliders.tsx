@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import data from '../data/testimonials.json'
-import pics from '../data/gallery.json'
+import pics from '../data/team.json'
 import { useRef } from 'react'
 import { SliderArrows } from './SliderArrows'
 
@@ -91,7 +91,7 @@ export const Gallery = () => {
   return (
     <Slider {...settings}>
       {pics &&
-        pics.map((pic, index) => (
+        pics.gallery.map((pic, index) => (
           <div className="flex flex-row gap-5" key={index}>
             <Image
               src={pic}

@@ -1,0 +1,42 @@
+{
+    "management": [
+        {
+            "name": "Olusola Omole",
+            "pic": "/assests/SVGs/team/managing_partner.svg",
+            "designation": "Managing Partner"
+        },
+        {
+            "name": "Kenneth Osanebi",
+            "pic": "/assests/SVGs/team/COO.svg",
+            "designation": "Chief Operating Officer"
+        },
+        {
+            "name": "Beatrice Aluma-Taiwo",
+            "pic": "/assests/SVGs/team/hr.svg",
+            "designation": "Lead, Human Capital"
+        },
+        {
+            "name": "Peace Ogbu",
+            "pic": "/assests/SVGs/team/aggronomist.svg",
+            "designation": "Lead, Agronomist & Project Administration"
+        },
+        {
+            "name": "Emmanuel Agboworin",
+            "pic": "/assests/SVGs/team/legal.svg",
+            "designation": "Legal Advisor"
+        },
+        {
+            "name": "Tosin Akinwunmi",
+            "pic": "/assests/SVGs/team/financial_management.svg",
+            "designation": "Financial Management Consultant"
+        }
+    ],
+    "gallery": [
+        "/assests/Images/landing-image.svg",
+        "/assests/Images/landing-image.svg",
+        "/assests/Images/landing-image.svg",
+        "/assests/Images/landing-image.svg",
+        "/assests/Images/landing-image.svg",
+        "/assests/Images/landing-image.svg"
+    ]
+}
