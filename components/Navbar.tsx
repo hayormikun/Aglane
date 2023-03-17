@@ -29,19 +29,118 @@ export const Navbar = () => {
             {/* links */}
             <div className="hidden md:block">
               <div className="flex ml-10 items-center gap-x-10 text-gray-500">
-           
-                
+                {/* <Link
+                  href="/about"
+                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                >
+                  About Us
+                </Link>
+                <Link
+                  href="/impact/social"
+                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                >
+                  Our Impact
+                </Link> */}
+                <Link
+                  href="/solutions/technology"
+                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                >
+                  Our Solutions
+                </Link>
                 <Link
                   href="/team"
                   className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                 >
                   Our Team
                 </Link>
-                
+                <Link
+                  href="/careers/"
+                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                >
+                  Careers
+                </Link>
+                {/* <Link
+                  href="/contact"
+                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                >
+                  Contact Us
+                </Link> */}
               </div>
             </div>
 
             {/* mobile nav  */}
+            {/* <Menu as={'div'} className="mr-14 relative flex md:hidden ">
+              <Menu.Button
+                className="bg-[#5C903D] inline-flex items-center rounded-md justify-center p-2 text-white hover:bg-[#3D3938] focus:outline-none focus:ring-white"
+                onClick={handleClick}
+              >
+                <span className="sr-only">Open mobile menu</span>
+                <FaBars className="w-5" aria-hidden="true" />
+              </Menu.Button>
+
+              <Menu.Items className="absolute origin-top-right flex flex-col right-0 mt-10 w-56 py-3 bg-gray-50 text-gray-400 shadow-lg rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Menu.Item>
+                  {({ active }) => (
+                    <div
+                      className={`${
+                        active ? ' text-blue-400 bg-gray-200' : ''
+                      }  w-full py-2`}
+                    >
+                      <Link href="about">
+                        <div className="flex items-center px-5">
+                          <span>About Us</span>
+                        </div>
+                      </Link>
+                    </div>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <div
+                      className={`${
+                        active ? ' text-blue-400 bg-gray-200' : ''
+                      }  w-full py-2`}
+                    >
+                      <Link href="products">
+                        <div className="flex items-center px-5">
+                          <span>Products</span>
+                        </div>
+                      </Link>
+                    </div>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <div
+                      className={`${
+                        active ? ' text-blue-400 bg-gray-200' : ''
+                      }  w-full py-2`}
+                    >
+                      <Link href="team">
+                        <div className="flex items-center px-5">
+                          <span>Our Team</span>
+                        </div>
+                      </Link>
+                    </div>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <div
+                      className={`${
+                        active ? ' text-blue-400 bg-gray-200' : ''
+                      }  w-full py-2`}
+                    >
+                      <Link href="contact">
+                        <div className="flex items-center px-5">
+                          <span>Contact Us</span>
+                        </div>
+                      </Link>
+                    </div>
+                  )}
+                </Menu.Item>
+              </Menu.Items>
+            </Menu> */}
           </div>
         </div>
       </div>
