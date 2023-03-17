@@ -12,7 +12,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className="fixed z-20 bg-white w-full font-quickSand shadow-sm pb-2 opacity-90">
+    <nav className="fixed z-20 bg-white w-full font-quickSand shadow-sm pb-2">
       <div className="w-full">
         <div className="flex items-center h-auto w-full">
           <div className="flex items-center mt-10 mx-10 md:mt-[1.125em] md:ml-[3.125em] md:mr-24 font-medium text-xl text-[#3A3A3A] justify-between w-full">
@@ -42,6 +42,12 @@ export const Navbar = () => {
                   Our Impact
                 </Link> */}
                 <Link
+                  href="/impact/social"
+                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                >
+                  Impact
+                </Link>
+                <Link
                   href="/solutions/technology"
                   className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                 >
@@ -69,7 +75,7 @@ export const Navbar = () => {
             </div>
 
             {/* mobile nav  */}
-            {/* <Menu as={'div'} className="mr-14 relative flex md:hidden ">
+            <Menu as={'div'} className="mr-14 relative flex md:hidden ">
               <Menu.Button
                 className="bg-[#5C903D] inline-flex items-center rounded-md justify-center p-2 text-white hover:bg-[#3D3938] focus:outline-none focus:ring-white"
                 onClick={handleClick}
@@ -79,7 +85,7 @@ export const Navbar = () => {
               </Menu.Button>
 
               <Menu.Items className="absolute origin-top-right flex flex-col right-0 mt-10 w-56 py-3 bg-gray-50 text-gray-400 shadow-lg rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
-                <Menu.Item>
+                {/* <Menu.Item>
                   {({ active }) => (
                     <div
                       className={`${
@@ -93,7 +99,7 @@ export const Navbar = () => {
                       </Link>
                     </div>
                   )}
-                </Menu.Item>
+                </Menu.Item> */}
                 <Menu.Item>
                   {({ active }) => (
                     <div
@@ -101,9 +107,9 @@ export const Navbar = () => {
                         active ? ' text-blue-400 bg-gray-200' : ''
                       }  w-full py-2`}
                     >
-                      <Link href="products">
+                      <Link href="impact/social">
                         <div className="flex items-center px-5">
-                          <span>Products</span>
+                          <span>Impact</span>
                         </div>
                       </Link>
                     </div>
@@ -124,7 +130,7 @@ export const Navbar = () => {
                     </div>
                   )}
                 </Menu.Item>
-                <Menu.Item>
+                {/* <Menu.Item>
                   {({ active }) => (
                     <div
                       className={`${
@@ -138,9 +144,9 @@ export const Navbar = () => {
                       </Link>
                     </div>
                   )}
-                </Menu.Item>
+                </Menu.Item> */}
               </Menu.Items>
-            </Menu> */}
+            </Menu>
           </div>
         </div>
       </div>
