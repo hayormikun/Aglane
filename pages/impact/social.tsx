@@ -26,8 +26,8 @@ const socialImpact = () => {
             data.data.map((impact, index) => (
               <div key={index}>
                 {index % 2 == 0 ? (
-                  <div className="flex flex-row gap-x-[6.5em] w-full mb-7">
-                    <div className="w-full bg-[#FCFCFC]">
+                  <div className="flex flex-col-reverse md:flex-row md:gap-x-[6.5em] w-full mb-7">
+                    <div className="w-full bg-[#FCFCFC] mt-5 md:mt-0">
                       <Image src={impact.pic} width={400} height={400} alt={impact.title} />
                     </div>
                     <div className="flex flex-col">
@@ -38,14 +38,14 @@ const socialImpact = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex flex-row gap-x-[6.5em] w-full mb-7">
+                  <div className="flex flex-col md:flex-row md:gap-x-[6.5em] w-full mb-7">
                     <div className="flex flex-col just">
                       <h2 className="font-montserrat font-semibold text-[1.625em] leading-[4.0625em]">
                         {impact.title}
                       </h2>
                       <p className="font-quickSand text-2xl">{impact.description}</p>
                     </div>
-                    <div className="w-full bg-[#FCFCFC]">
+                    <div className="w-full bg-[#FCFCFC] mt-5 md:mt-0">
                       <Image src={impact.pic} width={400} height={400} alt={impact.title} />
                     </div>
                   </div>
