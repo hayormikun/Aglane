@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <HtmlHead title="Homepage" />
-      <main className="pt-[6.9rem] mb-0 w-full h-full">
+      <main className="pt-[7rem] mb-0 w-full h-full">
         <section id="homeCaption">
           <div className="grid md:grid-cols-2 lg:grid-cols-2 mt-0 pt-[3.125em] pb-[4.8125em]">
             <div className="col-span-1 flex-col mx-[3.125em]">
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="px-5 md:mx-[3.125em] w-full">
+        <div className="px-5 md:px-[4.375rem] w-full">
           <section className="mt-[1.875rem]">
             <Heading header={'What we do'} />
             <div className="flex flex-col md:flex-row w-full gap-4 md:gap-[3.125em] mb-10">

@@ -14,11 +14,11 @@ const Team = () => {
         <section>
           <Heading header="Management" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-14">
+          <div className="grid grid-cols-1 md:grid-cols-[360px_360px_360px] gap-x-[50px] gap-y-14">
             {data &&
               data.management.map((staff, index) => (
                 <div
-                  className="col-span-1 mx-auto md:pr-[4.375em] flex flex-col justify-center text-center"
+                  className="flex flex-col mx-auto text-center"
                   key={index}
                 >
                   <Image

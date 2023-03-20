@@ -29,18 +29,18 @@ export const Navbar = () => {
             {/* links */}
             <div className="hidden md:block">
               <div className="flex ml-10 items-center gap-x-10 text-gray-500">
-                {/* <Link
+                <Link
                   href="/about"
                   className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                 >
                   About Us
                 </Link>
                 <Link
-                  href="/impact/social"
+                  href="/impact/numbers"
                   className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                 >
-                  Our Impact
-                </Link> */}
+                  figures
+                </Link>
                 <Link
                   href="/impact/social"
                   className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
@@ -65,12 +65,12 @@ export const Navbar = () => {
                 >
                   Careers
                 </Link>
-                {/* <Link
+                <Link
                   href="/contact"
                   className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                 >
                   Contact Us
-                </Link> */}
+                </Link>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export const Navbar = () => {
               </Menu.Button>
 
               <Menu.Items className="absolute origin-top-right flex flex-col right-0 mt-10 w-56 py-3 bg-gray-50 text-gray-400 shadow-lg rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
-                {/* <Menu.Item>
+                <Menu.Item>
                   {({ active }) => (
                     <div
                       className={`${
@@ -99,7 +99,7 @@ export const Navbar = () => {
                       </Link>
                     </div>
                   )}
-                </Menu.Item> */}
+                </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
                     <div
@@ -130,7 +130,7 @@ export const Navbar = () => {
                     </div>
                   )}
                 </Menu.Item>
-                {/* <Menu.Item>
+                <Menu.Item>
                   {({ active }) => (
                     <div
                       className={`${
@@ -144,7 +144,7 @@ export const Navbar = () => {
                       </Link>
                     </div>
                   )}
-                </Menu.Item> */}
+                </Menu.Item>
               </Menu.Items>
             </Menu>
           </div>

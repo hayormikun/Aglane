@@ -1,187 +1,204 @@
 {
     "data": [{
-            "State": "Bauchi State",
-            "Registered farmers": "12,430",
-            "Commodities produced and traded in tons": "28,589",
-            "Hectares cultivated": "13,673",
-            "Commodities": "Wheat and Rice",
-            "Job created": "124",
-            "Communities": "47"
+            "state": "Bauchi State",
+            "farmers": "12,430",
+            "produced": "28,589",
+            "hectares": "13,673",
+            "commodities": "Wheat and Rice",
+            "jobs": "124",
+            "communities": "47",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Oyo State",
-            "Registered farmers": "30",
-            "Commodities produced and traded in tons": "169",
-            "Hectares cultivated": "50",
-            "Commodities": "Maize and Cashew",
-            "Job created": "2",
-            "Communities": "2"
+
+            "state": "Oyo State",
+            "farmers": "30",
+            "produced": "169",
+            "hectares": "50",
+            "commodities": "Maize and Cashew",
+            "jobs": "2",
+            "communities": "2",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Kano State",
-            "Registered farmers": "5,845",
-            "Commodities produced and traded in tons": "13,444",
-            "Hectares cultivated": "6,429.5",
-            "Commodities": "Wheat",
-            "Job created": "60",
-            "Communities": "5"
+
+            "state": "Kano State",
+            "farmers": "5,845",
+            "produced": "13,444",
+            "hectares": "6,429.5",
+            "commodities": "Wheat",
+            "jobs": "60",
+            "communities": "5",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Niger State",
-            "Registered farmers": "5,225",
-            "Commodities produced and traded in tons": "12,018",
-            "Hectares cultivated": "5,747.5",
-            "Commodities": "Wheat",
-            "Job created": "53",
-            "Communities": "21"
+
+            "state": "Niger State",
+            "farmers": "5,225",
+            "produced": "12,018",
+            "hectares": "5,747.5",
+            "commodities": "Wheat",
+            "jobs": "53",
+            "communities": "21",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Kaduna State",
-            "Registered farmers": "2,650",
-            "Commodities produced and traded in tons": "6,095",
-            "Hectares cultivated": "2,915",
-            "Commodities": "Wheat",
-            "Job created": "27",
-            "Communities": "13"
+
+            "state": "Kaduna State",
+            "farmers": "2,650",
+            "produced": "6,095",
+            "hectares": "2,915",
+            "commodities": "Wheat",
+            "jobs": "27",
+            "communities": "13",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Sokoto State",
-            "Registered farmers": "1,570",
-            "Commodities produced and traded in tons": "3,611",
-            "Hectares cultivated": "1,727",
-            "Commodities": "Wheat",
-            "Job created": "16",
-            "Communities": "14"
+
+            "state": "Sokoto State",
+            "farmers": "1,570",
+            "produced": "3,611",
+            "hectares": "1,727",
+            "commodities": "Wheat",
+            "jobs": "16",
+            "communities": "14",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Kebbi State",
-            "Registered farmers": "10,864",
-            "Commodities produced and traded in tons": "24,987",
-            "Hectares cultivated": "11,950",
-            "Commodities": "Wheat and Rice",
-            "Job created": "109",
-            "Communities": "38"
+
+            "state": "Kebbi State",
+            "farmers": "10,864",
+            "produced": "24,987",
+            "hectares": "11,950",
+            "commodities": "Wheat and Rice",
+            "jobs": "109",
+            "communities": "38",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Jigawa State",
-            "Registered farmers": "14,288",
-            "Commodities produced and traded in tons": "32,862",
-            "Hectares cultivated": "15,716.8",
-            "Commodities": "Wheat and Maize",
-            "Job created": "159",
-            "Communities": "147"
+
+            "state": "Jigawa State",
+            "farmers": "14,288",
+            "produced": "32,862",
+            "hectares": "15,716.8",
+            "commodities": "Wheat and Maize",
+            "jobs": "159",
+            "communities": "147",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Zamfara State",
-            "Registered farmers": 5000,
-            "Commodities produced and traded in tons": "12181",
-            "Hectares cultivated": "5500",
-            "Commodities": "Wheat",
-            "Job created": "50",
-            "Communities": "43"
+
+            "state": "Zamfara State",
+            "farmers": 5000,
+            "produced": "12181",
+            "hectares": "5500",
+            "commodities": "Wheat",
+            "jobs": "50",
+            "communities": "43",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Nasarawa State",
-            "Registered farmers": "5",
-            "Commodities produced and traded in tons": "12",
-            "Hectares cultivated": "5.5",
-            "Commodities": "Melon",
-            "Job created": "1",
-            "Communities": "1"
+
+            "state": "Nasarawa State",
+            "farmers": "5",
+            "produced": "12",
+            "hectares": "5.5",
+            "commodities": "Melon",
+            "jobs": "1",
+            "communities": "1",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Adamawa State",
-            "Registered farmers": "3,488",
-            "Commodities produced and traded in tons": "8,022",
-            "Hectares cultivated": "3,836.8",
-            "Commodities": "Wheat and Rice",
-            "Job created": "15",
-            "Communities": "17"
+
+            "state": "Adamawa State",
+            "farmers": "3,488",
+            "produced": "8,022",
+            "hectares": "3,836.8",
+            "commodities": "Wheat and Rice",
+            "jobs": "15",
+            "communities": "17",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Taraba State",
-            "Registered farmers": "1,336",
-            "Commodities produced and traded in tons": "3,073",
-            "Hectares cultivated": "1,469.6",
-            "Commodities": "Wheat",
-            "Job created": "14",
-            "Communities": "12"
+
+            "state": "Taraba State",
+            "farmers": "1,336",
+            "produced": "3,073",
+            "hectares": "1,469.6",
+            "commodities": "Wheat",
+            "jobs": "14",
+            "communities": "12",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Ekiti State",
-            "Registered farmers": "104",
-            "Commodities produced and traded in tons": "2,050",
-            "Hectares cultivated": "215",
-            "Commodities": "Cassava and Maize",
-            "Job created": "4",
-            "Communities": "8"
+
+            "state": "Ekiti State",
+            "farmers": "104",
+            "produced": "2,050",
+            "hectares": "215",
+            "commodities": "Cassava and Maize",
+            "jobs": "4",
+            "communities": "8",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Borno State",
-            "Registered farmers": "399",
-            "Commodities produced and traded in tons": "918",
-            "Hectares cultivated": "438.9",
-            "Commodities": "Wheat",
-            "Job created": "4",
-            "Communities": "3"
+
+            "state": "Borno State",
+            "farmers": "399",
+            "produced": "918",
+            "hectares": "438.9",
+            "commodities": "Wheat",
+            "jobs": "4",
+            "communities": "3",
+            "geopolitical": ""
         },
         {
-            
-            "State": "Yobe State",
-            "Registered farmers": "1,010",
-            "Commodities produced and traded in tons": "2,323",
-            "Hectares cultivated": "1,111",
-            "Commodities": "Wheat",
-            "Job created": "10",
-            "Communities": "9"
+
+            "state": "Yobe State",
+            "farmers": "1,010",
+            "produced": "2,323",
+            "hectares": "1,111",
+            "commodities": "Wheat",
+            "jobs": "10",
+            "communities": "9",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Gombe State",
-            "Registered farmers": "3,868",
-            "Commodities produced and traded in tons": "8,896",
-            "Hectares cultivated": "4,254.8",
-            "Commodities": "Wheat",
-            "Job created": "39",
-            "Communities": "11"
+
+            "state": "Gombe State",
+            "farmers": "3,868",
+            "produced": "8,896",
+            "hectares": "4,254.8",
+            "commodities": "Wheat",
+            "jobs": "39",
+            "communities": "11",
+            "geopolitical": ""
         },
 
         {
-            
-            "State": "Benue State",
-            "Registered farmers": "361",
-            "Commodities produced and traded in tons": "830",
-            "Hectares cultivated": "397.1",
-            "Commodities": "Wheat",
-            "Job created": "4",
-            "Communities": "5"
+
+            "state": "Benue State",
+            "farmers": "361",
+            "produced": "830",
+            "hectares": "397.1",
+            "commodities": "Wheat",
+            "jobs": "4",
+            "communities": "5",
+            "geopolitical": ""
         }
     ]
 }
