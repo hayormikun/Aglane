@@ -8,13 +8,15 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-[#EAF1E6] pl-[3.125em] pt-10 mb-0">
       <span className="w-full h-auto">
-        <Image
-          src={'/assests/AgLane_Logo.png'}
-          width={204}
-          height={80}
-          alt="Aglane footer logo"
-          loading="lazy"
-        />
+        <Link href={'/'}>
+          <Image
+            src={'/assests/AgLane_Logo.png'}
+            width={204}
+            height={80}
+            alt="Aglane footer logo"
+            loading="lazy"
+          />
+        </Link>
       </span>
 
       <div className="grid md:grid-cols-3 ml-2 mt-[1.25em] text-[#3A3A3A] text-lg font-quickSand font-semibold">
@@ -32,7 +34,11 @@ export const Footer = () => {
           <ul className="flex flex-col w-fit">
             {data &&
               data.footerNav.map((item, index) => (
-                <Link href={'/'} key={index} className="block mb-[1.25rem] w-fit hover:text-[#428821] hover:font-bold transition-all">
+                <Link
+                  href={item.link}
+                  key={index}
+                  className="block mb-[1.25rem] w-fit hover:text-[#428821] hover:font-bold transition-all"
+                >
                   {item.name}
                 </Link>
               ))}

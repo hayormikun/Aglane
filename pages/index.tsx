@@ -26,7 +26,7 @@ export default function Home() {
                 Building Sustainable Food Systems Across Sub-Saharan Africa
               </p>
               <Link
-                href={'/'}
+                href={'/about'}
                 className="flex flex-row mt-7 md:mt-[3.75em] w-fit md:w-[15.875rem] pl-5 pr-20 md:px-[1.8725rem] h-14 md:h-20 bg-[#428821] hover:bg-[#346c1a] hover:cursor-pointer rounded-[0.625em] justify-start items-center"
               >
                 <span className="text-white font-lexand font-normal text-xl md:text-2xl mr-5 md:mr-[1.8725rem]">

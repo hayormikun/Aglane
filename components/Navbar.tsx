@@ -28,50 +28,95 @@ export const Navbar = () => {
             </div>
             {/* links */}
             <div className="hidden md:block">
-              <div className="flex ml-10 items-center gap-x-10 text-gray-500">
-                <Link
-                  href="/about"
-                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
-                >
-                  About Us
-                </Link>
-                <Link
-                  href="/impact/numbers"
-                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
-                >
-                  figures
-                </Link>
-                <Link
-                  href="/impact/social"
-                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
-                >
-                  Impact
-                </Link>
-                <Link
-                  href="/solutions/technology"
-                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
-                >
-                  Our Solutions
-                </Link>
-                <Link
-                  href="/team"
-                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
-                >
-                  Our Team
-                </Link>
-                <Link
-                  href="/careers/"
-                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
-                >
-                  Careers
-                </Link>
-                <Link
-                  href="/contact"
-                  className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
-                >
-                  Contact Us
-                </Link>
-              </div>
+              <ul className="flex ml-10 items-center gap-x-10 text-gray-500">
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                  <Link
+                    href="/about"
+                    className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <Menu as={'div'} className="relative">
+                  <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                    <Menu.Button
+                      className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                      onClick={handleClick}
+                    >
+                      <span className="sr-only">Impact dropdown menu</span>
+                      Our Impact
+                    </Menu.Button>
+                  </li>
+                  <Menu.Items className="absolute origin-top-left flex flex-col left-0 mt-3 w-64 py-3 bg-[#FCFCFC] text-[#3A3A3A] shadow-lg rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Item>
+                      {({ active }) => (
+                        <div
+                          className={`${
+                            active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                          }  w-full py-2`}
+                        >
+                          <Link
+                            href="/impact/social"
+                            className="transition flex items-center px-5 hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                          >
+                            Social Impact
+                          </Link>
+                        </div>
+                      )}
+                    </Menu.Item>
+
+                    <Menu.Item>
+                      {({ active }) => (
+                        <div
+                          className={`${
+                            active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                          }  w-full py-2`}
+                        >
+                          <Link
+                            href="/impact/numbers"
+                            className="transition flex items-center px-5 hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                          >
+                            Impact in Numbers
+                          </Link>
+                        </div>
+                      )}
+                    </Menu.Item>
+                  </Menu.Items>
+                </Menu>
+
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                  <Link
+                    href="/solutions/technology"
+                    className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                  >
+                    Our Solutions
+                  </Link>
+                </li>
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                  <Link
+                    href="/team"
+                    className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                  >
+                    Our Team
+                  </Link>
+                </li>
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                  <Link
+                    href="/careers/"
+                    className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                  >
+                    Careers
+                  </Link>
+                </li>
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                  <Link
+                    href="/contact"
+                    className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
             </div>
 
             {/* mobile nav  */}
