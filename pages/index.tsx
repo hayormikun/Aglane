@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <HtmlHead title="Homepage" />
+      <HtmlHead title="Building Sustainable Food Systems Across Sub-Saharan Africa" />
       <main className="pt-[7rem] mb-0 w-full h-full">
         <section id="homeCaption">
           <div className="grid md:grid-cols-2 lg:grid-cols-2 mt-0 pt-[3.125em] pb-[4.8125em]">
