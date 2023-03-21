@@ -1,4 +1,3 @@
-import React from 'react'
 import { Heading } from '../components/Heading'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import axios from 'axios'
@@ -93,9 +92,7 @@ const Contact = () => {
       <HtmlHead title="Contact Us" />
       <main className="pt-40">
         <Heading header="Contact Us" />
-        <p>
-        Drop us a line and we’ll get back to you as soon as possible
-        </p>
+        <p>Drop us a line and we’ll get back to you as soon as possible</p>
 
         <section>
           <div>
@@ -116,37 +113,45 @@ const Contact = () => {
                   )}
                   {isSuccess ? <Success item="message" /> : ''}
 
-                  <div className="flex flex-col w-full space-y-1 text-md">
+                  <div className="field">
                     <input
                       type="text"
+                      autoComplete="off"
                       id="name"
-                      className="p-2 rounded-md border-2 border-gray-200 text-gray-500"
-                      placeholder="Name: "
+                      className="form__input"
+                      placeholder=" "
                       {...register('name')}
                     />
 
-                    {errors.name && (
+                    <label htmlFor="name" className="form__label">
+                      Name
+                    </label>
+                  </div>
+                  {errors.name && (
                       <span className="text-red-400 pt-3 font-semibold">
                         {errors.name.message}
                       </span>
                     )}
-                  </div>
 
-                  <div className="flex flex-col w-full space-y-1 text-md">
+                  <div className="field">
                     <input
                       type="email"
+                      autoComplete="off"
                       id="email"
-                      className="p-2 rounded-md border-2 border-gray-300 text-gray-400"
-                      placeholder="Email: "
+                      className="form__input"
+                      placeholder=" "
                       {...register('email')}
                     />
 
-                    {errors.email && (
+                    <label htmlFor="email" className="form__label">
+                      Email
+                    </label>
+                  </div>
+                  {errors.email && (
                       <span className="text-red-400 pt-3 font-semibold">
                         {errors.email.message}
                       </span>
                     )}
-                  </div>
 
                   <div className="flex flex-col w-full space-y-1 text-md">
                     <textarea

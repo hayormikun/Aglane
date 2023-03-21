@@ -6,11 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
   html {
     font-size: 16px;
@@ -34,3 +36,53 @@
     background-repeat: repeat;
     width: 100%;
   }
+
+
+.field {
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+  border-radius: 20px;
+  color: black;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+input:hover, input:focus{
+  border-color: blue;
+}
+
+label {
+  position: absolute;
+  background: #fcfcfc;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: black;
+  cursor: text;
+  transition: top 200ms ease-in,
+              top 200ms ease-in,
+              top 200ms ease-in;
+}
+
+/* .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+} */
+
+.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label{
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}

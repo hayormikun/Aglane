@@ -8,10 +8,15 @@ import Image from 'next/image'
 
 const About = () => {
   const [open, setOpen] = useState<number | boolean>(false)
+  const [readMore, setReadMore] = useState(false)
 
   const toggle = (index: number) => {
     if (open === index) return setOpen(false)
     setOpen(index)
+  }
+
+  const read = () => {
+    setReadMore(!readMore)
   }
 
   return (
@@ -147,31 +152,40 @@ const About = () => {
                 this wave of change and taken full advantage of the
                 opportunities. Our approach to Agribusiness focuses on utilizing
                 digital technology to create a fully integrated system that
-                supports farmers. I am thrilled to announce that our team of
-                agricultural experts is leveraging new and cutting-edge
-                technology, automation, and digital tools to improve the
-                efficiency of our operations, make data-driven decisions,
-                minimize crop loss and boost crop yield. We are also utilizing
-                digital tools to enhance remote monitoring, improve water
-                management and give insights into soil health. At AgLane, we are
-                dedicated to helping our customers and partners grow, thrive,
-                and succeed in the ever-changing agribusiness landscape. We
-                provide innovative solutions that leverage the power of
-                technology to maximize operational efficiency, streamline
-                production, and facilitate the aggregation and trading of
-                healthy agricultural products. Our main business focus is to
-                redefine agriculture through primary crop production, farmer and
-                produce aggregation, and commodity trading. We are confident
-                that we can build better food systems through our modern
-                technologies, one of which is the AgLanegrator software. We
-                embrace innovation and excellence in all our operations, to
-                continue improving access and quality in the food production
-                sector. We are driven by innovation to provide you with the
-                needed tools to run a productive agribusiness. We are excited to
-                continue working together with our existing and prospective
-                customers to make agriculture more successful and sustainable.”
-                Thank you. Olusola Omole, FCA Managing Partner & Co-Founder
-                AgLane Nigeria Limited
+                supports farmers.
+                <span className={readMore ? 'flex' : 'hidden'}>
+                  {' '}
+                  I am thrilled to announce that our team of agricultural
+                  experts is leveraging new and cutting-edge technology,
+                  automation, and digital tools to improve the efficiency of our
+                  operations, make data-driven decisions, minimize crop loss and
+                  boost crop yield. We are also utilizing digital tools to
+                  enhance remote monitoring, improve water management and give
+                  insights into soil health. At AgLane, we are dedicated to
+                  helping our customers and partners grow, thrive, and succeed
+                  in the ever-changing agribusiness landscape. We provide
+                  innovative solutions that leverage the power of technology to
+                  maximize operational efficiency, streamline production, and
+                  facilitate the aggregation and trading of healthy agricultural
+                  products. Our main business focus is to redefine agriculture
+                  through primary crop production, farmer and produce
+                  aggregation, and commodity trading. We are confident that we
+                  can build better food systems through our modern technologies,
+                  one of which is the AgLanegrator software. We embrace
+                  innovation and excellence in all our operations, to continue
+                  improving access and quality in the food production sector. We
+                  are driven by innovation to provide you with the needed tools
+                  to run a productive agribusiness. We are excited to continue
+                  working together with our existing and prospective customers
+                  to make agriculture more successful and sustainable. <br />{' '}
+                  <br />
+                  Thank you.”
+                </span>
+                {readMore ? (
+                  <button className='text-xl font-light text-blue-500' onClick={()=>read()}>read less...</button>
+                ) : (
+                  <button className='text-xl font-light text-blue-500' onClick={()=>read()}>read more...</button>
+                )}
               </p>
             </div>
           </div>
