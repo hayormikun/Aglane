@@ -21,11 +21,6 @@
         },
         {
             "name": "Aglane Nigeria Ltd",
-            "link": "http://www.linkedin.com/in/aglane-nigeria-5276a9265",
-            "logo": "/assests/SVGs/FooterIcons/LinkedIn.svg"
-        },
-        {
-            "name": "Aglane Nigeria Ltd",
             "link": "https://web.facebook.com/AgLane-Nigeria-Ltd/",
             "logo": "/assests/SVGs/FooterIcons/Facebook.svg"
         }
@@ -36,7 +31,7 @@
         },
         {
             "name": "Our Impact",
-            "link": "/impact"
+            "link": "/impact/social"
         },
         {
             "name": "Our Solutions",
@@ -45,10 +40,6 @@
         {
             "name": "Our Team",
             "link": "/team"
-        },
-        {
-            "name": "Careers",
-            "link": "/careers"
         }
     ]
 

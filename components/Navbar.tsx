@@ -114,7 +114,7 @@ export const Navbar = () => {
                     Our Team
                   </Link>
                 </li>
-                <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                {/* <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
                     href="/careers/"
                     className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
@@ -129,12 +129,12 @@ export const Navbar = () => {
                   >
                     Contact Us
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
             {/* mobile nav  */}
-            <Menu as={'div'} className="mr-14 relative flex md:hidden ">
+            {/* <Menu as={'div'} className="mr-14 relative flex md:hidden ">
               <Menu.Button
                 className="bg-[#5C903D] inline-flex items-center rounded-md justify-center p-2 text-white hover:bg-[#3D3938] focus:outline-none focus:ring-white"
                 onClick={handleClick}
@@ -205,7 +205,7 @@ export const Navbar = () => {
                   )}
                 </Menu.Item>
               </Menu.Items>
-            </Menu>
+            </Menu> */}
           </div>
         </div>
       </div>

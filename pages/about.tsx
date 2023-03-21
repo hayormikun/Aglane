@@ -121,7 +121,7 @@ const About = () => {
           </div>
         </section> */}
 
-        <section className="mt-[4.357rem] mb-[4.357rem]">
+        <section className="mt-[4.357rem] pb-[4.357rem]">
           <MidHeading header={'MANAGING PARTNER’S ADDRESS'} />
 
           <div className="grid md:grid-cols-[23.75rem_auto] gap-7 w-full mb-7">
