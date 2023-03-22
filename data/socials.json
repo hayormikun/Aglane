@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+          "logo": "/assests/SVGs/contact/twitter.svg",
+          "name": "@aglaneng",
+          "link": "http://www.twitter.com/AglaneNigeria"
+        },
+      
+        {
+          "logo": "/assests/SVGs/contact/email.svg",
+          "name": "info@aglane.ng",
+          "link": "mailto:info@aglane.ng"
+        },
+        {
+          "logo": "/assests/SVGs/contact/facebook.svg",
+          "name": "Aglane Nigeria Ltd",
+          "link": "https://facebook.com/AglaneNigeriaLtd"
+        }
+      ]
+}

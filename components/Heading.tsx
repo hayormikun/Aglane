@@ -6,17 +6,17 @@ type HeadingProps = {
 
 export const Heading = ({header}: HeadingProps) => {
   return (
-    <h2 className='text-3xl mx-auto font-montserrat font-semibold text-[#3A3A3A] uppercase w-full mb-[1.875rem]'>
+    <h1 className='text-3xl mx-auto font-montserrat font-semibold text-[#3A3A3A] uppercase w-full mb-[1.875rem]'>
         {header}
-    </h2>
+    </h1>
   )
 }
 
 export const MidHeading =  ({header}: HeadingProps) => {
   return (
-    <h3 className='text-2xl mx-auto leading-[1.875em] font-montserrat font-semibold text-[#3A3A3A] w-auto mb-[1.25rem]'>
+    <h2 className='text-2xl mx-auto leading-[1.875em] font-montserrat font-semibold text-[#3A3A3A] w-auto mb-[1.25rem]'>
         {header}
-    </h3>
+    </h2>
   )
 }
 
