@@ -10,7 +10,7 @@ const Team = () => {
   return (
     <>
       <HtmlHead title="Meet the Team" />
-      <main className="pt-40 px-[3.125em] mb-0 w-full h-full color-[#3A3A3A]">
+      <main className="pt-40 px-[3.125em] mb-0 w-full h-full">
         <section>
           <Heading header="Management" />
 
@@ -28,7 +28,7 @@ const Team = () => {
                     alt={staff.name}
                     className="mb-4"
                   />
-                  <span className="font-montserrat font-semibold text-3xl">
+                  <span className="font-montserrat font-semibold text-3xl text-[#3A3A3A]">
                     {staff.name}
                   </span>
                   <span className="font-quickSand font-medium text-xl text-[#428821]">
@@ -51,8 +51,8 @@ const Team = () => {
             {data &&
               data.links.map((link, index) => (
                 <Link key={index} target="_blank" href={link.link} className="flex flex-row mb-5 mr-[3.125em]">
-                  <div className="flex flex-row px-5 hover:text-[#428821] transition-colors bg-[#FCFCFC] border border-[#D5D5D5] hover:border-[#428821] rounded-lg items-center justify-center min-w-full max-w-[35.3125em] md:w-[35.3125em] h-20">
-                    <h3 className="font-montserrat font-normal mr-[1.875em]">
+                  <div className="flex flex-row px-5 hover:text-[#428821] font-normal hover:font-medium bg-[#FCFCFC] border hover:border-2 border-[#D5D5D5] hover:border-[#428821] transition-all rounded-lg items-center justify-center min-w-full max-w-[35.3125em] md:w-[35.3125em] h-20">
+                    <h3 className="font-montserrat mr-[1.875em]">
                       {link.title}
                     </h3>
 

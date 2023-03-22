@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="px-5 md:px-[4.375rem] w-full">
+        <div className="px-3 md:px-[4.375rem] w-full">
           <section className="mt-[1.875rem]">
             <Heading header={'What we do'} />
             <div className="flex flex-col md:flex-row w-full gap-4 md:gap-[3.125em] mb-10">
@@ -79,20 +79,20 @@ export default function Home() {
                         loading="lazy"
                       />
                     </span>
-                    <span className="m-auto w-auto md:w-[16.875em]">
+                    <span className="m-auto w-auto md:w-[16.875em] text-[#3A3A3A]">
                       {service.title}
                     </span>
                   </div>
                 ))}
             </div>
-            <div className="mx-[2rem] font-medium font-quickSand md:text-2xl md:leading-10">
-              <h3 className="mb-5">
+            <div className="mx-[2rem] font-normal font-quickSand md:text-2xl md:leading-10">
+              <h3 className="mb-5 text-[#494949]">
                 In addition Aglane provides the following services
               </h3>
               <ul>
                 {data &&
                   data.additional.map((val, index) => (
-                    <li className="list-disc pl-5 mb-5" key={index}>
+                    <li className="list-disc pl-5 mb-5 text-[#494949]" key={index}>
                       {val}
                     </li>
                   ))}
