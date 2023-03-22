@@ -51,7 +51,7 @@ export const Testimonials = () => {
                 </div>
 
                 <div className="flex flex-col justify-start w-fit">
-                  <p className="text-xl md:text-2xl md:leading-10 font-quickSand font-medium md:mr-20 mb-3 md:mb-20">
+                  <p className="text-xl md:text-2xl md:leading-10 font-quickSand font-normal md:mr-20 mb-3 md:mb-20 text-[#494949]">
                     {person.testimonial}
                   </p>
                   <div className="">
