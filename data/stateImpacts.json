@@ -7,7 +7,7 @@
             "commodities": "Wheat and Rice",
             "jobs": "124",
             "communities": "47",
-            "geopolitical": ""
+            "color": "#3A811D"
         },
 
         {
@@ -19,7 +19,7 @@
             "commodities": "Maize and Cashew",
             "jobs": "2",
             "communities": "2",
-            "geopolitical": ""
+            "color": "#D6322D"
         },
 
         {
@@ -31,7 +31,7 @@
             "commodities": "Wheat",
             "jobs": "60",
             "communities": "5",
-            "geopolitical": ""
+            "color": "#BE5FD4"
         },
 
         {
@@ -43,7 +43,7 @@
             "commodities": "Wheat",
             "jobs": "53",
             "communities": "21",
-            "geopolitical": ""
+            "color": "#F17F3A"
         },
 
         {
@@ -55,7 +55,7 @@
             "commodities": "Wheat",
             "jobs": "27",
             "communities": "13",
-            "geopolitical": ""
+            "color": "#BE5FD4"
         },
 
         {
@@ -67,7 +67,7 @@
             "commodities": "Wheat",
             "jobs": "16",
             "communities": "14",
-            "geopolitical": ""
+            "color": "#BE5FD4"
         },
 
         {
@@ -79,7 +79,7 @@
             "commodities": "Wheat and Rice",
             "jobs": "109",
             "communities": "38",
-            "geopolitical": ""
+            "color": "#BE5FD4"
         },
 
         {
@@ -91,7 +91,7 @@
             "commodities": "Wheat and Maize",
             "jobs": "159",
             "communities": "147",
-            "geopolitical": ""
+            "color": "#BE5FD4"
         },
 
         {
@@ -103,7 +103,7 @@
             "commodities": "Wheat",
             "jobs": "50",
             "communities": "43",
-            "geopolitical": ""
+            "color": "#BE5FD4"
         },
 
         {
@@ -115,7 +115,7 @@
             "commodities": "Melon",
             "jobs": "1",
             "communities": "1",
-            "geopolitical": ""
+            "color": "#F17F3A"
         },
 
         {
@@ -127,7 +127,7 @@
             "commodities": "Wheat and Rice",
             "jobs": "15",
             "communities": "17",
-            "geopolitical": ""
+            "color": "#3A811D"
         },
 
         {
@@ -139,7 +139,7 @@
             "commodities": "Wheat",
             "jobs": "14",
             "communities": "12",
-            "geopolitical": ""
+            "color": "#3A811D"
         },
 
         {
@@ -151,7 +151,7 @@
             "commodities": "Cassava and Maize",
             "jobs": "4",
             "communities": "8",
-            "geopolitical": ""
+            "color": "#D6322D"
         },
 
         {
@@ -163,7 +163,7 @@
             "commodities": "Wheat",
             "jobs": "4",
             "communities": "3",
-            "geopolitical": ""
+            "color": "#3A811D"
         },
         {
 
@@ -174,7 +174,7 @@
             "commodities": "Wheat",
             "jobs": "10",
             "communities": "9",
-            "geopolitical": ""
+            "color": "#3A811D"
         },
 
         {
@@ -186,7 +186,7 @@
             "commodities": "Wheat",
             "jobs": "39",
             "communities": "11",
-            "geopolitical": ""
+            "color": "#3A811D"
         },
 
         {
@@ -198,7 +198,7 @@
             "commodities": "Wheat",
             "jobs": "4",
             "communities": "5",
-            "geopolitical": ""
+            "color": "#F17F3A"
         }
     ]
 }

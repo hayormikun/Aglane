@@ -33,14 +33,15 @@ const Numbers = () => {
           <p className="font-quickSand font-medium text-2xl w-fit mb-10">
             States we have impacted:{' '}
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-7">
             {data &&
               data.data.map((state, index) => (
                 <div
                   onMouseEnter={(e) => setHovered(index)}
                   onMouseLeave={(e) => setHovered(null)}
+                  style={{ background: state.color}}
                   key={index}
-                  className="flex items-center justify-center bg-[#5B9BD5] hover:cursor-pointer w-full md:w-[12.5rem] rounded-2xl h-20 font-light text-sm md:text-2xl text-white"
+                  className="flex items-center justify-center hover:cursor-pointer w-full md:w-[12.5rem] rounded-2xl h-20 font-light text-sm md:text-2xl text-white"
                 >
                   <span className="relative">
                     {state.state}
