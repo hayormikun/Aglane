@@ -1,7 +1,7 @@
 {
     "management": [{
             "name": "Olusola Omole",
-            "pic": "/assests/SVGs/team/managing_partner.svg",
+            "pic": "/assests/SVGs/team/managingPartner.svg",
             "designation": "Managing Partner"
         },
         {
@@ -11,7 +11,7 @@
         },
         {
             "name": "Beatrice Aluma-Taiwo",
-            "pic": "/assests/SVGs/team/hr.svg",
+            "pic": "/assests/SVGs/team/HR.svg",
             "designation": "Lead, Human Capital"
         },
         {
@@ -26,7 +26,7 @@
         },
         {
             "name": "Tosin Akinwunmi",
-            "pic": "/assests/SVGs/team/financial_management.svg",
+            "pic": "/assests/SVGs/team/FinancialManager.svg",
             "designation": "Financial Management Consultant"
         }
     ],
