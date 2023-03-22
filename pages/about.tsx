@@ -125,9 +125,9 @@ const About = () => {
           <MidHeading header={'MANAGING PARTNER’S ADDRESS'} />
 
           <div className="grid md:grid-cols-[23.75rem_auto] gap-7 w-full mb-7">
-            <div className="col-span-[23.75rem] bg-[#FCFCFC] mt-5 md:mt-0">
+            <div className="col-span-[23.75rem] bg-[#FCFCFC] mx-auto mt-5 md:mt-0">
               <Image
-                src={'/assests/SVGs/team/managing_partner.svg'}
+                src={'/assests/SVGs/team/managingPartner.svg'}
                 width={360}
                 height={360}
                 alt={'Managing Partner'}
@@ -135,7 +135,7 @@ const About = () => {
 
               <div className="flex flex-col text-center w-full">
                 <h3 className="text-[1.875rem] leading-[2.29em] font-montserrat font-semibold text-[#428821]">
-                  Olusola Omole
+                  Olusola Omole, FCA
                 </h3>
                 <span className="font-quickSand font-medium text-2xl">
                   Managing Partner
@@ -143,7 +143,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <p className="font-quickSand text-[1.625rem] leading-[3.5rem] font-medium">
+              <article className="font-quickSand text-[1.625rem] leading-[3.5rem] font-medium">
                 “Agribusiness is undergoing a major transformation as advances
                 in technology continue to revolutionize the ecosystem. From
                 digital agriculture to precision and climate-smart agriculture,
@@ -182,11 +182,11 @@ const About = () => {
                   Thank you.”
                 </span>
                 {readMore ? (
-                  <button className='text-xl font-light text-blue-500' onClick={()=>read()}>read less...</button>
+                  <button className='text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read less...</button>
                 ) : (
-                  <button className='text-xl font-light text-blue-500' onClick={()=>read()}>read more...</button>
+                  <button className='ml-3 md:ml-0 text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read more...</button>
                 )}
-              </p>
+              </article>
             </div>
           </div>
         </section>
