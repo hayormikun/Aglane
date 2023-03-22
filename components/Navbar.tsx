@@ -122,6 +122,7 @@ export const Navbar = () => {
                     Careers
                   </Link>
                 </li>
+                */}
                 <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
                     href="/contact"
@@ -129,7 +130,7 @@ export const Navbar = () => {
                   >
                     Contact Us
                   </Link>
-                </li> */}
+                </li> 
               </ul>
             </div>
 
