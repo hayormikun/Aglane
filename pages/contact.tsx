@@ -77,7 +77,7 @@ const Contact = () => {
               className="w-full text-white mx-auto flex flex-col gap-8"
             >
               {isError ? (
-                <ErrorPrompt item="message" msg="Unable to seng your message" />
+                <ErrorPrompt item="message" msg="Unable to send your message" />
               ) : (
                 ''
               )}
