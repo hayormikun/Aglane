@@ -8,12 +8,12 @@ const technology = () => {
   return (
     <>
       <HtmlHead title="Our Technology" />
-      <main className="pt-40 px-[3.125em] mb-0 w-full h-full">
+      <main className="pt-40 px-3 lg:px-[3.125em] mb-0 w-full h-full">
         <Heading header="Our Technology" />
 
         <section className='w-full mx-auto'>
           <MidHeading header="AgLanegrator" />
-          <p className='font-normal font-quickSand text-2xl text-[#494949]'>
+          <p className='font-normal font-quickSand text-xl md:text-2xl text-[#494949]'>
             <b>AgLanegrator</b> is a solution designed specifically to meet the
             challenges of farmers in Nigeria. It focuses on assisting women,
             youths, rural and remote farmers in accessing loans, and farm

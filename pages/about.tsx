@@ -22,10 +22,10 @@ const About = () => {
   return (
     <>
       <HtmlHead title="About Us" />
-      <main className="pt-40 px-[3.125em] mb-0 w-full h-full">
+      <main className="pt-40 px-3 md:px-[3.125em] mb-0 w-full h-full">
         <section className="mb-[4.357rem]">
           <Heading header="About Us" />
-          <p className="font-quickSand font-normal text-[1.625rem] leading-[2.75rem] text-[#494949]">
+          <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
             We are a social enterprise engaged in climate-smart agriculture,
             specializing in end-to-end agricultural primary production, farmer
             and produce aggregation, and commodity trading for sustainable food
@@ -37,11 +37,11 @@ const About = () => {
         </section>
 
         <section className="flex flex-col gap-y-14">
-          <div className="grid md:grid-cols-2 gap-5">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
             <div className="col-span-1">
               <MidHeading header={'OUR VISION'} />
 
-              <p className="font-quickSand font-normal text-[1.625rem] leading-[2.75rem] text-[#494949]">
+              <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
                 To become a leading investor in the agribusiness space by
                 forming beneficial and profitable partnerships with smallholder
                 farmers and other key stakeholders in Nigeria, making
@@ -61,22 +61,24 @@ const About = () => {
                 width={565}
                 height={423}
                 alt={'Vision image'}
+                className={"w-full"}
               />
             </div>
           </div>
 
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-5">
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5">
             <div className="col-span-1">
               <Image
                 src={'/assests/SVGs/about/mission.svg'}
                 width={565}
                 height={423}
-                alt={'Vision image'}
+                alt={'Mission image'}
+                className={"w-full"}
               />
             </div>
             <div className="col-span-1">
               <MidHeading header={'OUR MISSION'} />
-              <p className="font-quickSand font-normal text-[1.625rem] leading-[2.75rem] text-[#494949]">
+              <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
                 To produce quality agricultural commodities using improved
                 production systems, value addition and marketing innovations for
                 multiple benefits.
@@ -124,7 +126,7 @@ const About = () => {
         <section className="mt-[4.357rem] pb-[4.357rem]">
           <MidHeading header={'MANAGING PARTNER’S ADDRESS'} />
 
-          <div className="grid md:grid-cols-[23.75rem_auto] gap-7 w-full mb-7">
+          <div className="flex flex-col lg:grid lg:grid-cols-[23.75rem_auto] gap-7 w-full mb-7">
             <div className="col-span-[23.75rem] bg-[#FCFCFC] mx-auto mt-5 md:mt-0">
               <Image
                 src={'/assests/SVGs/team/managingPartner.svg'}
@@ -143,7 +145,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <article className="font-quickSand text-[1.625rem] leading-[3.5rem] font-normal text-[#494949]">
+              <article className="font-quickSand text-xl md:text-[1.625rem] leading-[3.5rem] font-normal text-[#494949]">
                 “Agribusiness is undergoing a major transformation as advances
                 in technology continue to revolutionize the ecosystem. From
                 digital agriculture to precision and climate-smart agriculture,

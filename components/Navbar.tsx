@@ -27,7 +27,7 @@ export const Navbar = () => {
               </Link>
             </div>
             {/* links */}
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <ul className="flex ml-10 items-center gap-x-10 text-gray-500">
                 <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
@@ -135,7 +135,7 @@ export const Navbar = () => {
             </div>
 
             {/* mobile nav  */}
-            <Menu as={'div'} className="mr-4 relative flex md:hidden ">
+            <Menu as={'div'} className="mr-4 relative flex lg:hidden ">
               <Menu.Button
                 className="bg-[#5C903D] inline-flex items-center rounded-md justify-center p-2 text-white hover:bg-[#3D3938] focus:outline-none focus:ring-white"
                 onClick={handleClick}

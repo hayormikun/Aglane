@@ -95,14 +95,14 @@
 
         {
 
-            "state": "Jigawa State",
-            "farmers": "14,288",
-            "produced": "32,862",
-            "hectares": "15,716.8",
-            "commodities": "Wheat and Maize",
-            "jobs": "159",
-            "communities": "147",
-            "color": "#BE5FD4"
+            "state": "Benue State",
+            "farmers": "361",
+            "produced": "830",
+            "hectares": "397.1",
+            "commodities": "Wheat",
+            "jobs": "4",
+            "communities": "5",
+            "color": "#F17F3A"
         },
 
         {
@@ -187,18 +187,16 @@
             "communities": "9",
             "color": "#3A811D"
         },
-
-
         {
 
-            "state": "Benue State",
-            "farmers": "361",
-            "produced": "830",
-            "hectares": "397.1",
-            "commodities": "Wheat",
-            "jobs": "4",
-            "communities": "5",
-            "color": "#F17F3A"
+            "state": "Jigawa State",
+            "farmers": "14,288",
+            "produced": "32,862",
+            "hectares": "15,716.8",
+            "commodities": "Wheat and Maize",
+            "jobs": "159",
+            "communities": "147",
+            "color": "#BE5FD4"
         }
     ]
 }

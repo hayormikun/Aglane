@@ -214,7 +214,7 @@ const Contact = () => {
                   key={index}
                   href={social.link}
                   target="_blank"
-                  className="h-[4.5rem] w-full md:w-[28.125rem] border border-[#D5D5D5] rounded-[0.625rem] flex items-center gap-x-4 px-4"
+                  className="h-[4.5rem] w-full lg:w-[28.125rem] border border-[#D5D5D5] rounded-[0.625rem] flex items-center gap-x-4 px-4"
                 >
                   <Image src={social.logo} width={30} height={30} alt="logo" />
                   <span className="font-medium font-quickSand text-xl md:text-2xl text-white">

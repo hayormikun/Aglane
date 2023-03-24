@@ -11,11 +11,11 @@ const Numbers = () => {
   return (
     <>
       <HtmlHead title="Impact in Numbers" />
-      <main className="pt-40 px-[3.125em] mb-0 w-full h-full text-[#3A3A3A]">
+      <main className="pt-40 px-3 lg:px-[3.125em] mb-0 w-full h-full text-[#3A3A3A]">
         <Heading header="Impact in Figures" />
 
         <div className="w-full">
-          <ul className="flex flex-col gap-y-5 w-fit text-2xl font-quickSand font-medium">
+          <ul className="flex flex-col gap-y-5 w-fit text-xl md:text-2xl font-quickSand font-medium">
             <li>Farmers Engaged 73,769+</li>
             <li>Hectares Cultivated 81,246+</li>
             <li>Commodities produced and traded in MT 171,465+</li>
@@ -30,10 +30,10 @@ const Numbers = () => {
 
         <section className="mt-10 pb-48 w-full">
           <Heading header="Impact in Figures" />
-          <p className="font-quickSand font-medium text-2xl w-fit mb-10">
+          <p className="font-quickSand font-medium text-xl md:text-2xl w-fit mb-10">
             States we have impacted:{' '}
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-7">
+          <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-y-5">
             {data &&
               data.data.map((state, index) => (
                 <div
@@ -41,7 +41,7 @@ const Numbers = () => {
                   onMouseLeave={(e) => setHovered(null)}
                   style={{ background: state.color}}
                   key={index}
-                  className="flex items-center justify-center hover:cursor-pointer w-full md:w-[12.5rem] rounded-2xl h-20 font-light text-sm md:text-2xl text-white"
+                  className="flex items-center justify-center hover:cursor-pointer w-full rounded-2xl h-20 font-light text-sm md:text-2xl text-white"
                 >
                   <span className="relative">
                     {state.state}
