@@ -57,7 +57,7 @@ export const Footer = () => {
                 <Link
                   href={item.link}
                   key={index}
-                  className="flex flex-row gap-3 mb-[1.25rem] hover:font-bold transition-all w-fit"
+                  className="flex flex-row gap-3 mb-[1.25rem] hover:font-bold hover:text-[#428821] transition-all w-fit"
                 >
                   <Image
                     src={item.logo}

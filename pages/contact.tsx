@@ -83,7 +83,7 @@ const Contact = () => {
               )}
               {isSuccess ? <Success item="message" /> : ''}
 
-              <div className="">
+              <div className="flex flex-col gap-y-3">
                 <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
                   <input
                     type="text"
@@ -96,19 +96,19 @@ const Contact = () => {
 
                   <label
                     htmlFor="name"
-                    className="form__label font-normal font-quickSand"
+                    className="form__label text-sm md:text-xl font-normal font-quickSand"
                   >
                     Name
                   </label>
                 </div>
                 {errors.name && (
-                  <span className="text-red-400 pt-3 font-semibold">
+                  <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
                     {errors.name.message}
                   </span>
                 )}
               </div>
 
-              <div className="">
+              <div className="flex flex-col gap-y-3">
                 <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
                   <input
                     type="email"
@@ -121,19 +121,19 @@ const Contact = () => {
 
                   <label
                     htmlFor="email"
-                    className="form__label font-normal font-quickSand"
+                    className="form__label text-sm md:text-xl font-normal font-quickSand"
                   >
                     Email
                   </label>
                 </div>
                 {errors.email && (
-                  <span className="text-red-400 pt-3 font-semibold">
+                  <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
                     {errors.email.message}
                   </span>
                 )}
               </div>
 
-              <div className="">
+              <div className="flex flex-col gap-y-3">
                 <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
                   <textarea
                     id="message"
@@ -144,13 +144,13 @@ const Contact = () => {
                   ></textarea>
                   <label
                     htmlFor="message"
-                    className="form__label font-medium font-quickSand"
+                    className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
                     Message
                   </label>
                 </div>
                 {errors.message && (
-                  <span className="text-red-400 pt-3 font-semibold">
+                  <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
                     {errors.message.message}
                   </span>
                 )}
@@ -160,14 +160,14 @@ const Contact = () => {
                 {isLoading ? (
                   <button
                     type="submit"
-                    className="flex items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a]  rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
+                    className="flex items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
                     Sending message...
                   </button>
                 ) : (
                   <button
                     type="submit"
-                    className="flex flex-row gap-x-4 items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
+                    className="flex flex-row gap-x-4 items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
                     <span>Send a message </span>
                     <svg
@@ -205,7 +205,7 @@ const Contact = () => {
               Head Office
             </h2>
 
-            <address className="not-italic font-medium font-quickSand text-2xl mb-3">
+            <address className="not-italic font-medium font-quickSand text-[#D5D5D5] text-xl md:text-2xl mb-5">
               7, Gambo Sawaba Road, Gwarinpa, Abuja
             </address>
             <div className="flex flex-col gap-y-[1.875rem]">
@@ -214,10 +214,10 @@ const Contact = () => {
                   key={index}
                   href={social.link}
                   target="_blank"
-                  className="h-[4.5rem] w-[28.125rem] border border-[#D5D5D5] rounded-[0.625rem] flex items-center gap-x-4 px-4"
+                  className="h-[4.5rem] w-full md:w-[28.125rem] border border-[#D5D5D5] rounded-[0.625rem] flex items-center gap-x-4 px-4"
                 >
                   <Image src={social.logo} width={30} height={30} alt="logo" />
-                  <span className="font-medium font-quickSand text-2xl text-[#D5D5D5]">
+                  <span className="font-medium font-quickSand text-xl md:text-2xl text-white">
                     {social.name}
                   </span>
                 </Link>
