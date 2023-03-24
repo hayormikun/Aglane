@@ -1,10 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import { MidHeading, SmallHeader } from './Heading'
+import { format } from 'date-fns'
 import data from '../data/footerLinks.json'
 import Link from 'next/link'
 
 export const Footer = () => {
+  const date = new Date()
+  const year = format(date, 'yyyy')
+
   return (
     <footer className="w-full bg-[#EAF1E6] pl-[3.125em] pt-10 mb-0">
       <span className="w-full h-auto">
@@ -68,7 +72,10 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* <span className='flex flex-row w-full justify-center py-3'> <FaCopyright width={5} height={5}/>  copyright</span> */}
+      
+      <h3 className="flex flex-row w-full font-semibold text-[#3A3A3A] justify-center md:justify-start py-3">
+        Aglane Nigeria Ltd <span className="mx-1 h-3 w-3"> &copy; </span> {year}
+      </h3>
     </footer>
   )
 }

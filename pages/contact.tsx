@@ -66,7 +66,7 @@ const Contact = () => {
           Drop us a line and we’ll get back to you as soon as possible
         </p>
 
-        <section className="grid grid-cols-2 gap-x-[3.75rem]">
+        <section className="flex flex-col md:grid md:grid-cols-2 gap-[3.75rem]">
           <div className="col-span-1 border-2 border-[#D5D5D5] rounded-2xl py-8 pl-[1.5625rem] pr-8">
             <h2 className="text-2xl mx-auto leading-[1.875em] font-montserrat font-semibold text-white w-auto mb-[1.25rem]">
               Send us a message
