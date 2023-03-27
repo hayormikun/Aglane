@@ -1,11 +1,6 @@
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-const adminUrl = {
-  url: "/admin",
-  baseUrl: "/",
-};
-
 export default NextAuth({
   providers: [
     CredentialsProvider({
