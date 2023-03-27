@@ -1,6 +1,7 @@
+import React from 'react'
 import Link from "next/link"
 
-export const HrMenu = () => {
+const HrMenu = () => {
     const navItems = [
         {
             name: "dashboard",
@@ -32,6 +33,8 @@ export const HrMenu = () => {
     </aside>
   )
 }
+
+export default HrMenu
 
 export const PostMenu = () => {
     const navItems = [
