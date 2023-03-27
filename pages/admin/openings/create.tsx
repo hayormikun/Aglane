@@ -9,6 +9,9 @@ import { HtmlHead } from '../../../components/Head'
 import Link from 'next/link'
 import { Heading } from '../../../components/Heading'
 import { HrMenu } from '../menu'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import { useSession } from 'next-auth/react'
 
 type FormValues = {
   description: string
@@ -35,6 +38,14 @@ const submitForm = async (data: FormValues): Promise<FormValues> => {
 }
 
 const Create = () => {
+  const { status, data: session } = useSession()
+  const router = useRouter()
+  
+  useEffect(()=>{
+    if (status === 'unauthenticated')
+    router.replace('/api/auth/signin')
+  }, [status, router])
+
   const {
     register,
     handleSubmit,
@@ -53,6 +64,7 @@ const Create = () => {
     mutate(data)
   }
 
+  if (status === 'authenticated' && session) {
   return (
     <>
       <HtmlHead title="Add Opening" />
@@ -242,6 +254,7 @@ const Create = () => {
       </main>
     </>
   )
+                }
 }
 
 export default Create

@@ -1,7 +1,19 @@
+import { useSession } from 'next-auth/react'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 import { HtmlHead } from '../../../components/Head'
 import { HrMenu } from '../menu'
 
 const Index = () => {
+  const { status, data: session } = useSession()
+  const router = useRouter()
+  
+  useEffect(()=>{
+    if (status === 'unauthenticated')
+    router.replace('/api/auth/signin')
+  }, [status, router])
+
+  if (status === 'authenticated' && session) {
   return (
     <>
       <HtmlHead title="Current Openings" />
@@ -31,6 +43,7 @@ const Index = () => {
       </main>
     </>
   )
+  }
 }
 
 export default Index
