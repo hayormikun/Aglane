@@ -68,7 +68,7 @@ const Create = () => {
         <HtmlHead title="Add Opening" />
         <main
           className="pt-40 px-[3.125em] mb-0 w-full h-full pb-12"
-          id="contact"
+          id="greenBackground"
         >
           <div className="md:w-[80%] mx-auto">
             <h1 className="text-3xl mx-auto pb-3 border-b-4 border-white font-montserrat font-semibold text-white uppercase w-full mb-[1.875rem]">
@@ -206,14 +206,14 @@ const Create = () => {
                     type="submit"
                     className="flex items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
-                    Creating Opening...
+                    Creating Post...
                   </button>
                 ) : (
                   <button
                     type="submit"
                     className="flex flex-row gap-x-4 items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
-                    <span>Create Opening</span>
+                    <span>Create Post</span>
                     <svg
                       width="30"
                       height="30"

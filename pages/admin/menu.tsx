@@ -25,7 +25,7 @@ export const HrMenu = () => {
     ]
 
   return (
-    <aside className="bg-[#D5D5D5] w-full h-fit p-5 rounded-lg">
+    <aside className="bg-[#EFEDFB] w-full h-fit p-5 rounded-lg">
       <ul className="flex flex-col gap-5">
         {
             navItems.map((navItem, index) =>(
@@ -54,7 +54,7 @@ export const PostMenu = () => {
     ]
 
   return (
-    <aside className="bg-[#D5D5D5] w-full h-fit p-5 rounded-lg">
+    <aside className="bg-[#FCF6E7] w-full h-fit p-5 rounded-lg">
       <ul className="flex flex-col gap-5">
         {
             navItems.map((navItem, index) =>(
