@@ -22,7 +22,7 @@ const About = () => {
   return (
     <>
       <HtmlHead title="About Us" />
-      <main className="pt-40 px-3 md:px-[3.125em] mb-0 w-full h-full">
+      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full">
         <section className="mb-[4.357rem]">
           <Heading header="About Us" />
           <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
@@ -87,23 +87,27 @@ const About = () => {
           </div>
         </section>
 
-        {/* <section className="mt-[4.357rem] mb-[4.357rem]">
-          <h2>Our Core Values</h2>
-          <div className="grid grid-cols-2">
+        <section className="mt-[4.357rem] mb-[4.357rem]">
+        <MidHeading header={'CORE VALUES'} />
+
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
             {data &&
               data.data.map((val, index) => (
-                <div key={index} className="col-span-1">
+                <div key={index}>
                   <AccordionItem
                     key={index}
                     open={index === open}
                     toggle={() => toggle(index)}
                     title={val.title}
                     description={val.description}
+                    bg={val.color}
                   />
                 </div>
               ))}
           </div>
-        </section> */}
+        </section>
+
+
 
         {/* <section className="">
           <MidHeading header="OUR PLAN OF CHANGE" />
@@ -154,7 +158,7 @@ const About = () => {
                 this wave of change and taken full advantage of the
                 opportunities. Our approach to Agribusiness focuses on utilizing
                 digital technology to create a fully integrated system that
-                supports farmers.
+                supports farmers. 
                 <span className={readMore ? 'flex' : 'hidden'}>
                   {' '}
                   I am thrilled to announce that our team of agricultural
@@ -184,9 +188,9 @@ const About = () => {
                   Thank you.”
                 </span>
                 {readMore ? (
-                  <button className='text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read less...</button>
+                  <button className='text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read less</button>
                 ) : (
-                  <button className='ml-3 md:ml-0 text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read more...</button>
+                  <button className='pl-3 md:pl-1 text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read more...</button>
                 )}
               </article>
             </div>

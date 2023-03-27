@@ -6,6 +6,7 @@ import data from '../data/services.json'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Affiliates } from '../components/Affiliates'
+import { useSession } from 'next-auth/react'
 
 export default function Home() {
   const [open, setOpen] = useState<number | boolean>(false)
@@ -61,25 +62,26 @@ export default function Home() {
           </div>
         </section>
         <div className="px-3 md:px-[4.375rem] w-full">
-          <section className="mt-[1.875rem]">
+          <section className="mt-[1.875rem] pt-12">
             <Heading header={'What we do'} />
-            <div className="flex flex-col md:flex-row w-full gap-4 md:gap-[3.125em] mb-10">
+            <div className="flex flex-col md:grid md:grid-cols-3 w-full gap-4 md:gap-[3.125em] mb-10">
               {data &&
                 data.primary.map((service, index) => (
                   <div
-                    className="flex flex-col text-center bg-white border border-[#D5D5D5] rounded-[20px] pt-5 pb-[0.625em] md:px-[2.8125em]"
+                    className="flex flex-col col-span-1 text-center bg-white border border-[#D5D5D5] rounded-[20px] pt-5 pb-[0.625em] md:px-[2.8125em]"
                     key={index}
                   >
                     <span className="flex justify-center mb-3">
                       <Image
                         src={service.icon}
                         width={100}
-                        height={100.02}
+                        height={100}
                         alt={service.title}
                         loading="lazy"
+                        className=''
                       />
                     </span>
-                    <span className="m-auto w-auto md:w-[16.875em] text-[#3A3A3A]">
+                    <span className="m-auto w-auto text-[#3A3A3A]">
                       {service.title}
                     </span>
                   </div>
@@ -100,12 +102,12 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-[1.875rem]">
+          <section className="mt-[1.875rem] pt-12">
             <Heading header={'Testimonials'} />
             <Testimonials />
           </section>
 
-          <section className="mt-[1.875rem] pb-10">
+          <section className="mt-[1.875rem] pt-12 pb-10">
             <Heading header={'Clients and affiliates'} />
 
             <Affiliates />

@@ -11,7 +11,7 @@ const Numbers = () => {
   return (
     <>
       <HtmlHead title="Impact in Numbers" />
-      <main className="pt-40 px-3 lg:px-[3.125em] mb-0 w-full h-full text-[#3A3A3A]">
+      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full text-[#3A3A3A]">
         <Heading header="Impact in Figures" />
 
         <div className="w-full">

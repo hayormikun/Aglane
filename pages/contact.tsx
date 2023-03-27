@@ -10,6 +10,7 @@ import { HtmlHead } from '../components/Head'
 import Link from 'next/link'
 import socials from '../data/socials.json'
 import Image from 'next/image'
+import { api } from './api/axios'
 
 type FormValues = {
   name: string
@@ -29,7 +30,8 @@ const schema = yup.object().shape({
 type FormInputs = yup.InferType<typeof schema>
 
 const submitForm = async (data: FormValues): Promise<FormValues> => {
-  return await axios.post(`${process.env.BASE_URL}/message`, data)
+  console.log(data)
+  return await api.post("/message", data)
 }
 
 const Contact = () => {
@@ -55,8 +57,8 @@ const Contact = () => {
     <>
       <HtmlHead title="Contact Us" />
       <main
-        className="pt-40 px-[3.125em] mb-0 w-full h-full pb-12"
-        id="contact"
+        className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full pb-12"
+        id="greenBackground"
       >
         <h1 className="text-3xl mx-auto font-montserrat font-semibold text-white uppercase w-full mb-[1.875rem]">
           Contact Us
