@@ -8,7 +8,7 @@ const technology = () => {
   return (
     <>
       <HtmlHead title="Our Technology" />
-      <main className="pt-40 px-3 lg:px-[3.125em] mb-0 w-full h-full">
+      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full">
         <Heading header="Our Technology" />
 
         <section className='w-full mx-auto'>

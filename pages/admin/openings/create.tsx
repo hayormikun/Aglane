@@ -1,40 +1,40 @@
-import { Heading, MidHeading } from '../components/Heading'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import axios from 'axios'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import { useMutation } from 'react-query'
-import { Success } from '../components/Success'
-import { ErrorPrompt } from '../components/ErrorPrompt'
-import { HtmlHead } from '../components/Head'
+import { Success } from '../../../components/Success'
+import { ErrorPrompt } from '../../../components/ErrorPrompt'
+import { HtmlHead } from '../../../components/Head'
 import Link from 'next/link'
-import socials from '../data/socials.json'
-import Image from 'next/image'
-import { api } from './api/axios'
+import { Heading } from '../../../components/Heading'
+import { HrMenu } from '../menu'
 
 type FormValues = {
-  name: string
-  email: string
-  message: string
+  description: string
+  roleOverview: string
+  responsibilities: string
+  requirements: string
+  benefits: string
 }
 
 const schema = yup.object().shape({
-  name: yup.string().required('Please enter your fullname'),
-  email: yup
+  description: yup.string().required('Please enter role description here'),
+  roleOverview: yup.string().required('Please enter role overview here'),
+  responsibilities: yup
     .string()
-    .required('Please enter your email')
-    .email('Please enter a valid email address'),
-  message: yup.string().required('Please enter your message here'),
+    .required('Please enter roles and responsibilities here'),
+  requirements: yup.string().required('Please enter requirements here'),
+  benefits: yup.string().required('Please enter role benefits here'),
 })
 
 type FormInputs = yup.InferType<typeof schema>
 
 const submitForm = async (data: FormValues): Promise<FormValues> => {
-  console.log(data)
-  return await api.post("/message", data)
+  return await axios.post(`${process.env.BASE_URL}/opening`, data)
 }
 
-const Contact = () => {
+const Create = () => {
   const {
     register,
     handleSubmit,
@@ -55,25 +55,17 @@ const Contact = () => {
 
   return (
     <>
-      <HtmlHead title="Contact Us" />
+      <HtmlHead title="Add Opening" />
       <main
-        className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full pb-12"
+        className="pt-40 px-[3.125em] mb-0 w-full h-full pb-12"
         id="greenBackground"
       >
-        <h1 className="text-3xl mx-auto font-montserrat font-semibold text-white uppercase w-full mb-[1.875rem]">
-          Contact Us
-        </h1>
-
-        <p className="text-[#D5D5D5] font-quickSand font-normal text-2xl mb-9">
-          Drop us a line and we’ll get back to you as soon as possible
-        </p>
-
-        <section className="flex flex-col md:grid md:grid-cols-2 gap-[3.75rem]">
-          <div className="col-span-1 border-2 border-[#D5D5D5] rounded-2xl py-8 pl-[1.5625rem] pr-8">
-            <h2 className="text-2xl mx-auto leading-[1.875em] font-montserrat font-semibold text-white w-auto mb-[1.25rem]">
-              Send us a message
-            </h2>
-
+        <div className="flex flex-row mx-auto">
+          
+          <div className="md:w-[80%] mx-auto">
+            <h1 className="text-3xl mx-auto pb-3 border-b-4 border-white font-montserrat font-semibold text-white uppercase w-full mb-[1.875rem]">
+              Create Opening
+            </h1>
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="w-full text-white mx-auto flex flex-col gap-8"
@@ -86,51 +78,24 @@ const Contact = () => {
               {isSuccess ? <Success item="message" /> : ''}
 
               <div className="flex flex-col gap-y-3">
-                <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
-                  <input
-                    type="text"
+                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <textarea
+                    id="description"
                     autoComplete="off"
-                    id="name"
-                    className="form__input font-medium font-quickSand"
+                    className="form__input font-normal font-quickSand"
                     placeholder=" "
-                    {...register('name')}
-                  />
-
+                    {...register('description')}
+                  ></textarea>
                   <label
-                    htmlFor="name"
-                    className="form__label text-sm md:text-xl font-normal font-quickSand"
+                    htmlFor="description"
+                    className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
-                    Name
+                    Description
                   </label>
                 </div>
-                {errors.name && (
+                {errors.description && (
                   <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.name.message}
-                  </span>
-                )}
-              </div>
-
-              <div className="flex flex-col gap-y-3">
-                <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
-                  <input
-                    type="email"
-                    autoComplete="off"
-                    id="email"
-                    className="form__input font-medium font-quickSand"
-                    placeholder=" "
-                    {...register('email')}
-                  />
-
-                  <label
-                    htmlFor="email"
-                    className="form__label text-sm md:text-xl font-normal font-quickSand"
-                  >
-                    Email
-                  </label>
-                </div>
-                {errors.email && (
-                  <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.email.message}
+                    {errors.description.message}
                   </span>
                 )}
               </div>
@@ -138,22 +103,91 @@ const Contact = () => {
               <div className="flex flex-col gap-y-3">
                 <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
                   <textarea
-                    id="message"
+                    id="roleOverview"
                     autoComplete="off"
                     className="form__input font-normal font-quickSand"
                     placeholder=" "
-                    {...register('message')}
+                    {...register('roleOverview')}
                   ></textarea>
                   <label
-                    htmlFor="message"
+                    htmlFor="roleOverview"
                     className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
-                    Message
+                    Role Overview
                   </label>
                 </div>
-                {errors.message && (
+                {errors.roleOverview && (
                   <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.message.message}
+                    {errors.roleOverview.message}
+                  </span>
+                )}
+              </div>
+
+              <div className="flex flex-col gap-y-3">
+                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <textarea
+                    id="responsibilities"
+                    autoComplete="off"
+                    className="form__input font-normal font-quickSand"
+                    placeholder=" "
+                    {...register('responsibilities')}
+                  ></textarea>
+                  <label
+                    htmlFor="responsibilities"
+                    className="form__label text-sm md:text-xl font-medium font-quickSand"
+                  >
+                    Roles and Responsibilites
+                  </label>
+                </div>
+                {errors.responsibilities && (
+                  <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
+                    {errors.responsibilities.message}
+                  </span>
+                )}
+              </div>
+
+              <div className="flex flex-col gap-y-3">
+                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <textarea
+                    id="requirements"
+                    autoComplete="off"
+                    className="form__input font-normal font-quickSand"
+                    placeholder=" "
+                    {...register('requirements')}
+                  ></textarea>
+                  <label
+                    htmlFor="requirements"
+                    className="form__label text-sm md:text-xl font-medium font-quickSand"
+                  >
+                    Requirements
+                  </label>
+                </div>
+                {errors.requirements && (
+                  <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
+                    {errors.requirements.message}
+                  </span>
+                )}
+              </div>
+
+              <div className="flex flex-col gap-y-3">
+                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <textarea
+                    id="benefits"
+                    autoComplete="off"
+                    className="form__input font-normal font-quickSand"
+                    placeholder=" "
+                    {...register('benefits')}
+                  ></textarea>
+                  <label
+                    htmlFor="benefits"
+                    className="form__label text-sm md:text-xl font-medium font-quickSand"
+                  >
+                    Benefits
+                  </label>
+                </div>
+                {errors.benefits && (
+                  <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
+                    {errors.benefits.message}
                   </span>
                 )}
               </div>
@@ -164,14 +198,14 @@ const Contact = () => {
                     type="submit"
                     className="flex items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
-                    Sending message...
+                    Creating Opening...
                   </button>
                 ) : (
                   <button
                     type="submit"
                     className="flex flex-row gap-x-4 items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
-                    <span>Send a message </span>
+                    <span>Create Opening</span>
                     <svg
                       width="30"
                       height="30"
@@ -201,35 +235,13 @@ const Contact = () => {
               </div>
             </form>
           </div>
-
-          <div className="col-span-1 text-white ">
-            <h2 className="text-3xl font-montserrat font-medium w-auto mb-[1.25rem]">
-              Head Office
-            </h2>
-
-            <address className="not-italic font-medium font-quickSand text-[#D5D5D5] text-xl md:text-2xl mb-5">
-              7, Gambo Sawaba Road, Gwarinpa, Abuja
-            </address>
-            <div className="flex flex-col gap-y-[1.875rem]">
-              {socials.data.map((social, index) => (
-                <Link
-                  key={index}
-                  href={social.link}
-                  target="_blank"
-                  className="h-[4.5rem] w-full lg:w-[28.125rem] border border-[#D5D5D5] rounded-[0.625rem] flex items-center gap-x-4 px-4"
-                >
-                  <Image src={social.logo} width={30} height={30} alt="logo" />
-                  <span className="font-medium font-quickSand text-xl md:text-2xl text-white">
-                    {social.name}
-                  </span>
-                </Link>
-              ))}
-            </div>
+          <div className="md:w-[15%] mx-auto">
+            <HrMenu />
           </div>
-        </section>
+        </div>
       </main>
     </>
   )
 }
 
-export default Contact
+export default Create

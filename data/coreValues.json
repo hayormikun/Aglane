@@ -2,22 +2,26 @@
     "data": [
         {
             "title": "Professionalism",
-            "description": "As a product and service provider, we engage a well-trained, exceptional team to meet our customers’ needs."
+            "description": "As a product and service provider, we engage a well-trained, exceptional team to meet our customers’ needs.",
+            "color": "#E8F8F1"
         },
 
         {
             "title": "Integrity",
-            "description": "We value integrity, honesty, and business ethics in our dealings."
+            "description": "We value integrity, honesty, and business ethics in our dealings.",
+            "color": "#FCF6E7"
         },
 
         {
             "title": "Excellence",
-            "description": "We provide the best value to our customers by continuously improving our processes, technology and cost structure."
+            "description": "We provide the best value to our customers by continuously improving our processes, technology and cost structure.",
+            "color": "#E3F3F7"
         },
 
         {
             "title": "Innovation",
-            "description": "We strive constantly to find new and better ways to meet our customers’ needs and exceed their expectations."
+            "description": "We strive constantly to find new and better ways to meet our customers’ needs and exceed their expectations.",
+            "color": "#EFEDFB"
         }
     ]
 }
