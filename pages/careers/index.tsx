@@ -6,7 +6,7 @@ const index = () => {
   return (
     <>
       <HtmlHead title="Careers" />
-      <main className="pt-40 px-[3.125em] mb-0 w-full h-full color-[#3A3A3A]">
+      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full color-[#3A3A3A]">
         <Heading header="Careers at Aglane" />
         <p className="font-quickSand text-2xl text-[#3A3A3A] pb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
