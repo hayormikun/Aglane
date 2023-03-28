@@ -17,10 +17,10 @@ export const Opening = ({
 }: OpeningPropsType) => {
   return (
     <div className="flex flex-col gap-3">
-      <div className="flex justify-between w-[90%] bg-[#E8F8F1] font-quickSand p-5 items-center gap-3">
+      <div className="flex justify-between w-[90%] bg-[#E8F8F1] font-quickSand p-5 items-center gap-3 rounded-lg">
         <div className="flex flex-col">
           <h3 className="font-semibold text-xl capitalize mb-3">{designation}</h3>
-          <span className="font-light text-sm">1 week ago</span>
+          {/* <span className="font-light text-sm">o</span> */}
         </div>
         <div className="capitalize text-[1rem]">{location}</div>
         <div className="capitalize text-[1rem]">{mode}</div>

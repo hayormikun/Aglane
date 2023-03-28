@@ -119,15 +119,15 @@ export const Navbar = () => {
                     Our Team
                   </Link>
                 </li>
-                {/* <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
-                    href="/careers/"
+                    href="/careers"
                     className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                   >
                     Careers
                   </Link>
                 </li>
-                */}
+
                 <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
                     href="/contact"
@@ -147,91 +147,108 @@ export const Navbar = () => {
               </Menu.Button>
 
               <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-100"
-                    enterFrom="transfrom opacity-0 scale-95"
-                    enterTo="transform opacity-100 scale-100"
-                    leave="transition ease-in duration-100"
-                    leaveFrom="transfrom opacity-100 scale-100"
-                    leaveTo="transform opacity-0 scale-95"
-                  >
-              <Menu.Items className="absolute origin-top-right flex flex-col right-0 mt-10 w-56 py-3 bg-gray-50 shadow-lg rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
-                <Menu.Item>
-                  {({ active }) => (
-                    <div
-                      className={`${
-                        active ? ' text-[#428821] bg-gray-200' : ''
-                      }  w-full py-2`}
-                    >
-                      <Link href="/about">
-                        <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
-                          <span>About Us</span>
-                        </div>
-                      </Link>
-                    </div>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <div
-                      className={`${
-                        active ? ' text-[#428821] bg-gray-200' : ''
-                      }  w-full py-2`}
-                    >
-                      <Link href="impact/social">
-                        <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
-                          <span>Impact</span>
-                        </div>
-                      </Link>
-                    </div>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <div
-                      className={`${
-                        active ? ' text-[#428821] bg-gray-200' : ''
-                      }  w-full py-2`}
-                    >
-                      <Link href="/team">
-                        <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
-                          <span>Our Team</span>
-                        </div>
-                      </Link>
-                    </div>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <div
-                      className={`${
-                        active ? ' text-[#428821] bg-gray-200' : ''
-                      }  w-full py-2`}
-                    >
-                      <Link href="/solutions/technology">
-                        <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
-                          <span>Our Solutions</span>
-                        </div>
-                      </Link>
-                    </div>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <div
-                      className={`${
-                        active ? ' text-[#428821] bg-gray-200' : ''
-                      }  w-full py-2`}
-                    >
-                      <Link href="/contact">
-                        <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
-                          <span>Contact Us</span>
-                        </div>
-                      </Link>
-                    </div>
-                  )}
-                </Menu.Item>
-              </Menu.Items>
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transfrom opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-100"
+                leaveFrom="transfrom opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
+              >
+                <Menu.Items className="absolute origin-top-right flex flex-col right-0 mt-10 w-56 py-3 bg-gray-50 shadow-lg rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="/about">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>About Us</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="impact/social">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Impact</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="/team">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Our Team</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="/solutions/technology">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Our Solutions</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="/careers">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Careers</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="/contact">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Contact Us</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+                </Menu.Items>
               </Transition>
             </Menu>
           </div>
