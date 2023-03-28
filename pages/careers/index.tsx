@@ -13,10 +13,13 @@ const index = () => {
         </p>
 
         <section>
-            <div className='border-b border-[#D5D5D5] w-full mb-2'>
+            <div className='w-full mb-2'>
                 <MidHeading header='Current Openings'/>
             </div>
-            <Opening designation='Public Relations Specialist' jobType='remote' location='abuja, nigeria' staffType='contract' />
+            <div className="flex flex-col gap-5 pb-20">
+            <Opening designation='Public Relations Specialist' mode='remote' location='abuja, nigeria' appointment='contract' link='/' />
+            <Opening designation='Public Relations Specialist' mode='remote' location='abuja, nigeria' appointment='contract' link='/' />
+            </div>
         </section>
       </main>
     </>
