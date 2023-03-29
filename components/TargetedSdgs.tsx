@@ -2,7 +2,7 @@ import sdgs from '../data/sdgs.json'
 
 export const TargetedSdgs = () => {
   return (
-    <div className="flex flex-col mt-5 md:grid md:grid-flow-col md:gap-x-5 gap-3 w-auto h-full text-[#FCFCFC] text-xl font-medium font-quickSand">
+    <div className="flex flex-col mt-5 lg:grid lg:grid-flow-col md:gap-x-5 gap-3 w-auto h-full text-[#FCFCFC] text-xl font-medium font-quickSand">
       {sdgs &&
         sdgs.data.map((sdg, index) => (
           <div

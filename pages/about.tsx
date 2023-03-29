@@ -131,7 +131,7 @@ const About = () => {
 
         <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
           <SmallHeader header="To Result" />
-          <div className="flex flex-col mt-5 md:grid md:grid-flow-col md:gap-x-5 gap-3 w-auto h-full text-[#FCFCFC] text-xl font-medium font-quickSand">
+          <div className="mt-5 w-full h-full text-[#FCFCFC] text-xl font-medium font-quickSand">
             <div className="h-full p-5 bg-[#5B9BD5] rounded-[10px]">
               A community of primary producers that have all resources needed to
               produce high yield for national and continental food sufficiency
