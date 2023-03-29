@@ -19,9 +19,9 @@ const Index = () => {
         <Link href={'/admin/messages'} className='w-40 h-40 bg-[#428821] text-white pl-3 pt-2 text-3xl font-montserrat font-semibold'>
           HR
         </Link>
-        <Link href={'/admin/posts'} className='w-40 h-40 bg-[#dbc68f] text-white pl-3 pt-2 text-3xl font-montserrat font-semibold'>
+        {/* <Link href={'/admin/posts'} className='w-40 h-40 bg-[#dbc68f] text-white pl-3 pt-2 text-3xl font-montserrat font-semibold'>
           MEDIA
-        </Link>
+        </Link> */}
       </main>
     )
   }

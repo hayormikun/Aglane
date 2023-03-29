@@ -6,29 +6,27 @@ import { useMutation } from 'react-query'
 import { Success } from '../../../components/Success'
 import { ErrorPrompt } from '../../../components/ErrorPrompt'
 import { HtmlHead } from '../../../components/Head'
-import Link from 'next/link'
-import { Heading } from '../../../components/Heading'
 import { HrMenu } from '../menu'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useSession } from 'next-auth/react'
 
 type FormValues = {
-  description: string
-  roleOverview: string
-  responsibilities: string
-  requirements: string
-  benefits: string
+  designation: string
+  mode: string
+  location: string
+  appointment: string
+  link: string
 }
 
 const schema = yup.object().shape({
-  description: yup.string().required('Please enter role description here'),
-  roleOverview: yup.string().required('Please enter role overview here'),
-  responsibilities: yup
+  designation: yup.string().required('Please enter job designation here'),
+  mode: yup.string().required('Please enter mode of resumption here'),
+  location: yup
     .string()
-    .required('Please enter roles and responsibilities here'),
-  requirements: yup.string().required('Please enter requirements here'),
-  benefits: yup.string().required('Please enter role benefits here'),
+    .required('Please enter job location here'),
+  appointment: yup.string().required('Please enter appointment type here'),
+  link: yup.string().required('Please enter link to apply here'),
 })
 
 type FormInputs = yup.InferType<typeof schema>
@@ -72,9 +70,9 @@ const Create = () => {
         className="pt-40 px-[3.125em] mb-0 w-full h-full pb-12"
         id="greenBackground"
       >
-        <div className="flex flex-row mx-auto">
+        <div className="flex flex-col-reverse md:flex-row mx-auto">
           
-          <div className="md:w-[80%] mx-auto">
+          <div className="w-full md:w-[80%] mx-auto">
             <h1 className="text-3xl mx-auto pb-3 border-b-4 border-white font-montserrat font-semibold text-white uppercase w-full mb-[1.875rem]">
               Create Opening
             </h1>
@@ -90,116 +88,121 @@ const Create = () => {
               {isSuccess ? <Success item="message" /> : ''}
 
               <div className="flex flex-col gap-y-3">
-                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
-                  <textarea
-                    id="description"
+              <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <input
+                    type="text"
                     autoComplete="off"
-                    className="form__input font-normal font-quickSand"
+                    id="designation"
+                    className="form__input font-medium font-quickSand"
                     placeholder=" "
-                    {...register('description')}
-                  ></textarea>
+                    {...register('designation')}
+                  />
                   <label
-                    htmlFor="description"
+                    htmlFor="designation"
                     className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
                     Description
                   </label>
                 </div>
-                {errors.description && (
+                {errors.designation && (
                   <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.description.message}
+                    {errors.designation.message}
                   </span>
                 )}
               </div>
 
               <div className="flex flex-col gap-y-3">
-                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
-                  <textarea
-                    id="roleOverview"
+              <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <input
+                    type="text"
                     autoComplete="off"
-                    className="form__input font-normal font-quickSand"
+                    id="mode"
+                    className="form__input font-medium font-quickSand"
                     placeholder=" "
-                    {...register('roleOverview')}
-                  ></textarea>
+                    {...register('mode')}
+                  />
                   <label
-                    htmlFor="roleOverview"
+                    htmlFor="mode"
                     className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
-                    Role Overview
+                    Mode
                   </label>
                 </div>
-                {errors.roleOverview && (
+                {errors.mode && (
                   <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.roleOverview.message}
+                    {errors.mode.message}
                   </span>
                 )}
               </div>
 
               <div className="flex flex-col gap-y-3">
-                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
-                  <textarea
-                    id="responsibilities"
+              <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <input
+                    type="text"
                     autoComplete="off"
-                    className="form__input font-normal font-quickSand"
+                    id="location"
+                    className="form__input font-medium font-quickSand"
                     placeholder=" "
-                    {...register('responsibilities')}
-                  ></textarea>
+                    {...register('location')}
+                  />
                   <label
-                    htmlFor="responsibilities"
+                    htmlFor="location"
                     className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
-                    Roles and Responsibilites
+                    Location
                   </label>
                 </div>
-                {errors.responsibilities && (
+                {errors.location && (
                   <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.responsibilities.message}
+                    {errors.location.message}
                   </span>
                 )}
               </div>
 
               <div className="flex flex-col gap-y-3">
-                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
-                  <textarea
-                    id="requirements"
+              <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <input
+                    type="text"
                     autoComplete="off"
-                    className="form__input font-normal font-quickSand"
+                    id="appointment"
+                    className="form__input font-medium font-quickSand"
                     placeholder=" "
-                    {...register('requirements')}
-                  ></textarea>
+                    {...register('appointment')}
+                  />
                   <label
-                    htmlFor="requirements"
+                    htmlFor="appointment"
                     className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
-                    Requirements
+                    Appointment
                   </label>
                 </div>
-                {errors.requirements && (
+                {errors.appointment && (
                   <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.requirements.message}
+                    {errors.appointment.message}
                   </span>
                 )}
               </div>
 
               <div className="flex flex-col gap-y-3">
-                <div className="form_comment_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
-                  <textarea
-                    id="benefits"
+              <div className="form_field w-full border border-[#D5D5D5] rounded-[0.625rem] flex">
+                  <input
+                    type="text"
                     autoComplete="off"
-                    className="form__input font-normal font-quickSand"
+                    id="link"
+                    className="form__input font-medium font-quickSand"
                     placeholder=" "
-                    {...register('benefits')}
-                  ></textarea>
+                    {...register('link')}
+                  />
                   <label
-                    htmlFor="benefits"
+                    htmlFor="link"
                     className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
-                    Benefits
+                    Link
                   </label>
                 </div>
-                {errors.benefits && (
+                {errors.link && (
                   <span className="text-red-500 text-sm md:text-xl font-quickSand font-bold">
-                    {errors.benefits.message}
+                    {errors.link.message}
                   </span>
                 )}
               </div>
@@ -247,7 +250,7 @@ const Create = () => {
               </div>
             </form>
           </div>
-          <div className="md:w-[15%] mx-auto">
+          <div className="mb-5 md:w-[18%] mx-auto">
             <HrMenu />
           </div>
         </div>

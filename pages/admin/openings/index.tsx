@@ -21,13 +21,13 @@ const Index = () => {
           className="pt-40 px-[3.125em] mb-0 w-full h-full pb-12"
           id="greenBackground"
         >
-          <div className="flex flex-row mx-auto">
-            <div className="md:w-[80%] mx-auto">
+          <div className="flex flex-col-reverse md:flex-row mx-auto">
+            <div className="w-full md:w-[80%] mx-auto">
               <h1 className="text-3xl mx-auto pb-3 border-b-4 border-white font-montserrat font-semibold text-white uppercase w-full mb-[1.875rem]">
                 Current Openings
               </h1>
               <div className="flex flex-col gap-3">
-                <div className="flex justify-between w-[70%] bg-white p-3 items-center gap-3">
+                <div className="flex justify-between w-full md:w-[70%] bg-white p-3 items-center gap-3">
                   <div className="flex flex-col font-quickSand">
                     <h3 className="font-semibold text-xl mb-3">
                       Finance officer
@@ -45,7 +45,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="md:w-[15%] mx-auto">
+            <div className="mb-5 md:w-[18%] mx-auto">
               <HrMenu />
             </div>
           </div>

@@ -21,7 +21,7 @@ const Index = () => {
           className="pt-40 px-[3.125em] mb-0 w-full h-full pb-12 text-white"
           id="greenBackground"
         >
-          <div className="flex flex-row mx-auto">
+          <div className="flex flex-col-reverse md:flex-row mx-auto">
             <section className="md:w-[80%] mx-auto">
               <h1 className="text-3xl mx-auto pb-3 border-b-4 border-white font-montserrat font-semibold text-white uppercase w-full mb-[1.875rem]">
                 All Messages
@@ -29,7 +29,7 @@ const Index = () => {
 
               <div className="flex flex-wrap gap-3 w-full text-[#494949] font-quickSand">
                 <div className="flex flex-col bg-[#EFEDFB] relative rounded-lg w-full p-3 lg:w-[15.625rem] h-auto">
-                  <div className="absolute right-3 bg-white p-2 cursor-pointer tracking-wider shadow">
+                  <div className="absolute right-3 bg-white text-[#428821] p-2 cursor-pointer tracking-wider shadow">
                     <FaTrashAlt />
                   </div>
                   <div className="message text-ellipsis overflow-y-hidden ... h-24 m-5 w-fit font-normal">
@@ -44,7 +44,7 @@ const Index = () => {
                 </div>
               </div>
             </section>
-            <div className="md:w-[15%] mx-auto">
+            <div className="mb-5 md:w-[18%] mx-auto">
               <HrMenu />
             </div>
           </div>
