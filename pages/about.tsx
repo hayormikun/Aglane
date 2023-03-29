@@ -5,6 +5,7 @@ import { HtmlHead } from '../components/Head'
 import { Heading, MidHeading, SmallHeader } from '../components/Heading'
 import { AccordionItem } from '../components/AccordionItem'
 import Image from 'next/image'
+import { TargetedSdgs } from '../components/TargetedSdgs'
 
 const About = () => {
   const [open, setOpen] = useState<number | boolean>(false)
@@ -126,6 +127,11 @@ const About = () => {
               ))}
           </div>
         </section> */}
+
+        <section className='border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5'>
+          <SmallHeader header='Targeted  SDGs' />
+          <TargetedSdgs />
+        </section>
 
         <section className="mt-[4.357rem] pb-[4.357rem]">
           <MidHeading header={'MANAGING PARTNER’S ADDRESS'} />
