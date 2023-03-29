@@ -1,0 +1,33 @@
+{
+    "data" : [
+        {
+            "title": "Market linkage facilities",
+            "color": "#2ECF8B"
+        },
+
+        {
+            "title": "Access to funds",
+            "color": "#0A697D"
+        },
+
+        {
+            "title": "Access to the best agronomic practices",
+            "color": "#FFA602"
+        },
+
+        {
+            "title": "Reduce post-harvest losses",
+            "color": "#2ECF8B"
+        },
+
+        {
+            "title": "Reduce the effect of climate change",
+            "color": "#0A697D"
+        },
+
+        {
+            "title": "Digitization of records",
+            "color": "#FFA602"
+        }
+    ]
+}

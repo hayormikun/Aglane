@@ -1,11 +1,11 @@
 import data from '../data/coreValues.json'
-import sdgs from '../data/sdgs.json'
 import React, { useState } from 'react'
 import { HtmlHead } from '../components/Head'
 import { Heading, MidHeading, SmallHeader } from '../components/Heading'
 import { AccordionItem } from '../components/AccordionItem'
 import Image from 'next/image'
 import { TargetedSdgs } from '../components/TargetedSdgs'
+import { PlanOfChange } from '../components/PlanOfChange'
 
 const About = () => {
   const [open, setOpen] = useState<number | boolean>(false)
@@ -62,7 +62,7 @@ const About = () => {
                 width={565}
                 height={423}
                 alt={'Vision image'}
-                className={"w-full"}
+                className={'w-full'}
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ const About = () => {
                 width={565}
                 height={423}
                 alt={'Mission image'}
-                className={"w-full"}
+                className={'w-full'}
               />
             </div>
             <div className="col-span-1">
@@ -89,9 +89,9 @@ const About = () => {
         </section>
 
         <section className="mt-[4.357rem] mb-[4.357rem]">
-        <MidHeading header={'CORE VALUES'} />
+          <MidHeading header={'CORE VALUES'} />
 
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
             {data &&
               data.data.map((val, index) => (
                 <div key={index}>
@@ -108,28 +108,55 @@ const About = () => {
           </div>
         </section>
 
+        <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
+          <SmallHeader header="Our Plan" />
+          <PlanOfChange />
+        </section>
+        <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            {' '}
+            <path
+              fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+              fill="#000000"
+            ></path>{' '}
+          </svg>
+        </div>
 
-
-        {/* <section className="">
-          <MidHeading header="OUR PLAN OF CHANGE" />
-          <div className="grid grid-cols-2">
-            {data &&
-              data.data.map((val, index) => (
-                <div key={index} className="col-span-1">
-                  <AccordionItem
-                    key={index}
-                    open={index === open}
-                    toggle={() => toggle(index)}
-                    title={val.title}
-                    description={val.description}
-                  />
-                </div>
-              ))}
+        <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
+          <SmallHeader header="To Result" />
+          <div className="flex flex-col mt-5 md:grid md:grid-flow-col md:gap-x-5 gap-3 w-auto h-full text-[#FCFCFC] text-xl font-medium font-quickSand">
+            <div className="h-full p-5 bg-[#5B9BD5] rounded-[10px]">
+              A community of primary producers that have all resources needed to
+              produce high yield for national and continental food sufficiency
+            </div>
           </div>
-        </section> */}
+        </section>
+        <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            {' '}
+            <path
+              fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+              fill="#000000"
+            ></path>{' '}
+          </svg>
+        </div>
 
-        <section className='border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5'>
-          <SmallHeader header='Targeted  SDGs' />
+        <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
+          <SmallHeader header="Targeted  SDGs" />
           <TargetedSdgs />
         </section>
 
@@ -164,7 +191,7 @@ const About = () => {
                 this wave of change and taken full advantage of the
                 opportunities. Our approach to Agribusiness focuses on utilizing
                 digital technology to create a fully integrated system that
-                supports farmers. 
+                supports farmers.
                 <span className={readMore ? 'flex' : 'hidden'}>
                   {' '}
                   I am thrilled to announce that our team of agricultural
@@ -194,9 +221,19 @@ const About = () => {
                   Thank you.”
                 </span>
                 {readMore ? (
-                  <button className='text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read less</button>
+                  <button
+                    className="text-xl font-light text-[#428821] outline-none"
+                    onClick={() => read()}
+                  >
+                    read less
+                  </button>
                 ) : (
-                  <button className='pl-3 md:pl-1 text-xl font-light text-[#428821] outline-none' onClick={()=>read()}>read more...</button>
+                  <button
+                    className="pl-3 md:pl-1 text-xl font-light text-[#428821] outline-none"
+                    onClick={() => read()}
+                  >
+                    read more...
+                  </button>
                 )}
               </article>
             </div>
