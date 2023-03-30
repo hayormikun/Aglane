@@ -26,9 +26,9 @@ const socialImpact = () => {
             data.data.map((impact, index) => (
               <div key={index}>
                 {index % 2 == 0 ? (
-                  <div className="flex flex-col-reverse lg:flex-row lg:gap-x-[6.5em] w-full mb-7">
-                    <div className="w-full bg-[#FCFCFC] mt-5 md:mt-0">
-                      <Image src={impact.pic} width={400} height={400} alt={impact.title} className={"w-full mx-auto"}/>
+                  <div className="flex flex-col-reverse lg:flex-row lg:gap-x-[5.625rem] w-full mb-7">
+                    <div className="w-full bg-[#FCFCFC] pt-5 md:pt-0">
+                      <Image src={impact.pic} width={280} height={280} alt={impact.title} className={"w-fit lg:w-full lg:h-full mx-auto"}/>
                     </div>
                     <div className="flex flex-col">
                       <h2 className="font-montserrat font-semibold text-xl md:text-[1.625rem] leading-[4.0625rem]">
@@ -38,15 +38,15 @@ const socialImpact = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex flex-col lg:flex-row lg:gap-x-[6.5em] w-full mb-7">
+                  <div className="flex flex-col lg:flex-row lg:gap-x-[5.625rem] w-full mb-7">
                     <div className="flex flex-col">
                       <h2 className="font-montserrat font-semibold text-xl md:text-[1.625rem] leading-[4.0625rem]">
                         {impact.title}
                       </h2>
                       <p className="font-quickSand font-normal text-2xl text-[#494949]">{impact.description}</p>
                     </div>
-                    <div className="w-full bg-[#FCFCFC] mt-5 md:mt-0">
-                      <Image src={impact.pic} width={400} height={400} alt={impact.title} className={"w-full mx-auto"}/>
+                    <div className="w-full bg-[#FCFCFC] pt-5 md:pt-0">
+                      <Image src={impact.pic} width={400} height={400} alt={impact.title} className={"w-fit lg:h-full mx-auto"}/>
                     </div>
                   </div>
                 )}
