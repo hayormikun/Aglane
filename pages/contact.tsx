@@ -31,7 +31,7 @@ type FormInputs = yup.InferType<typeof schema>
 
 const submitForm = async (data: FormValues): Promise<FormValues> => {
   console.log(data)
-  return await api.post("/message", data)
+  return await axios.post("http://localhost:5000/api/v1/message", data)
 }
 
 const Contact = () => {

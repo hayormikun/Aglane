@@ -5,7 +5,8 @@ import type { AppProps } from 'next/app'
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
 import { SessionProvider } from 'next-auth/react'
-import { QueryClient, QueryClientProvider } from 'react-query'
+import { Hydrate, QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import { useState } from 'react'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -13,9 +14,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <SessionProvider session={pageProps.session}>
     <QueryClientProvider client={queryClient} >
+    <Hydrate state={pageProps.dehydratedState} >
       <Navbar />
       <Component {...pageProps} />
       <Footer />
+    </Hydrate >
+    <ReactQueryDevtools /> 
     </QueryClientProvider>
     </SessionProvider>
   )
