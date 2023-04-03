@@ -32,7 +32,7 @@ const schema = yup.object().shape({
 type FormInputs = yup.InferType<typeof schema>
 
 const submitForm = async (data: FormValues): Promise<FormValues> => {
-  return await axios.post(`${process.env.BASE_URL}/opening`, data)
+  return await axios.post('http://localhost:5000/api/v1/opening', data)
 }
 
 const Create = () => {
@@ -101,7 +101,7 @@ const Create = () => {
                     htmlFor="designation"
                     className="form__label text-sm md:text-xl font-medium font-quickSand"
                   >
-                    Description
+                    Designation
                   </label>
                 </div>
                 {errors.designation && (
