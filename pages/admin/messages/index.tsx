@@ -3,7 +3,28 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { FaTrashAlt } from 'react-icons/fa'
 import { HtmlHead } from '../../../components/Head'
+import { dehydrate, QueryClient, useQuery } from 'react-query'
 import { HrMenu } from '../menu'
+import { IMessages } from '../../../interfaces/IMessages'
+import { Loading } from '../../../components/Loading'
+
+const fetchMessages = async () => {
+  const res = await fetch('http://localhost:5000/api/v1/messages')
+  const data = await res.json()
+  return data
+}
+
+export async function getServerSideProps() {
+  const queryClient = new QueryClient()
+
+  await queryClient.prefetchQuery<IMessages>('messages')
+
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  }
+}
 
 const Index = () => {
   const { status, data: session } = useSession()
@@ -12,6 +33,23 @@ const Index = () => {
   useEffect(() => {
     if (status === 'unauthenticated') router.replace('/api/auth/signin')
   }, [status, router])
+
+  const { data: messages, isLoading, isError, error } = useQuery(
+    'message',
+    fetchMessages,
+  )
+
+  if (isLoading) {
+    return (
+      <>
+        <Loading />
+      </>
+    )
+  }
+
+  if (isError) {
+    return alert(error)
+  }
 
   if (status === 'authenticated' && session) {
     return (
@@ -28,20 +66,25 @@ const Index = () => {
               </h1>
 
               <div className="flex flex-wrap gap-3 w-full text-[#494949] font-quickSand">
-                <div className="flex flex-col bg-[#EFEDFB] relative rounded-lg w-full p-3 lg:w-[15.625rem] h-auto">
-                  <div className="absolute right-3 bg-white text-[#428821] p-2 cursor-pointer tracking-wider shadow">
-                    <FaTrashAlt />
-                  </div>
-                  <div className="message text-ellipsis overflow-y-hidden ... h-24 m-5 w-fit font-normal">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Laudantium cumque pariatur enim voluptates? Facere a,
-                    repellendus qui ipsa molestiae ex ea expedita corrupti,
-                    quia, pariatur possimus omnis consequuntur ipsum mollitia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sit ab accusamus id expedita dolorem iure, ducimus vero. Aperiam magni ipsum distinctio saepe quasi? Ipsum quisquam consectetur et sequi placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione, maxime ut accusantium ea doloremque iste eum ad nisi non deserunt aliquid quas sapiente at saepe repellat recusandae. Voluptatem, repellat? Molestias nemo voluptates a necessitatibus ex veritatis animi reiciendis non neque. Qui iste autem ab odit tenetur itaque repudiandae similique unde ipsum?
-                  </div>
-                  
-                  <span className='mx-5 pt-2 border-t-2 border-gray-400 font-medium'> Favour Akomolafe</span>
-                </div>
+                {messages &&
+                  messages.map((message: IMessages) => (
+                    <div
+                      key={message.id}
+                      className="flex flex-col bg-[#EFEDFB] relative rounded-lg w-full p-3 lg:w-[15.625rem] h-auto"
+                    >
+                      <div className="absolute right-3 bg-white text-[#428821] p-2 cursor-pointer tracking-wider shadow">
+                        <FaTrashAlt />
+                      </div>
+                      <div className="message text-ellipsis overflow-y-hidden ... h-24 m-5 w-fit font-normal">
+                        {message.message}
+                      </div>
+
+                      <span className="mx-5 pt-2 border-t-2 border-gray-400 font-medium">
+                        {' '}
+                        {message.name}
+                      </span>
+                    </div>
+                  ))}
               </div>
             </section>
             <div className="mb-5 md:w-[18%] mx-auto">
