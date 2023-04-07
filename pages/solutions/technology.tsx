@@ -21,7 +21,7 @@ const technology = () => {
             the time inputs or commodities enter a warehouse until they move
             out. It is useful in accessing bank loans and farm inputs...{' '}
             <Link
-              href={'https://aglane-aggregator.com/'}
+              href={'https://aglane-aggregator.com/ltr'}
               target={'_blank'}
               className="font-medium text-[#428841] underline"
             >
