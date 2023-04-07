@@ -31,7 +31,7 @@ const technology = () => {
           </p>
 
           <div className="w-full flex justify-center pb-10">
-            <Link href={'https://aglane-aggregator.com/'} target={'_blank'}>
+            <Link href={'https://aglane-aggregator.com/ltr'} target={'_blank'}>
               <Image
                 src={'/assests/SVGs/solutions/Aglanegrator.svg'}
                 width={800}
