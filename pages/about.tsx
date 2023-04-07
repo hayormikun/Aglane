@@ -37,9 +37,9 @@ const About = () => {
           </p>
         </section>
 
-        <section className="flex flex-col gap-y-14">
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
-            <div className="col-span-1">
+        <section className="flex flex-col gap-y-20">
+          <div className="flex flex-col lg:flex-row w-full items-center gap-5 lg:gap-[8.75rem]">
+            <div className="w-fit">
               <MidHeading header={'OUR VISION'} />
 
               <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
@@ -56,28 +56,28 @@ const About = () => {
                 </span>
               </p>
             </div>
-            <div className="col-span-1">
+            <div className="w-fit">
               <Image
                 src={'/assests/SVGs/about/vision.svg'}
-                width={565}
-                height={423}
+                width={360}
+                height={360}
                 alt={'Vision image'}
-                className={'w-full'}
+                className='w-full h-full'
               />
             </div>
           </div>
 
-          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5">
-            <div className="col-span-1">
+          <div className="flex flex-col-reverse lg:flex-row items-center w-full gap-5 lg:gap-[4.69rem]">
+            <div className="w-fit">
               <Image
                 src={'/assests/SVGs/about/mission.svg'}
-                width={565}
-                height={423}
+                width={280}
+                height={280}
                 alt={'Mission image'}
-                className={'w-full'}
+                className='w-full h-full'
               />
             </div>
-            <div className="col-span-1">
+            <div className="w-fit">
               <MidHeading header={'OUR MISSION'} />
               <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
                 To produce quality agricultural commodities using improved
