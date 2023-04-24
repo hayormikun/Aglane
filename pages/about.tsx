@@ -166,7 +166,7 @@ const About = () => {
           <div className="flex flex-col lg:grid lg:grid-cols-[23.75rem_auto] gap-7 w-full mb-7">
             <div className="col-span-[23.75rem] bg-[#FCFCFC] mx-auto mt-5 md:mt-0">
               <Image
-                src={'/assests/SVGs/team/managingPartner.svg'}
+                src={'/assests/SVGs/team/managingPartner.png'}
                 width={360}
                 height={360}
                 alt={'Managing Partner'}
