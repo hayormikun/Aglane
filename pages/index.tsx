@@ -6,7 +6,6 @@ import data from '../data/services.json'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Affiliates } from '../components/Affiliates'
-import { useSession } from 'next-auth/react'
 
 export default function Home() {
   const [open, setOpen] = useState<number | boolean>(false)

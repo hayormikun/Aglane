@@ -20,13 +20,14 @@ const index = () => {
             <MidHeading header="Current Openings" />
           </div>
           <div className="flex flex-col gap-5 pb-20">
-            <Opening
+            {/* <Opening
               designation="Finance Officer"
               mode="on-site"
               location="Abuja"
               appointment="Full-time"
               link="https://ng.indeed.com/job/finance-officer-ed5203e575047570?_ga=2.145256560.573211784.1679914999-849307790.1667566874"
-            />
+            /> */}
+            No openings at the moment.
           </div>
         </section>
       </main>

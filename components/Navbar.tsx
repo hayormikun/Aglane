@@ -119,14 +119,14 @@ export const Navbar = () => {
                     Our Team
                   </Link>
                 </li>
-                {/* <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
                     href="/careers"
                     className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                   >
                     Careers
                   </Link>
-                </li> */}
+                </li>
 
                 <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
@@ -180,12 +180,29 @@ export const Navbar = () => {
                       >
                         <Link href="impact/social">
                           <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
-                            <span>Impact</span>
+                            <span>Social Impact</span>
                           </div>
                         </Link>
                       </div>
                     )}
                   </Menu.Item>
+
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="impact/numbers">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Impact in Numbers</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+
                   <Menu.Item>
                     {({ active }) => (
                       <div
@@ -217,7 +234,7 @@ export const Navbar = () => {
                     )}
                   </Menu.Item>
 
-                  {/* <Menu.Item>
+                  <Menu.Item>
                     {({ active }) => (
                       <div
                         className={`${
@@ -231,7 +248,7 @@ export const Navbar = () => {
                         </Link>
                       </div>
                     )}
-                  </Menu.Item> */}
+                  </Menu.Item>
 
                   <Menu.Item>
                     {({ active }) => (
