@@ -6,7 +6,7 @@ const index = () => {
   return (
     <>
       <HtmlHead title="Careers" />
-      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full min-h-screen color-[#3A3A3A]">
+      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 cropBg w-full min-h-screen color-[#3A3A3A]">
         <Heading header="CAREERS - Build your Career with AgLane!" />
         <p className="font-quickSand text-xl text-[#3A3A3A] pb-10">
           Aglane creates an opportunity for impact as an intern, graduate or a

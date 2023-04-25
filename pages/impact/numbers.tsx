@@ -11,10 +11,11 @@ const Numbers = () => {
   return (
     <>
       <HtmlHead title="Impact in Numbers" />
-      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full text-[#3A3A3A]">
-        <Heading header="Impact in Figures" />
+      <main className="pt-40 mb-0 w-full h-full text-[#3A3A3A]">
+        
 
-        <div className="w-full">
+        <section className="w-full px-3 lg:px-[6.25rem] pb-6">
+        <Heading header="Impact in Figures" />
           <ul className="flex flex-col gap-y-5 w-fit text-xl md:text-2xl font-quickSand font-medium">
             <li>Farmers Engaged 73,769+</li>
             <li>Hectares Cultivated 81,246+</li>
@@ -26,9 +27,9 @@ const Numbers = () => {
               Cassava, Melon
             </li>
           </ul>
-        </div>
+        </section>
 
-        <section className="mt-10 pb-48 w-full">
+        <section className="p-3 lg:pt-10 lg:px-[6.25rem] pb-48 cropBg w-full">
           <Heading header="Impact in Figures" />
           <p className="font-quickSand font-medium text-xl md:text-2xl w-fit mb-10">
             States we have impacted:{' '}

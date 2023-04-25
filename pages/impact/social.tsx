@@ -7,10 +7,10 @@ const socialImpact = () => {
   return (
     <>
       <HtmlHead title="Social Impact" />
-      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full">
+      <main className="pt-40 mb-0 w-full h-full">
+        <section className='px-3 lg:px-[6.25rem]'>
         <Heading header="Social Impact" />
 
-        <section>
           <p className="font-quickSand text-xl md:text-2xl text-[#494949] pb-10">
             Our major social impact as operators in the Agribusiness space is
             enhancing a sustainable and effective food system, which includes
@@ -26,8 +26,8 @@ const socialImpact = () => {
             data.data.map((impact, index) => (
               <div key={index}>
                 {index % 2 == 0 ? (
-                  <div className="flex flex-col-reverse lg:flex-row lg:gap-x-[5.625rem] w-full mb-7">
-                    <div className="w-full bg-[#FCFCFC] pt-5 md:pt-0">
+                  <div className="flex flex-col-reverse lg:flex-row lg:gap-x-[5.625rem] w-full p-3 lg:px-[6.25rem] lg:pt-5 pb-6 mb-7 cropBg">
+                    <div className="w-full pt-5 md:pt-0">
                       <Image src={impact.pic} width={280} height={280} alt={impact.title} className={"w-fit lg:w-full lg:h-full mx-auto"}/>
                     </div>
                     <div className="flex flex-col">
@@ -38,7 +38,7 @@ const socialImpact = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex flex-col lg:flex-row lg:gap-x-[5.625rem] w-full mb-7">
+                  <div className="flex flex-col lg:flex-row lg:gap-x-[5.625rem] p-3 lg:px-[6.25rem] w-full mb-7">
                     <div className="flex flex-col">
                       <h2 className="font-montserrat font-semibold text-xl md:text-[1.625rem] leading-[4.0625rem]">
                         {impact.title}

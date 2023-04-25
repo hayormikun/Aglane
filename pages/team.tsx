@@ -10,7 +10,7 @@ const Team = () => {
   return (
     <>
       <HtmlHead title="Meet the Team" />
-      <main className="pt-40 px-3 lg:px-[3.125rem] mb-0 w-full h-full">
+      <main className="pt-40 px-3 lg:px-[3.125rem] mb-0 cropBg w-full h-full">
         <section>
           <Heading header="Management" />
 

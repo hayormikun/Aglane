@@ -1,30 +1,30 @@
-import data from '../data/coreValues.json'
-import React, { useState } from 'react'
-import { HtmlHead } from '../components/Head'
-import { Heading, MidHeading, SmallHeader } from '../components/Heading'
-import { AccordionItem } from '../components/AccordionItem'
-import Image from 'next/image'
-import { TargetedSdgs } from '../components/TargetedSdgs'
-import { PlanOfChange } from '../components/PlanOfChange'
+import data from "../data/coreValues.json";
+import React, { useState } from "react";
+import { HtmlHead } from "../components/Head";
+import { Heading, MidHeading, SmallHeader } from "../components/Heading";
+import { AccordionItem } from "../components/AccordionItem";
+import Image from "next/image";
+import { TargetedSdgs } from "../components/TargetedSdgs";
+import { PlanOfChange } from "../components/PlanOfChange";
 
 const About = () => {
-  const [open, setOpen] = useState<number | boolean>(false)
-  const [readMore, setReadMore] = useState(false)
+  const [open, setOpen] = useState<number | boolean>(false);
+  const [readMore, setReadMore] = useState(false);
 
   const toggle = (index: number) => {
-    if (open === index) return setOpen(false)
-    setOpen(index)
-  }
+    if (open === index) return setOpen(false);
+    setOpen(index);
+  };
 
   const read = () => {
-    setReadMore(!readMore)
-  }
+    setReadMore(!readMore);
+  };
 
   return (
     <>
       <HtmlHead title="About Us" />
-      <main className="pt-40 px-3 lg:px-[6.25rem] mb-0 w-full h-full">
-        <section className="mb-[4.357rem]">
+      <main className="pt-40 mb-0 w-full h-full">
+        <section className="px-3 lg:px-[6.25rem] mb-[4.357rem]">
           <Heading header="About Us" />
           <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
             We are a social enterprise engaged in climate-smart agriculture,
@@ -38,9 +38,9 @@ const About = () => {
         </section>
 
         <section className="flex flex-col gap-y-20">
-          <div className="flex flex-col lg:flex-row w-full items-center gap-5 lg:gap-[8.75rem]">
+          <div className="flex flex-col lg:flex-row w-full items-center gap-5 p-3 lg:px-[6.25rem] lg:pt-[3.125rem] lg:pb-6 lg:gap-[8.75rem] cropBg">
             <div className="w-fit">
-              <MidHeading header={'OUR VISION'} />
+              <MidHeading header={"OUR VISION"} />
 
               <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
                 To become a leading investor in the agribusiness space by
@@ -58,27 +58,27 @@ const About = () => {
             </div>
             <div className="w-fit">
               <Image
-                src={'/assests/SVGs/about/vision.svg'}
+                src={"/assests/SVGs/about/vision.svg"}
                 width={360}
                 height={360}
-                alt={'Vision image'}
-                className='w-full h-full'
+                alt={"Vision image"}
+                className="w-full h-full"
               />
             </div>
           </div>
 
-          <div className="flex flex-col-reverse lg:flex-row items-center w-full gap-5 lg:gap-[4.69rem]">
+          <div className="flex flex-col-reverse lg:flex-row items-center w-full gap-5 p-3 lg:px-[6.25rem] lg:pt-[2.69rem] lg:pb-6 lg:gap-[4.69rem]">
             <div className="w-fit">
               <Image
-                src={'/assests/SVGs/about/mission.svg'}
+                src={"/assests/SVGs/about/mission.svg"}
                 width={280}
                 height={280}
-                alt={'Mission image'}
-                className='w-full h-full'
+                alt={"Mission image"}
+                className="w-full h-full"
               />
             </div>
             <div className="w-fit">
-              <MidHeading header={'OUR MISSION'} />
+              <MidHeading header={"OUR MISSION"} />
               <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
                 To produce quality agricultural commodities using improved
                 production systems, value addition and marketing innovations for
@@ -88,8 +88,8 @@ const About = () => {
           </div>
         </section>
 
-        <section className="mt-[4.357rem] mb-[4.357rem]">
-          <MidHeading header={'CORE VALUES'} />
+        <section className="mt-[4.357rem] p-3 lg:pt-5 lg:px-[6.25rem] lg:pb-6 mb-[4.357rem] cropBg">
+          <MidHeading header={"CORE VALUES"} />
 
           <div className="flex flex-col md:grid md:grid-cols-2 gap-5">
             {data &&
@@ -108,81 +108,100 @@ const About = () => {
           </div>
         </section>
 
-        <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
-          <SmallHeader header="Our Plan" />
-          <PlanOfChange />
-        </section>
-        <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            {' '}
-            <path
-              fill-rule="evenodd"
-              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-              fill="#000000"
-            ></path>{' '}
-          </svg>
-        </div>
+        <div className="p-3 lg:px-[6.25rem] lg:pt-[2.69rem] lg:pb-6">
+          <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
+            <SmallHeader header="Our Plan" />
+            <PlanOfChange />
+          </section>
 
-        <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
-          <SmallHeader header="To Result" />
-          <div className="mt-5 w-full h-full text-[#FCFCFC] text-xl font-medium font-quickSand">
-            <div className="h-full p-5 bg-[#5B9BD5] rounded-[10px]">
-              A community of primary producers that have all resources needed to
-              produce high yield for national and continental food sufficiency
-            </div>
+          <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
+            <svg
+              width="62"
+              height="62"
+              viewBox="0 0 62 62"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1"
+                y="61"
+                width="60"
+                height="60"
+                rx="30"
+                transform="rotate(-90 1 61)"
+                fill="#FCFCFC"
+                stroke="#3A3A3A"
+              />
+              <path
+                d="M33.0013 41.1225L36.7188 37.2521C36.8079 37.1591 36.8786 37.0485 36.9269 36.9267C36.9751 36.8048 37 36.6741 37 36.542C37 36.41 36.9751 36.2793 36.9269 36.1574C36.8786 36.0355 36.8079 35.9249 36.7188 35.832C36.5406 35.6457 36.2997 35.5411 36.0485 35.5411C35.7973 35.5411 35.5563 35.6457 35.3782 35.832L31.965 39.3924L31.965 19.0001C31.965 18.7349 31.8648 18.4805 31.6865 18.2929C31.5082 18.1054 31.2664 18 31.0143 18V18C30.7621 18 30.5203 18.1054 30.342 18.2929C30.1637 18.4805 30.0635 18.7349 30.0635 19.0001L30.0635 39.4524L26.6313 35.832C26.5429 35.7382 26.4378 35.6638 26.3219 35.613C26.206 35.5623 26.0818 35.5361 25.9563 35.5361C25.8308 35.5361 25.7065 35.5623 25.5906 35.613C25.4748 35.6638 25.3696 35.7382 25.2812 35.832C25.1921 35.9249 25.1214 36.0355 25.0731 36.1574C25.0248 36.2793 25 36.41 25 36.542C25 36.6741 25.0248 36.8048 25.0731 36.9267C25.1214 37.0485 25.1921 37.1591 25.2812 37.2521L28.9701 41.1225C29.5049 41.6844 30.2299 42 30.9857 42C31.7416 42 32.4665 41.6844 33.0013 41.1225Z"
+                fill="#428821"
+              />
+            </svg>
           </div>
-        </section>
-        <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            {' '}
-            <path
-              fill-rule="evenodd"
-              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-              fill="#000000"
-            ></path>{' '}
-          </svg>
+
+          <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
+            <SmallHeader header="To Result" />
+            <div className="mt-5 w-full h-full text-[#FCFCFC] text-xl font-medium font-quickSand">
+              <div className="h-full p-5 bg-[#5B9BD5] rounded-[10px]">
+                A community of primary producers that have all resources needed
+                to produce high yield for national and continental food
+                sufficiency
+              </div>
+            </div>
+          </section>
+          <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
+            <svg
+              width="62"
+              height="62"
+              viewBox="0 0 62 62"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1"
+                y="61"
+                width="60"
+                height="60"
+                rx="30"
+                transform="rotate(-90 1 61)"
+                fill="#FCFCFC"
+                stroke="#3A3A3A"
+              />
+              <path
+                d="M33.0013 41.1225L36.7188 37.2521C36.8079 37.1591 36.8786 37.0485 36.9269 36.9267C36.9751 36.8048 37 36.6741 37 36.542C37 36.41 36.9751 36.2793 36.9269 36.1574C36.8786 36.0355 36.8079 35.9249 36.7188 35.832C36.5406 35.6457 36.2997 35.5411 36.0485 35.5411C35.7973 35.5411 35.5563 35.6457 35.3782 35.832L31.965 39.3924L31.965 19.0001C31.965 18.7349 31.8648 18.4805 31.6865 18.2929C31.5082 18.1054 31.2664 18 31.0143 18V18C30.7621 18 30.5203 18.1054 30.342 18.2929C30.1637 18.4805 30.0635 18.7349 30.0635 19.0001L30.0635 39.4524L26.6313 35.832C26.5429 35.7382 26.4378 35.6638 26.3219 35.613C26.206 35.5623 26.0818 35.5361 25.9563 35.5361C25.8308 35.5361 25.7065 35.5623 25.5906 35.613C25.4748 35.6638 25.3696 35.7382 25.2812 35.832C25.1921 35.9249 25.1214 36.0355 25.0731 36.1574C25.0248 36.2793 25 36.41 25 36.542C25 36.6741 25.0248 36.8048 25.0731 36.9267C25.1214 37.0485 25.1921 37.1591 25.2812 37.2521L28.9701 41.1225C29.5049 41.6844 30.2299 42 30.9857 42C31.7416 42 32.4665 41.6844 33.0013 41.1225Z"
+                fill="#428821"
+              />
+            </svg>
+          </div>
+
+          <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
+            <SmallHeader header="Targeted  SDGs" />
+            <TargetedSdgs />
+          </section>
         </div>
+        <section className="p-3 mt-[4.357rem] pb-[4.357rem] lg:px-[6.25rem] lg:pt-[2.69rem] cropBg">
+          <MidHeading header={"MANAGING PARTNER’S ADDRESS"} />
 
-        <section className="border border-[#D5D5D5] bg-[#FCFCFC] w-full rounded-[20px] p-5 h-full">
-          <SmallHeader header="Targeted  SDGs" />
-          <TargetedSdgs />
-        </section>
-
-        <section className="mt-[4.357rem] pb-[4.357rem]">
-          <MidHeading header={'MANAGING PARTNER’S ADDRESS'} />
-
-          <div className="flex flex-col lg:grid lg:grid-cols-[23.75rem_auto] gap-7 w-full mb-7">
-            <div className="col-span-[23.75rem] bg-[#FCFCFC] mx-auto mt-5 md:mt-0">
+          <div className="flex flex-col lg:grid lg:grid-cols-[18.75rem_auto] gap-7 w-full mb-7">
+            <div className="col-span-[18.75rem] mx-auto mt-5 md:mt-0">
               <Image
-                src={'/assests/SVGs/team/managingPartner.png'}
-                width={360}
-                height={360}
-                alt={'Managing Partner'}
+                src={"/assests/SVGs/team/managingPartner.png"}
+                width={300}
+                height={300}
+                alt={"Managing Partner"}
               />
 
               <div className="flex flex-col text-center w-full">
-                <h3 className="text-[1.875rem] leading-[2.29em] font-montserrat font-semibold text-[#428821]">
+                <h3 className="text-2xl leading-[2.29em] font-montserrat font-semibold text-[#428821]">
                   Olusola Omole, FCA
                 </h3>
-                <span className="font-quickSand font-normal text-2xl">
+                <span className="font-quickSand font-medium text-xl">
                   Managing Partner
                 </span>
               </div>
             </div>
             <div className="flex flex-col">
-              <article className="font-quickSand text-xl md:text-[1.625rem] leading-[3.5rem] font-normal text-[#494949]">
+              <article className="font-quickSand text-xl md:text-2xl leading-10 font-medium text-[#494949]">
                 “Agribusiness is undergoing a major transformation as advances
                 in technology continue to revolutionize the ecosystem. From
                 digital agriculture to precision and climate-smart agriculture,
@@ -192,8 +211,8 @@ const About = () => {
                 opportunities. Our approach to Agribusiness focuses on utilizing
                 digital technology to create a fully integrated system that
                 supports farmers.
-                <span className={readMore ? 'flex' : 'hidden'}>
-                  {' '}
+                <span className={readMore ? "flex" : "hidden"}>
+                  {" "}
                   I am thrilled to announce that our team of agricultural
                   experts is leveraging new and cutting-edge technology,
                   automation, and digital tools to improve the efficiency of our
@@ -216,20 +235,20 @@ const About = () => {
                   are driven by innovation to provide you with the needed tools
                   to run a productive agribusiness. We are excited to continue
                   working together with our existing and prospective customers
-                  to make agriculture more successful and sustainable. <br />{' '}
+                  to make agriculture more successful and sustainable. <br />{" "}
                   <br />
                   Thank you.”
                 </span>
                 {readMore ? (
                   <button
-                    className="text-xl font-light text-[#428821] outline-none"
+                    className="text-xl font-medium text-[#428821] outline-none"
                     onClick={() => read()}
                   >
                     read less
                   </button>
                 ) : (
                   <button
-                    className="pl-3 md:pl-1 text-xl font-light text-[#428821] outline-none"
+                    className="pl-3 md:pl-1 text-xl font-medium text-[#428821] outline-none"
                     onClick={() => read()}
                   >
                     read more...
@@ -241,7 +260,7 @@ const About = () => {
         </section>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
