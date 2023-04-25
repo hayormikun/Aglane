@@ -7,7 +7,7 @@ type HeadProps = {
 export const HtmlHead = ({ title }: HeadProps) => {
   return (
     <Head>
-      <title>{title ? `Aglane - ${title}` : 'Aglane Website'}</title>
+      <title>{title ? `Aglane - ${title}` : 'Aglane Nigeria Limited'}</title>
       <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
       <meta
         name="description"
@@ -15,7 +15,7 @@ export const HtmlHead = ({ title }: HeadProps) => {
       />
       <meta
         name="keywords"
-        content="Sustainable food systems, Sufficiency, Food security in Nigeria, Primary production, Aggregation, Commodity trading, Agribusiness in Nigeria, Agritech, Morden Agriculture in Africa, Agribusiness in Africa, Agribusiness in sub-sahara, Farmers, Farmers registration, Farmers validation "
+        content="Aglane Nigeria Limited, Agriculture, Sustainable food systems, Sufficiency, Food security in Nigeria, Primary production, Aggregation, Commodity trading, Agribusiness in Nigeria, Agritech, Morden Agriculture in Africa, Agribusiness in Africa, Agribusiness in sub-sahara, Farmers, Farmers registration, Farmers validation "
       />
       <meta name="author" content="Aglane Nigeria Limited" />
       <meta

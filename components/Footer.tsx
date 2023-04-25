@@ -74,7 +74,7 @@ export const Footer = () => {
 
       
       <h3 className="flex flex-row w-full font-semibold font-montserrat text-[#3A3A3A] justify-center md:justify-start py-3">
-        Aglane Nigeria Ltd <span className="mx-1 h-3 w-3"> &copy; </span> {year}
+        Aglane Nigeria Limited <span className="mx-1 h-3 w-3"> &copy; </span> {year}
       </h3>
     </footer>
   )
