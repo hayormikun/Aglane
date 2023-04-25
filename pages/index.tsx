@@ -60,8 +60,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="px-3 md:px-[4.375rem] w-full">
-          <section className="mt-[1.875rem] pt-12">
+        <div className="px-3 md:px-[4.375rem] cropBg w-full">
+          <section className="pt-20">
             <Heading header={'What we do'} />
             <div className="flex flex-col md:grid md:grid-cols-3 w-full gap-4 md:gap-[3.125em] mb-10">
               {data &&
@@ -86,7 +86,7 @@ export default function Home() {
                   </div>
                 ))}
             </div>
-            <div className="mx-[2rem] font-normal font-quickSand md:text-2xl md:leading-10">
+            <div className="mx-[2rem] pb-6 font-normal font-quickSand md:text-2xl md:leading-10">
               <h3 className="mb-5 text-[#494949]">
                 In addition Aglane provides the following services
               </h3>
@@ -100,12 +100,16 @@ export default function Home() {
               </ul>
             </div>
           </section>
+        </div>
 
+        <div className="px-3 md:px-[4.375rem] w-full">
           <section className="mt-[1.875rem] pt-12">
             <Heading header={'Testimonials'} />
             <Testimonials />
           </section>
+        </div>
 
+        <div className="px-3 md:px-[4.375rem] cropBg w-full">
           <section className="mt-[1.875rem] pt-12 pb-10">
             <Heading header={'Clients and affiliates'} />
 
