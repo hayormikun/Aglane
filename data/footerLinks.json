@@ -35,8 +35,12 @@
             "link": "/about"
         },
         {
-            "name": "Our Impact",
+            "name": "Social Impact",
             "link": "/impact/social"
+        },
+        {
+            "name": "Impact in Numbers",
+            "link": "/impact/numbers"
         },
         {
             "name": "Our Solutions",
@@ -45,6 +49,10 @@
         {
             "name": "Our Team",
             "link": "/team"
+        },
+        {
+            "name": "Careers",
+            "link": "/careers"
         },
         {
             "name": "Contact Us",
