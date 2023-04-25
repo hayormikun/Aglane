@@ -6,6 +6,7 @@ import { AccordionItem } from "../components/AccordionItem";
 import Image from "next/image";
 import { TargetedSdgs } from "../components/TargetedSdgs";
 import { PlanOfChange } from "../components/PlanOfChange";
+import Banner from "../components/Banner";
 
 const About = () => {
   const [open, setOpen] = useState<number | boolean>(false);
@@ -23,19 +24,13 @@ const About = () => {
   return (
     <>
       <HtmlHead title="About Us" />
-      <main className="pt-40 mb-0 w-full h-full">
-        <section className="px-3 lg:px-[6.25rem] mb-[4.357rem]">
-          <Heading header="About Us" />
-          <p className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#494949]">
-            We are a social enterprise engaged in climate-smart agriculture,
-            specializing in end-to-end agricultural primary production, farmer
-            and produce aggregation, and commodity trading for sustainable food
-            systems. Our strategy focuses on increasing agricultural
-            productivity and income sustainably, adapting to and strengthening
-            resilience to climate change, and reducing and/or removing
-            greenhouse gas emissions where possible.
-          </p>
-        </section>
+      <main className="pt-28 mb-0 w-full h-full">
+     
+          <Banner
+            header="About Us"
+            info="We are a social enterprise engaged in climate-smart agriculture, specializing in end-to-end agricultural primary production, farmer and produce aggregation, and commodity trading for sustainable food systems. Our strategy focuses on increasing agricultural productivity and income sustainably, adapting to and strengthening resilience to climate change, and reducing and/or removing greenhouse gas emissions where possible."
+            img = {"/assests/SVGs/about/About_Us.svg"}
+          />
 
         <section className="flex flex-col gap-y-20">
           <div className="flex flex-col lg:flex-row w-full items-center gap-5 p-3 lg:px-[6.25rem] lg:pt-[3.125rem] lg:pb-6 lg:gap-[8.75rem] cropBg">

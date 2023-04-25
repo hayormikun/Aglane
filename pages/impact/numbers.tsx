@@ -3,6 +3,7 @@ import { number } from 'yup'
 import { HtmlHead } from '../../components/Head'
 import { Heading } from '../../components/Heading'
 import data from '../../data/stateImpacts.json'
+import Banner from '../../components/Banner'
 
 const Numbers = () => {
   const [show, setShow] = useState(false)
@@ -11,24 +12,26 @@ const Numbers = () => {
   return (
     <>
       <HtmlHead title="Impact in Numbers" />
-      <main className="pt-40 mb-0 w-full h-full text-[#3A3A3A]">
+      <main className="pt-28 mb-0 w-full h-full text-[#3A3A3A]">
         
-
-        <section className="w-full px-3 lg:px-[6.25rem] pb-6">
-        <Heading header="Impact in Figures" />
-          <ul className="flex flex-col gap-y-5 w-fit text-xl md:text-2xl font-quickSand font-medium">
-            <li>Farmers Engaged 73,769+</li>
-            <li>Hectares Cultivated 81,246+</li>
-            <li>Commodities produced and traded in MT 171,465+</li>
-            <li>Jobs Created 727+</li>
-            <li>Communities Impacted 32+</li>
-            <li>
-              Commodities produced and traded: Wheat, Soybeans, Rice, Maize,
-              Cassava, Melon
-            </li>
-          </ul>
-        </section>
-
+        <Banner
+            header="Impact in Figures"
+            info= {
+              <ul className="flex flex-col gap-y-5 w-fit text-xl md:text-2xl font-quickSand font-medium">
+              <li>Farmers Engaged 73,769+</li>
+              <li>Hectares Cultivated 81,246+</li>
+              <li>Commodities produced and traded in MT 171,465+</li>
+              <li>Jobs Created 727+</li>
+              <li>Communities Impacted 32+</li>
+              <li>
+                Commodities produced and traded: Wheat, Soybeans, Rice, Maize,
+                Cassava, Melon
+              </li>
+            </ul>
+            }
+           img = {"/assests/SVGs/Impacts/NumbersImpact.svg"}
+          />
+    
         <section className="p-3 lg:pt-10 lg:px-[6.25rem] pb-48 cropBg w-full">
           <Heading header="Impact in Figures" />
           <p className="font-quickSand font-medium text-xl md:text-2xl w-fit mb-10">
