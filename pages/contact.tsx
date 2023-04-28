@@ -161,6 +161,7 @@ const Contact = () => {
               <div className="w-full">
                 {isLoading ? (
                   <button
+                    disabled
                     type="submit"
                     className="flex items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
@@ -168,6 +169,7 @@ const Contact = () => {
                   </button>
                 ) : (
                   <button
+                    disabled
                     type="submit"
                     className="flex flex-row gap-x-4 items-center shadow-lg justify-center bg-[#428821] hover:bg-[#346c1a] outline-none rounded-md tracking-wider cursor-pointer px-5 py-3 w-full text-white text-lg font-medium"
                   >
