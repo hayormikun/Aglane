@@ -34,7 +34,7 @@ const technology = () => {
                 </p>
               </div>
             }
-            img={"/assests/SVGs/solutions/Our_Technology.svg"}
+            img={"/assests/SVGs/solutions/Our_Technology.png"}
           />
 
           <div className="w-full p-3 lg:px-[6.25rem] flex justify-center cropBg lg:pb-6">
