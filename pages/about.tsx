@@ -29,7 +29,7 @@ const About = () => {
           <Banner
             header="About Us"
             info="We are a social enterprise engaged in climate-smart agriculture, specializing in end-to-end agricultural primary production, farmer and produce aggregation, and commodity trading for sustainable food systems. Our strategy focuses on increasing agricultural productivity and income sustainably, adapting to and strengthening resilience to climate change, and reducing and/or removing greenhouse gas emissions where possible."
-            img = {"/assests/SVGs/about/About_Us.svg"}
+            img = {"/assests/SVGs/about/About_Us.png"}
           />
 
         <section className="flex flex-col gap-y-20">

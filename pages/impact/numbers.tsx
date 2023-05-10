@@ -15,7 +15,7 @@ const Numbers = () => {
       <main className="pt-28 mb-0 w-full h-full text-[#3A3A3A]">
         
         <Banner
-            header="Impact in Figures"
+            header="Impact in Numbers"
             info= {
               <ul className="flex flex-col gap-y-5 w-fit text-xl md:text-2xl font-quickSand font-medium">
               <li>Farmers Engaged 73,769+</li>
@@ -29,11 +29,11 @@ const Numbers = () => {
               </li>
             </ul>
             }
-           img = {"/assests/SVGs/Impacts/NumbersImpact.svg"}
+           img = {"/assests/SVGs/Impacts/NumbersImpact.png"}
           />
     
         <section className="p-3 lg:pt-10 lg:px-[6.25rem] pb-48 cropBg w-full">
-          <Heading header="Impact in Figures" />
+          <Heading header="Impact per State" />
           <p className="font-quickSand font-medium text-xl md:text-2xl w-fit mb-10">
             States we have impacted:{' '}
           </p>

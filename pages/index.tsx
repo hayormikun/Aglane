@@ -20,7 +20,7 @@ export default function Home() {
       <HtmlHead title="Building Sustainable Food Systems Across Sub-Saharan Africa" />
       <main className="pt-[7rem] mb-0 w-full h-full">
         <section id="homeCaption">
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 mt-0 pt-[3.125em] pb-[4.8125em]">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 mt-0 pt-[2.5rem] pb-[2.5rem]">
             <div className="col-span-1 flex-col mx-[3.125em]">
               <p className="font-montserrat font-bold text-white text-2xl md:text-5xl md:leading-[4.0625rem]">
                 Building Sustainable Food Systems Across Sub-Saharan Africa

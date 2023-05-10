@@ -18,7 +18,7 @@ const socialImpact = () => {
             more prosperous nation. As a measure of social impact, some
             sustainable development goals that our work touches on are SDG 1, 2,
             5, 8, 9, 12 and 13."
-          img="/assests/SVGs/Impacts/Social_Impact.svg"
+          img="/assests/SVGs/Impacts/Social_Impact.png"
         />
 
         <section className="pb-10">

@@ -11,7 +11,7 @@ type BannerPropsType = {
 
 const Banner = ({ header, info, img }:  BannerPropsType) => {
   return (
-    <section className="px-3 lg:px-[6.25rem]" style={{ backgroundImage: `url(${img})`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat",  backgroundColor: "#428821", width: "100%", paddingTop: "1rem", paddingBottom: "1rem"}}>
+    <section className="px-3 lg:px-[6.25rem]" style={{ backgroundImage: `url(${img})`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat",  backgroundColor: "#428821", width: "100%", height: "auto", paddingTop: "3rem", paddingBottom: "2rem"}}>
       <h1 className="text-3xl mx-auto font-montserrat font-semibold text-[#FCFCFC] uppercase w-full mb-[1.875rem]">
         {header}
       </h1>
