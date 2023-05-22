@@ -12,6 +12,17 @@
         {
             "icon": "/assests/SVGs/What We Do Icons/market.svg",
             "title": "Commodity Trading"
+        },
+        {
+
+            "icon": "/assests/SVGs/What We Do Icons/renewableEnergy.svg",
+
+            "title": "Renewable Energy"
+
+        },
+        {
+            "icon": "/assests/SVGs/What We Do Icons/collateralManagement.svg",
+            "title": "Collateral Management"
         }
     ],
 
