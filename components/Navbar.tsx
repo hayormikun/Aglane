@@ -178,7 +178,7 @@ export const Navbar = () => {
                           active ? ' text-[#428821] bg-gray-200' : ''
                         }  w-full py-2`}
                       >
-                        <Link href="impact/social">
+                        <Link href="/impact/social">
                           <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
                             <span>Social Impact</span>
                           </div>
@@ -194,7 +194,7 @@ export const Navbar = () => {
                           active ? ' text-[#428821] bg-gray-200' : ''
                         }  w-full py-2`}
                       >
-                        <Link href="impact/numbers">
+                        <Link href="/impact/numbers">
                           <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
                             <span>Impact in Numbers</span>
                           </div>
