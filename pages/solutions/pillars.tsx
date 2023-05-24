@@ -29,7 +29,7 @@ const pillars = () => {
                   <div className="flex flex-col-reverse lg:flex-row lg:gap-x-[5.625rem] w-full p-3 lg:px-[6.25rem] lg:pt-5 pb-6 mb-7 cropBg">
                     <div className="w-full pt-5 md:pt-0">
                       <Image
-                        src={impact.pic}
+                        src={pillar.pic}
                         width={500}
                         height={5000}
                         alt={pillar.title}
@@ -57,7 +57,7 @@ const pillars = () => {
                     </div>
                     <div className="w-full bg-[#FCFCFC] pt-5 md:pt-0">
                       <Image
-                        src={impact.pic}
+                        src={pillar.pic}
                         width={500}
                         height={500}
                         alt={pillar.title}
