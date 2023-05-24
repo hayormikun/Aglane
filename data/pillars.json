@@ -1,30 +1,30 @@
 {
     "data": [{
             "title": "End-to-end Agricultural Primary Production",
-            "description": "This pillar is focused on offering novel solutions to improve farming practices and assist smallholder farmers including women and youth in becoming financially viable agricultural commodity providers.\\nWith climate change impacting harvest predictability and the viability of several regional crops, we practice and promote climate-smart and sustainable agriculture following SDG 2. ",
+            "description": "This pillar is focused on offering novel solutions to improve farming practices and assist smallholder farmers including women and youth in becoming financially viable agricultural commodity providers.\nWith climate change impacting harvest predictability and the viability of several regional crops, we practice and promote climate-smart and sustainable agriculture following SDG 2. ",
             "pic": "/assests/SVGs/primaryProduction.png"
         },
 
         {
             "title": "Farmer and Produce Aggregation",
-            "description": "Farmer Aggregation: Through our solution “Aglanegrator” developed to onboard farmers for on-lending, monitoring of end-to-end primary production and ensuring the traceability of inputs and produce, we offer solutions around the challenges of obtaining reliable and accurate data on smallholder farmers.\\n\\nProduce Aggregation: Through our wide network of farmers, we aggregate quality produce that meets the standards and requirements of the local and international markets.",
+            "description": "Farmer Aggregation: Through our solution “Aglanegrator” developed to onboard farmers for on-lending, monitoring of end-to-end primary production and ensuring the traceability of inputs and produce, we offer solutions around the challenges of obtaining reliable and accurate data on smallholder farmers.\n\nProduce Aggregation: Through our wide network of farmers, we aggregate quality produce that meets the standards and requirements of the local and international markets.",
             "pic": "/assests/SVGs/primaryProduction.png"
         },
 
         {
             "title": "Commodity Trading",
-            "description": "AgLane changes the way trade works through better prices and providing a fairer deal for farmers. We offer guaranteed access to a market where smallholder farmers sell their produce at a premium.\\nThrough our inclusive out-growers model, we are creating a platform where farmers earn foreign exchange by linking them to buyers all over the world. ",
+            "description": "AgLane changes the way trade works through better prices and providing a fairer deal for farmers. We offer guaranteed access to a market where smallholder farmers sell their produce at a premium.\nThrough our inclusive out-growers model, we are creating a platform where farmers earn foreign exchange by linking them to buyers all over the world. ",
             "pic": "/assests/SVGs/primaryProduction.png"
         },
 
         {
             "title": "Renewable Energy",
-            "description": "This pillar’s primary goal is to reduce greenhouse gas emissions and the carbon footprint of agriculture.\\nIn collaboration with our partners, we offer universal access to clean, affordable, and reliable energy services. We also provide and install modern, sustainable, and environmentally friendly power generation technologies for our clients at pocket-friendly prices.",
+            "description": "This pillar’s primary goal is to reduce greenhouse gas emissions and the carbon footprint of agriculture.\nIn collaboration with our partners, we offer universal access to clean, affordable, and reliable energy services. We also provide and install modern, sustainable, and environmentally friendly power generation technologies for our clients at pocket-friendly prices.",
             "pic": "/assests/SVGs/renewableEnergy.png"
         },
                 {
             "title": "Collateral Management",
-            "description": "This pillar focuses on improving loan management and providing risk management strategies for agricultural credit.\\nAgLane ultimately reduces risk by ensuring the traceability of commodities held as collateral along the agricultural value and supply chain through robust audit, monitoring, and control measures.",
+            "description": "This pillar focuses on improving loan management and providing risk management strategies for agricultural credit.\nAgLane ultimately reduces risk by ensuring the traceability of commodities held as collateral along the agricultural value and supply chain through robust audit, monitoring, and control measures.",
             "pic": "/assests/SVGs/renewableEnergy.png"
         }
     ]
