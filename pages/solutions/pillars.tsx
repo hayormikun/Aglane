@@ -25,9 +25,9 @@ const pillars = () => {
           {data &&
             data.data.map((pillar, index) => (
               <div key={index}>
-                {index % 2 == 0 ? (
+                {index % 2 != 0 ? (
                   <div className="flex flex-col-reverse lg:flex-row lg:gap-x-[5.625rem] w-full p-3 lg:px-[6.25rem] lg:pt-5 pb-6 mb-7 cropBg">
-                    <div className="w-full pt-5 md:pt-0">
+                    <div className="w-full lg:w-[50%] pt-5 md:pt-0">
                       <Image
                         src={pillar.pic}
                         width={500}
@@ -36,7 +36,7 @@ const pillars = () => {
                         className={"w-fit lg:w-full lg:h-full mx-auto"}
                       />
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col lg:w-[50%] w-full">
                       <h2 className="font-montserrat font-semibold text-xl md:text-[1.625rem] leading-[4.0625rem]">
                         {pillar.title}
                       </h2>
