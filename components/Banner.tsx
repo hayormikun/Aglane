@@ -15,7 +15,7 @@ const Banner = ({ header, info, img }:  BannerPropsType) => {
       <h1 className="text-3xl mx-auto font-montserrat font-semibold text-[#FCFCFC] uppercase w-full mb-[1.875rem]">
         {header}
       </h1>
-      <div className="font-quickSand font-normal text-xl md:text-[1.625rem] leading-[2.75rem] text-[#FCFCFC]">
+      <div className="font-quickSand font-normal text-xl md:text-[1.625em] leading-[2.75rem] text-[#FCFCFC]">
         {info}
       </div>
     </section>
