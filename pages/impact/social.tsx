@@ -27,7 +27,7 @@ const socialImpact = () => {
               <div key={index}>
                 {index % 2 == 0 ? (
                   <div className="flex flex-col-reverse lg:flex-row lg:gap-x-[5.625rem] w-full p-3 lg:px-[6.25rem] lg:pt-5 pb-6 mb-7 cropBg">
-                    <div className="w-full pt-5 md:pt-0">
+                    <div className="lg:w-[50%] w-full pt-5 md:pt-0">
                       <Image
                         src={impact.pic}
                         width={280}
@@ -36,26 +36,26 @@ const socialImpact = () => {
                         className={"w-fit lg:w-full lg:h-full mx-auto"}
                       />
                     </div>
-                    <div className="flex flex-col">
-                      <h2 className="font-montserrat font-semibold text-xl md:text-[1.625rem] leading-[4.0625rem]">
+                    <div className="flex flex-col w-full lg:w-[50%]">
+                      <h2 className="font-montserrat font-semibold text-xl md:text-[1.625em] leading-[4.0625rem]">
                         {impact.title}
                       </h2>
-                      <p className="font-quickSand text-2xl font-normal text-[#494949]">
+                      <p className="font-quickSand text-2xl lg:text-3xl font-normal text-[#494949]">
                         {impact.description}
                       </p>
                     </div>
                   </div>
                 ) : (
                   <div className="flex flex-col lg:flex-row lg:gap-x-[5.625rem] p-3 lg:px-[6.25rem] w-full mb-7">
-                    <div className="flex flex-col">
-                      <h2 className="font-montserrat font-semibold text-xl md:text-[1.625rem] leading-[4.0625rem]">
+                    <div className="flex flex-col w-full lg:w-[50%]">
+                      <h2 className="font-montserrat font-semibold text-xl md:text-[1.625em] leading-[4.0625rem]">
                         {impact.title}
                       </h2>
-                      <p className="font-quickSand font-normal text-2xl text-[#494949]">
+                      <p className="font-quickSand font-normal text-2xl lg:text-3xl text-[#494949]">
                         {impact.description}
                       </p>
                     </div>
-                    <div className="w-full bg-[#FCFCFC] pt-5 md:pt-0">
+                    <div className="w-full lg:w-[50%] bg-[#FCFCFC] pt-5 md:pt-0">
                       <Image
                         src={impact.pic}
                         width={400}
