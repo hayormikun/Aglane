@@ -8,13 +8,13 @@
         {
             "title": "Farmer and Produce Aggregation",
             "description": "Farmer Aggregation: Through our solution “Aglanegrator” developed to onboard farmers for on-lending, monitoring of end-to-end primary production and ensuring the traceability of inputs and produce, we offer solutions around the challenges of obtaining reliable and accurate data on smallholder farmers.\n\nProduce Aggregation: Through our wide network of farmers, we aggregate quality produce that meets the standards and requirements of the local and international markets.",
-            "pic": "/assests/SVGs/primaryProduction.png"
+            "pic": "/assests/SVGs/farmersProduce.jpeg"
         },
 
         {
             "title": "Commodity Trading",
             "description": "AgLane changes the way trade works through better prices and providing a fairer deal for farmers. We offer guaranteed access to a market where smallholder farmers sell their produce at a premium.\nThrough our inclusive out-growers model, we are creating a platform where farmers earn foreign exchange by linking them to buyers all over the world. ",
-            "pic": "/assests/SVGs/primaryProduction.png"
+            "pic": "/assests/SVGs/comodityTrading.jpeg"
         },
 
         {
@@ -25,7 +25,7 @@
                 {
             "title": "Collateral Management",
             "description": "This pillar focuses on improving loan management and providing risk management strategies for agricultural credit.\nAgLane ultimately reduces risk by ensuring the traceability of commodities held as collateral along the agricultural value and supply chain through robust audit, monitoring, and control measures.",
-            "pic": "/assests/SVGs/renewableEnergy.png"
+            "pic": "/assests/SVGs/collateralManagement.jpeg"
         }
     ]
 }
