@@ -11,13 +11,7 @@ const pillars = () => {
       <main className="pt-28 mb-0 w-full h-full">
         <Banner
           header="Core Services"
-          info="Our major social impact as operators in the Agribusiness space is
-            enhancing a sustainable and effective food system, which includes
-            promoting sustainable agriculture to end hunger and malnutrition
-            with the guarantee that this will create healthier communities and a
-            more prosperous nation. As a measure of social impact, some
-            sustainable development goals that our work touches on are SDG 1, 2,
-            5, 8, 9, 12 and 13."
+          info=""
           img="/assests/SVGs/Impacts/Social_Impact.png"
         />
 
