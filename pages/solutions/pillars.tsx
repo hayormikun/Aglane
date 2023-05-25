@@ -12,7 +12,7 @@ const pillars = () => {
         <Banner
           header="Core Services"
           info=""
-          img="/assests/SVGs/Impacts/Social_Impact.png"
+          img="/assests/SVGs/solutions/pillars.png"
         />
 
         <section className="pb-10">
