@@ -26,7 +26,7 @@ export const Navbar = () => {
             </div>
             {/* links */}
             <div className="hidden lg:block">
-              <ul className="flex ml-10 items-center gap-x-10 text-gray-500">
+              <ul className="flex ml-10 items-center gap-x-8 text-gray-500">
                 <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
                     href="/about"
@@ -103,7 +103,7 @@ export const Navbar = () => {
                   </Transition>
                 </Menu>
 
-<Menu as={'div'} className="relative">
+                <Menu as={'div'} className="relative">
                   <li className="list-none transition hover:list-disc hover:text-[#428821]">
                     <Menu.Button className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">
                       <span className="sr-only"> Our Solutions dropdown menu</span>
@@ -172,6 +172,8 @@ export const Navbar = () => {
                 </Menu>
 
 
+              
+               <li className="list-none transition hover:list-disc hover:text-[#428821]">
 
                   <Link
                     href="/team"
