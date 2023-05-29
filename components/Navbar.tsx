@@ -103,15 +103,76 @@ export const Navbar = () => {
                   </Transition>
                 </Menu>
 
-                <li className="list-none transition hover:list-disc hover:text-[#428821]">
-                  <Link
-                    href="/solutions/technology"
-                    className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+<Menu as={'div'} className="relative">
+                  <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                    <Menu.Button className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">
+                      <span className="sr-only"> Our Solutions dropdown menu</span>
+                      <span className="flex items-center gap-3">
+                        <p> Our Solutions </p>
+                        <svg
+                          width="14"
+                          height="10"
+                          viewBox="0 0 14 9"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.7101 1.21001C13.6171 1.11628 13.5065 1.04189 13.3846 0.991122C13.2628 0.940353 13.1321 0.914215 13.0001 0.914215C12.868 0.914215 12.7373 0.940353 12.6155 0.991122C12.4936 1.04189 12.383 1.11628 12.2901 1.21001L7.71006 5.79001C7.6171 5.88374 7.5065 5.95814 7.38464 6.0089C7.26278 6.05967 7.13207 6.08581 7.00006 6.08581C6.86805 6.08581 6.73734 6.05967 6.61548 6.0089C6.49362 5.95814 6.38302 5.88374 6.29006 5.79001L1.71006 1.21001C1.6171 1.11628 1.5065 1.04189 1.38464 0.991122C1.26278 0.940353 1.13207 0.914215 1.00006 0.914215C0.868048 0.914215 0.737342 0.940353 0.615483 0.991122C0.493624 1.04189 0.383023 1.11628 0.29006 1.21001C0.103809 1.39738 -0.000732422 1.65083 -0.000732422 1.91501C-0.000732422 2.1792 0.103809 2.43265 0.29006 2.62001L4.88006 7.21001C5.44256 7.77182 6.20506 8.08737 7.00006 8.08737C7.79506 8.08737 8.55756 7.77182 9.12006 7.21001L13.7101 2.62001C13.8963 2.43265 14.0009 2.1792 14.0009 1.91501C14.0009 1.65083 13.8963 1.39738 13.7101 1.21001Z"
+                            fill="#428821"
+                          />
+                        </svg>
+                      </span>
+                    </Menu.Button>
+                  </li>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transfrom opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-100"
+                    leaveFrom="transfrom opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
                   >
-                    Our Solutions
-                  </Link>
-                </li>
-                <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                    <Menu.Items className="absolute origin-top-left flex flex-col left-0 mt-3 w-64 py-3 bg-[#FCFCFC] text-[#3A3A3A] shadow-lg rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <div
+                            className={`${
+                              active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                            }  w-full py-2`}
+                          >
+                            <Link
+                              href="solutions/pillars"
+                              className="transition flex items-center px-5 hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                            >
+                              Core Services 
+                            </Link>
+                          </div>
+                        )}
+                      </Menu.Item>
+
+                      <Menu.Item>
+                        {({ active }) => (
+                          <div
+                            className={`${
+                              active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                            }  w-full py-2`}
+                          >
+                            <Link
+                              href="/solutions/technology"
+                              className="transition flex items-center px-5 hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                            >
+                              Our Technology
+                            </Link>
+                          </div>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+
+
+
                   <Link
                     href="/team"
                     className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
@@ -218,6 +279,23 @@ export const Navbar = () => {
                       </div>
                     )}
                   </Menu.Item>
+
+<Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? ' text-[#428821] bg-gray-200' : ''
+                        }  w-full py-2`}
+                      >
+                        <Link href="/solutions/pillars">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Core Services</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item>
+
                   <Menu.Item>
                     {({ active }) => (
                       <div
@@ -227,7 +305,7 @@ export const Navbar = () => {
                       >
                         <Link href="/solutions/technology">
                           <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
-                            <span>Our Solutions</span>
+                            <span>Our Technology</span>
                           </div>
                         </Link>
                       </div>
