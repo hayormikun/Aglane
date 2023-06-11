@@ -33,7 +33,7 @@ const socialImpact = () => {
                         width={280}
                         height={280}
                         alt={impact.title}
-                        className={"w-fit lg:w-full lg:h-full mx-auto"}
+                        className={"w-fit lg:h-full mx-auto"}
                       />
                     </div>
                     <div className="flex flex-col w-full lg:w-[50%]">

@@ -1,11 +1,11 @@
-import { Fragment } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Menu, Transition } from '@headlessui/react'
-import { FaBars } from 'react-icons/fa'
+import { Fragment } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Menu, Transition } from "@headlessui/react";
+import { FaBars } from "react-icons/fa";
 
 function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export const Navbar = () => {
@@ -17,7 +17,7 @@ export const Navbar = () => {
             <div className="flex justify-center items-center flex-shrink-0">
               <Link href="/">
                 <Image
-                  src={'/assests/AgLane_Logo.png'}
+                  src={"/assests/AgLane_Logo.png"}
                   alt="Aglane logo"
                   width={204}
                   height={80}
@@ -35,7 +35,7 @@ export const Navbar = () => {
                     About Us
                   </Link>
                 </li>
-                <Menu as={'div'} className="relative">
+                <Menu as={"div"} className="relative">
                   <li className="list-none transition hover:list-disc hover:text-[#428821]">
                     <Menu.Button className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">
                       <span className="sr-only">Impact dropdown menu</span>
@@ -70,7 +70,7 @@ export const Navbar = () => {
                         {({ active }) => (
                           <div
                             className={`${
-                              active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                              active ? " text-[#428821] bg-[#eae6e6]" : ""
                             }  w-full py-2`}
                           >
                             <Link
@@ -87,7 +87,7 @@ export const Navbar = () => {
                         {({ active }) => (
                           <div
                             className={`${
-                              active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                              active ? " text-[#428821] bg-[#eae6e6]" : ""
                             }  w-full py-2`}
                           >
                             <Link
@@ -103,10 +103,13 @@ export const Navbar = () => {
                   </Transition>
                 </Menu>
 
-                <Menu as={'div'} className="relative">
+                <Menu as={"div"} className="relative">
                   <li className="list-none transition hover:list-disc hover:text-[#428821]">
                     <Menu.Button className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]">
-                      <span className="sr-only"> Our Solutions dropdown menu</span>
+                      <span className="sr-only">
+                        {" "}
+                        Our Solutions dropdown menu
+                      </span>
                       <span className="flex items-center gap-3">
                         <p> Our Solutions </p>
                         <svg
@@ -138,14 +141,14 @@ export const Navbar = () => {
                         {({ active }) => (
                           <div
                             className={`${
-                              active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                              active ? " text-[#428821] bg-[#eae6e6]" : ""
                             }  w-full py-2`}
                           >
                             <Link
-                              href="solutions/pillars"
+                              href="/solutions/pillars"
                               className="transition flex items-center px-5 hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                             >
-                              Core Services 
+                              Core Services
                             </Link>
                           </div>
                         )}
@@ -155,7 +158,7 @@ export const Navbar = () => {
                         {({ active }) => (
                           <div
                             className={`${
-                              active ? ' text-[#428821] bg-[#eae6e6]' : ''
+                              active ? " text-[#428821] bg-[#eae6e6]" : ""
                             }  w-full py-2`}
                           >
                             <Link
@@ -171,10 +174,7 @@ export const Navbar = () => {
                   </Transition>
                 </Menu>
 
-
-              
-               <li className="list-none transition hover:list-disc hover:text-[#428821]">
-
+                <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
                     href="/team"
                     className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
@@ -203,7 +203,7 @@ export const Navbar = () => {
             </div>
 
             {/* mobile nav  */}
-            <Menu as={'div'} className="mr-4 relative flex lg:hidden ">
+            <Menu as={"div"} className="mr-4 relative flex lg:hidden ">
               <Menu.Button className="bg-[#5C903D] inline-flex items-center rounded-md justify-center p-2 text-white hover:bg-[#3D3938] focus:outline-none focus:ring-white">
                 <span className="sr-only">Open mobile menu</span>
                 <FaBars className="w-5" aria-hidden="true" />
@@ -223,7 +223,7 @@ export const Navbar = () => {
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/about">
@@ -238,7 +238,7 @@ export const Navbar = () => {
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/impact/social">
@@ -254,7 +254,7 @@ export const Navbar = () => {
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/impact/numbers">
@@ -270,7 +270,7 @@ export const Navbar = () => {
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/team">
@@ -282,11 +282,11 @@ export const Navbar = () => {
                     )}
                   </Menu.Item>
 
-<Menu.Item>
+                  <Menu.Item>
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/solutions/pillars">
@@ -302,7 +302,7 @@ export const Navbar = () => {
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/solutions/technology">
@@ -318,7 +318,7 @@ export const Navbar = () => {
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/careers">
@@ -334,7 +334,7 @@ export const Navbar = () => {
                     {({ active }) => (
                       <div
                         className={`${
-                          active ? ' text-[#428821] bg-gray-200' : ''
+                          active ? " text-[#428821] bg-gray-200" : ""
                         }  w-full py-2`}
                       >
                         <Link href="/contact">
@@ -352,5 +352,5 @@ export const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
