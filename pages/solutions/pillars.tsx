@@ -88,7 +88,7 @@ const pillars = () => {
                   AgLane changes the way trade works through better prices and
                   providing a fairer deal for farmers. We offer guaranteed
                   access to a market where smallholder farmers sell their
-                  produce at a premium.\nThrough our inclusive out-growers
+                  produce at a premium.Through our inclusive out-growers
                   model, we are creating a platform where farmers earn foreign
                   exchange by linking them to buyers all over the world.
                 </p>
@@ -123,7 +123,7 @@ const pillars = () => {
                 </h2>
                 <p className="font-quickSand text-xl lg:text-[1.35rem] font-normal text-[#494949]">
                   This pillar’s primary goal is to reduce greenhouse gas
-                  emissions and the carbon footprint of agriculture.\nIn
+                  emissions and the carbon footprint of agriculture.In
                   collaboration with our partners, we offer universal access to
                   clean, affordable, and reliable energy services. We also
                   provide and install modern, sustainable, and environmentally
