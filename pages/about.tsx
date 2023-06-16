@@ -109,7 +109,7 @@ const About = () => {
             <PlanOfChange />
           </section>
 
-          <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
+          <div className="flex justify-center w-full py-5 mx-auto">
             <svg
               width="62"
               height="62"
@@ -144,7 +144,7 @@ const About = () => {
               </div>
             </div>
           </section>
-          <div className="flex justify-center w-full bg-[#FCFCFC] py-5 mx-auto">
+          <div className="flex justify-center w-full py-5 mx-auto">
             <svg
               width="62"
               height="62"
