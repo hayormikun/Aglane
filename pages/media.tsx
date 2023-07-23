@@ -26,7 +26,7 @@ const Media = () => {
                 on the sidelines of the BusinessDay CEO Forum 2023. We discussed
                 innovative ways to revolutionize the agricultural sector in
                 Nigeria and create sustainable solutions for farmers. Together,
-                we're paving the way for a brighter future in agriculture.
+                we&apos;re paving the way for a brighter future in agriculture.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-y-10">
@@ -56,11 +56,11 @@ const Media = () => {
                 The AgLane management team embarked on a pre-investment and
                 production capacity evaluation visitation to the vibrant Ginger
                 farms in Kwoi Community, Kaduna. Witnessing the dedication of
-                the local farmers and the potential for growth, we're excited
+                the local farmers and the potential for growth, we&apos;re excited
                 about the opportunity to support and invest in this community.
                 AgLane aims to collaborate closely with the farmers, empowering
                 them with modern agricultural techniques, access to markets, and
-                sustainable practices. Together, we'll spice up the agricultural
+                sustainable practices. Together, we&apos;ll spice up the agricultural
                 landscape and create a thriving ecosystem that benefits both
                 farmers and consumers.
               </p>
@@ -94,10 +94,10 @@ const Media = () => {
                 were blown away by the dedication and innovation showcased by
                 our field staff in cultivating cashews and producing quality oil
                 palm. The collaboration between AgLane and FoodRoad is set to
-                elevate Nigeria's cash-crop subsector of the agribusiness sector
+                elevate Nigeria&apos;s cash-crop subsector of the agribusiness sector
                 to new heights, empowering local farmers and boosting
-                sustainable production. Together, we're cultivating a future of
-                prosperity for Nigeria's agricultural landscape.
+                sustainable production. Together, we&apos;re cultivating a future of
+                prosperity for Nigeria&apos;s agricultural landscape.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-y-10">
