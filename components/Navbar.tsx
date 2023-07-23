@@ -184,12 +184,20 @@ export const Navbar = () => {
                 </li>
                 <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
+                    href="/media"
+                    className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
+                  >
+                    Media
+                  </Link>
+                </li>
+                {/* <li className="list-none transition hover:list-disc hover:text-[#428821]">
+                  <Link
                     href="/careers"
                     className="transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821]"
                   >
                     Careers
                   </Link>
-                </li>
+                </li> */}
 
                 <li className="list-none transition hover:list-disc hover:text-[#428821]">
                   <Link
@@ -314,7 +322,7 @@ export const Navbar = () => {
                     )}
                   </Menu.Item>
 
-                  <Menu.Item>
+                  {/* <Menu.Item>
                     {({ active }) => (
                       <div
                         className={`${
@@ -324,6 +332,22 @@ export const Navbar = () => {
                         <Link href="/careers">
                           <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
                             <span>Careers</span>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+                  </Menu.Item> */}
+
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        className={`${
+                          active ? " text-[#428821] bg-gray-200" : ""
+                        }  w-full py-2`}
+                      >
+                        <Link href="/media">
+                          <div className="flex items-center transition hover:text-[#428821] hover:font-semibold active:font-semibold active:text-[#428821] focus:font-semibold focus:text-[#428821] px-5">
+                            <span>Media</span>
                           </div>
                         </Link>
                       </div>

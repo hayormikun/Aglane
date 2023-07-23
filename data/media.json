@@ -1,0 +1,53 @@
+{
+    "images": [
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-1.jpg"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-5.jpg"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-6.jpg"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-4.jpg"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-2.jpg"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-3.jpg"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-7.jpg"
+        },
+
+        {
+            "trip": "iseyin trip",
+            "pic": "/assests/SVGs/media/iseyin-1.jpg"
+        },
+        {
+            "trip": "iseyin trip",
+            "pic": "/assests/SVGs/media/iseyin-2.jpg"
+        },
+        {
+            "trip": "iseyin trip",
+            "pic": "/assests/SVGs/media/iseyin-3.jpg"
+        },
+        {
+            "trip": "iseyin trip",
+            "pic": "/assests/SVGs/media/iseyin-4.jpg"
+        },
+        {
+            "trip": "iseyin trip",
+            "pic": "/assests/SVGs/media/iseyin-5.jpg"
+        }
+    ]
+}

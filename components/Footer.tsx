@@ -10,7 +10,7 @@ export const Footer = () => {
   const year = format(date, 'yyyy')
 
   return (
-    <footer className="w-full bg-[#EAF1E6] pl-[3.125em] pt-10 mb-0">
+    <footer className="w-full bg-[#EAF1E6] pl-3 md:pl-[3.125em] pt-10 mb-0">
       <span className="w-full h-auto">
         <Link href={'/'}>
           <Image
