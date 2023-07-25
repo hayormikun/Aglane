@@ -3,9 +3,10 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import data from '../data/testimonials.json'
-import pics from '../data/team.json'
+import pics from '../data/carousel.json'
 import { useRef } from 'react'
 import { SliderArrows } from './SliderArrows'
+import Link from 'next/link'
 
 
 export const Testimonials = () => {
@@ -83,7 +84,7 @@ export const Gallery = () => {
     slidesToShow: 3,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     cssEase: 'linear',
     pauseOnHover: true,
   }
@@ -91,14 +92,21 @@ export const Gallery = () => {
   return (
     <Slider {...settings}>
       {pics &&
-        pics.gallery.map((pic, index) => (
-          <div className="flex flex-row gap-5" key={index}>
+        pics.images.map((image, index) => (
+          <div className="flex flex-row gap-5 outline-none hover:cursor-pointer" key={index}>
+            <Link
+                href={'/media'}
+              >
+                <div className="block relative w-[300px]">
             <Image
-              src={pic}
+              src={image.pic}
               width={300}
-              height={215}
-              alt={`Gallery image - ${index}`}
+              height={300}
+              alt={image.caption}
             />
+            <span className='absolute z-20 text-sm py-2 flex justify-center align-middle bottom-0 text-center bg-black bg-opacity-70 font-montserrat font-thin text-white w-full'>{image.caption}</span>
+            </div>
+            </Link>
           </div>
         ))}
     </Slider>

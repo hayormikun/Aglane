@@ -13,8 +13,8 @@ const Media = () => {
       <main className="pt-40 px-3 lg:px-[3.125rem] mb-0 cropBg w-full h-full">
         <section>
           <Heading header="Media" />
-          {/* <article className="flex flex-col">
-            <div className="">
+          <article className="flex flex-col gap-y-5">
+          <div className="flex flex-col gap-y-1">
               <SmallHeader header="Empowering Nigerian agriculture through collaboration! 🌱✨" />
               <p>
                 Our Managing Partner, Olusola Omole, alongside Amb. Adegboyega
@@ -29,15 +29,15 @@ const Media = () => {
                 we&apos;re paving the way for a brighter future in agriculture.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-y-10">
+            <div className="grid grid-cols-2 gap-5 md:gap-y-10">
               {data &&
                 data.images.map((image, index) => (
                   <Fragment key={index}>
-                    {image.trip == "iseyin trip" ? (
+                    {image.trip == "afdb visit" ? (
                       <Image
                         src={image.pic}
-                        width={360}
-                        height={360}
+                        width={560}
+                        height={560}
                         alt={image.trip}
                         className="mb-4"
                       />
@@ -47,9 +47,9 @@ const Media = () => {
                   </Fragment>
                 ))}
             </div>
-          </article> */}
+          </article>
 
-          <article className="flex flex-col gap-y-5">
+          <article className="flex flex-col mt-3 md:mt-7 gap-y-5">
             <div className="flex flex-col gap-y-1">
               <SmallHeader header="🌱👨‍🌾 Nurturing growth from the ground up!" />
               <p className="font-quickSand font-normal text-xl leading-[1.7rem] text-[#494949]">

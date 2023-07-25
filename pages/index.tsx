@@ -1,7 +1,7 @@
 import { HtmlHead } from '../components/Head'
 import { useState } from 'react'
 import { Heading } from '../components/Heading'
-import { Testimonials } from '../components/Sliders'
+import { Gallery, Testimonials } from '../components/Sliders'
 import data from '../data/services.json'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -108,6 +108,11 @@ export default function Home() {
             <Testimonials />
           </section>
         </div>
+
+        <section className='px-3 md:px-[4.375rem] md:py-7'>
+          <Heading header="Gallery" />
+          <Gallery />
+        </section>
 
         <div className="px-3 md:px-[4.375rem] cropBg w-full">
           <section className="mt-[1.875rem] pt-12 pb-10">

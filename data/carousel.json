@@ -1,0 +1,52 @@
+{
+    "images": [
+        {
+            "trip": "afdb visit",
+            "pic": "/assests/SVGs/media/afdb-2.jpg",
+            "caption": "AgLane's M.P  with SmartAg's M.P, Dr Gboyega Bamisile, Dr Akinwumi A. Adesina (AfDb President)"
+        },
+        
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-1.jpg",
+            "caption": "AgLane's visit to GINGER COOPERATIVE FARM in Kwoi, Jaba LGA, Kaduna state"
+
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-4.jpg",
+            "caption": "Dried ginger from a ginger cooperative farm in Kwoi, Jaba LGA, Kaduna state"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-2.jpg",
+            "caption": "AgLane Nigeria Ltd's team on a visit to ginger farm in Kaduna state"
+        },
+        {
+            "trip": "afdb visit",
+            "pic": "/assests/SVGs/media/afdb-1.jpg",
+            "caption": "From left to right; SmartAg's M.P, Dr Gboyega Bamisile, Dr Akinwumi A. Adesina (AfDb), AgLane's M.P"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-3.jpg",
+            "caption": "AgLane Nigeria Ltd's team on a visit to ginger farm in Kaduna state"
+        },
+        
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-5.jpg",
+            "caption": "Ginger crop at the early vegetative stage"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-6.jpg",
+            "caption": "Soybean crop at fruiting stage"
+        },
+        {
+            "trip": "kaduna trip",
+            "pic": "/assests/SVGs/media/kaduna-7.jpg",
+            "caption": "Ginger farm at Kwoi, Jaba LGA, Kaduna state"
+        }
+    ]
+}

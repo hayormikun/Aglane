@@ -4,7 +4,6 @@ import { HtmlHead } from '../components/Head'
 import { Heading } from '../components/Heading'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Gallery } from '../components/Sliders'
 
 const Team = () => {
   return (
@@ -38,11 +37,6 @@ const Team = () => {
               ))}
           </div>
         </section>
-
-        {/* <section>
-          <Heading header="Gallery" />
-          <Gallery />
-        </section> */}
 
         <section className="mt-10 pb-[4.375em]">
           <Heading header="JOIN OUR COMMUNITY" />
