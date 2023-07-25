@@ -76,10 +76,7 @@ export const Testimonials = () => {
 
 export const Gallery = () => {
   const settings = {
-    className: 'center',
     dots: true,
-    centerMode: true,
-    centerPadding: '100px',
     infinite: true,
     slidesToShow: 3,
     speed: 500,
@@ -87,6 +84,37 @@ export const Gallery = () => {
     autoplaySpeed: 2000,
     cssEase: 'linear',
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          className: 'center',
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          className: 'center',
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    
   }
 
   return (
